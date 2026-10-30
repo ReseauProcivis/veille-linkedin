@@ -49,8 +49,18 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 80px; }
 .texte { white-space: pre-wrap; margin: 6px 0; max-height: 7.5em; overflow: hidden; position: relative; }
 .texte.ouvert { max-height: none; }
 .lire { border: 0; background: none; color: var(--orange); cursor: pointer; padding: 0; font: inherit; font-size: 13px; }
-.medias { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+.medias { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; align-items: flex-start; }
 .medias img { height: 74px; border-radius: 6px; border: 1px solid var(--ligne); }
+.medias img.cliquable { cursor: pointer; }
+.medias img.cliquable:hover { outline: 2px solid var(--orange-pale); }
+.medias img.photo-choisie { outline: 3px solid var(--orange); outline-offset: 1px; }
+.medias .miniature { opacity: .45; }
+.aide-photo { font-size: 12px; color: var(--gris); margin: 2px 0 6px; }
+.lecteur { margin: 6px 0; }
+.lecteur video { max-width: 100%; max-height: 320px; border-radius: 6px; background: #000; display: block; }
+.lecteur .btn.second { margin-top: 6px; }
+#panier li img { height: 30px; vertical-align: middle; border-radius: 4px; margin-left: 4px; }
+#exporter { margin-top: 8px; width: 100%; }
 #panier { position: sticky; top: 16px; background: var(--carte); border: 1px solid var(--ligne); border-radius: 12px; padding: 14px 16px; }
 #panier h2 { margin: 0 0 8px; font-size: 17px; }
 #panier ol { padding-left: 22px; margin: 0 0 12px; }
@@ -104,6 +114,8 @@ td a { color: var(--orange); word-break: break-all; }
         <ol id="choix"></ol>
         <p class="note" id="choix-vide">Cochez les posts à mettre dans la newsletter. L'ordre ici sera l'ordre de la newsletter.</p>
         <button class="btn" id="valider" disabled>Valider la sélection</button>
+        <button class="btn second" id="exporter" disabled>Télécharger la sélection (.md)</button>
+        <p class="note">Fichier à transmettre à la personne qui fait les temps forts : elle le donne à son application Claude.</p>
         <div id="valide"></div>
       </aside>
     </div>
@@ -139,7 +151,8 @@ td a { color: var(--orange); word-break: break-all; }
 </main>
 
 <script>
-const ETAT = {config: null, pages: null, data: null, choix: [], vue: 'selection'};
+// photos : photo retenue pour la newsletter, par post ({url} ou {video, t} pour un plan de vidéo).
+const ETAT = {config: null, pages: null, data: null, choix: [], photos: {}, vue: 'selection'};
 const $ = s => document.querySelector(s);
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
 const MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
@@ -171,7 +184,10 @@ async function relais(action, contenu) {
   const loc = lire('vl-data');
   ETAT.data = (loc && (!distant || loc.genere >= distant.genere)) ? loc : distant;
   const sel = lire('vl-choix');
-  if (sel && ETAT.data && sel.date === ETAT.data.date) ETAT.choix = sel.posts.map(p => p.urn);
+  if (sel && ETAT.data && sel.date === ETAT.data.date) {
+    ETAT.choix = sel.posts.map(p => p.urn);
+    for (const p of sel.posts) if (p.photo) ETAT.photos[p.urn] = p.photo;
+  }
   installerFavori();
   document.querySelectorAll('nav button').forEach(b => b.onclick = () => montrer(b.dataset.vue));
   if (location.hash === '#scan' && window.opener) lancerScan();
@@ -301,8 +317,7 @@ function rendreSelection() {
       '<a href="' + esc(pg.url) + '" target="_blank" rel="noopener">voir la page</a></div>';
     for (const p of pg.posts) {
       const on = ETAT.choix.includes(p.urn);
-      const media = (p.images || []).slice(0, 5).map(i => '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(i.url) + '" alt="">').join('') +
-        ((p.doc_pages || []).length ? '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(p.doc_pages[0]) + '" alt="">' : '');
+      const media = medias(p);
       const badges = [];
       if (p.video) badges.push('<span class="badge">vidéo</span>');
       if ((p.doc_pages || []).length) badges.push('<span class="badge">document ' + p.doc_pages.length + ' p.</span>');
@@ -325,9 +340,48 @@ function rendreSelection() {
     memoriserChoix(); rendrePanier();
   });
   L.querySelectorAll('.lire').forEach(b => b.onclick = () => { const t = b.previousElementSibling; t.classList.toggle('ouvert'); b.textContent = t.classList.contains('ouvert') ? 'Réduire' : 'Lire la suite'; });
+  L.querySelectorAll('img[data-photo]').forEach(img => img.onclick = () => choisirPhoto(img.closest('.post').querySelector('input').dataset.urn, {url: img.dataset.photo}));
+  L.querySelectorAll('button[data-plan]').forEach(b => b.onclick = () => ouvrirLecteur(b));
   L.querySelectorAll('button[data-statut]').forEach(b => b.onclick = () => changerStatut(Number(b.dataset.id), b.dataset.statut));
   L.querySelectorAll('button[data-supprimer]').forEach(b => b.onclick = () => supprimerPage(Number(b.dataset.supprimer)));
   rendrePanier();
+}
+
+// Vignettes d'un post. Cliquer une photo (ou une page de document) la retient pour la newsletter et coche le post.
+// Dans un post vidéo, l'image est la miniature : on ne la propose pas, on choisit un plan dans la vidéo.
+function medias(p) {
+  const ph = ETAT.photos[p.urn];
+  const vignette = (url, titre) => '<img loading="lazy" referrerpolicy="no-referrer" class="cliquable' + (ph && ph.url === url ? ' photo-choisie' : '') +
+    '" data-photo="' + esc(url) + '" title="' + titre + '" src="' + esc(url) + '" alt="">';
+  let h = '';
+  if (p.video) {
+    h += (p.images || []).slice(0, 1).map(i => '<img loading="lazy" referrerpolicy="no-referrer" class="miniature" title="Miniature de la vidéo" src="' + esc(i.url) + '" alt="">').join('');
+    h += '<div><button class="btn second" data-plan="' + esc(p.urn) + '">' + (ph && ph.video ? 'Plan choisi à ' + ph.t + ' s : changer' : 'Choisir un plan de la vidéo') + '</button></div>';
+  } else {
+    h += (p.images || []).slice(0, 8).map(i => vignette(i.url, 'Prendre cette photo pour la newsletter')).join('');
+  }
+  h += (p.doc_pages || []).slice(0, 3).map(u => vignette(u, 'Prendre cette page du document pour la newsletter')).join('');
+  if (!h) return '';
+  return h + '<div class="aide-photo" style="flex-basis:100%">' + (ph ? 'Photo retenue pour la newsletter (encadrée).' :
+    p.video ? 'Choisissez un plan de la vidéo, ou laissez Claude le choisir.' : 'Cliquez une image pour la retenir, ou laissez Claude choisir.') + '</div>';
+}
+
+function choisirPhoto(urn, photo) {
+  ETAT.photos[urn] = photo;
+  if (!ETAT.choix.includes(urn)) ETAT.choix.push(urn);
+  memoriserChoix(); rendreSelection();
+}
+
+function ouvrirLecteur(b) {
+  const urn = b.dataset.plan;
+  const p = tousLesPosts().find(x => x.urn === urn);
+  const zone = b.parentElement;
+  const ph = ETAT.photos[urn];
+  zone.innerHTML = '<div class="lecteur"><video controls muted preload="metadata" src="' + esc(p.video.url) + (ph && ph.video ? '#t=' + ph.t : '') + '"></video>' +
+    '<button class="btn second">Prendre ce plan</button> <span class="note">Mettez la vidéo en pause sur une image nette, sans texte coupé.</span></div>';
+  const v = zone.querySelector('video');
+  v.onerror = () => { zone.innerHTML = '<span class="note">Vidéo illisible (lien LinkedIn expiré ?). Claude choisira un plan.</span>'; };
+  zone.querySelector('button').onclick = () => choisirPhoto(urn, {video: p.video.url, t: Math.round(v.currentTime * 10) / 10});
 }
 
 function postsChoisis() {
@@ -336,7 +390,7 @@ function postsChoisis() {
 }
 
 function memoriserChoix() {
-  ecrire('vl-choix', {date: ETAT.data.date, posts: postsChoisis().map(p => ({urn: p.urn}))});
+  ecrire('vl-choix', {date: ETAT.data.date, posts: postsChoisis().map(p => ({urn: p.urn, photo: ETAT.photos[p.urn] || null}))});
 }
 
 function rendrePanier() {
@@ -344,7 +398,9 @@ function rendrePanier() {
   $('#nb').textContent = ch.length;
   $('#choix-vide').style.display = ch.length ? 'none' : '';
   $('#valider').disabled = !ch.length;
-  $('#choix').innerHTML = ch.map((p, i) => '<li>' + esc(p.page.nom) + ' <span class="note">(' + esc(p.date) + ')</span> <span class="ctl">' +
+  $('#exporter').disabled = !ch.length;
+  const vignette = p => { const ph = ETAT.photos[p.urn]; return !ph ? '' : ph.url ? '<img referrerpolicy="no-referrer" src="' + esc(ph.url) + '" alt="">' : ' <span class="note">plan ' + ph.t + ' s</span>'; };
+  $('#choix').innerHTML = ch.map((p, i) => '<li>' + esc(p.page.nom) + ' <span class="note">(' + esc(p.date) + ')</span>' + vignette(p) + ' <span class="ctl">' +
     '<button data-m="-1" data-i="' + i + '" title="Monter">↑</button><button data-m="1" data-i="' + i + '" title="Descendre">↓</button><button data-x="' + i + '" title="Retirer">×</button></span></li>').join('');
   $('#choix').querySelectorAll('button').forEach(b => b.onclick = () => {
     const i = Number(b.dataset.i ?? b.dataset.x);
@@ -354,11 +410,44 @@ function rendrePanier() {
   });
 }
 
+// photo : choix fait sur la page ({url} ou {video, t}), sinon null et Claude choisit.
+function selectionCourante() {
+  return {date: ETAT.data.date, valide: new Date().toISOString(), temps_forts: postsChoisis().map((p, i) => ({
+    n: i + 1, page: p.page.nom, page_url: p.page.url, urn: p.urn, url: p.url, date: p.date, texte: p.texte,
+    auteur: p.auteur, entete: p.entete, reprise: p.reprise, kind: p.kind, images: p.images, doc_pages: p.doc_pages, video: p.video,
+    photo: ETAT.photos[p.urn] || null}))};
+}
+
+// Fichier à transmettre : lisible par une personne, avec en fin de fichier la sélection complète pour Claude.
+function selectionMarkdown(s) {
+  const decrit = t => !t.photo ? 'à choisir par Claude' : t.photo.video ? 'plan de la vidéo à ' + t.photo.t + ' s' :
+    (t.doc_pages || []).includes(t.photo.url) ? 'page ' + (t.doc_pages.indexOf(t.photo.url) + 1) + ' du document' :
+    'photo ' + ((t.images || []).findIndex(i => i.url === t.photo.url) + 1) + ' du post';
+  const L = ['# Temps forts : sélection du ' + dateFr(s.date), '',
+    s.temps_forts.length + (s.temps_forts.length > 1 ? ' temps forts' : ' temps fort') + ', dans l\'ordre de la newsletter.', '',
+    'À faire : ouvrir l\'application Claude, joindre ce fichier et demander « Fais les temps forts de la semaine avec cette sélection ». ' +
+    'Les liens des images LinkedIn expirent au bout de quelques semaines : traiter le fichier dans la semaine.', ''];
+  for (const t of s.temps_forts) {
+    L.push('## ' + t.n + '. ' + t.page, '', '- Post : ' + t.url + ' (il y a ' + t.date + ')', '- Image : ' + decrit(t));
+    if (t.reprise) L.push('- Republie : ' + t.reprise.auteur);
+    L.push('', ...String(t.texte || '').split('\n').map(l => '> ' + l), '');
+  }
+  L.push('## Données pour Claude', '', '```json', JSON.stringify(s, null, 1), '```', '');
+  return L.join('\n');
+}
+
+$('#exporter').onclick = () => {
+  const s = selectionCourante();
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([selectionMarkdown(s)], {type: 'text/markdown;charset=utf-8'}));
+  a.download = 'temps-forts-' + s.date + '.md';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+};
+
 $('#valider').onclick = async () => {
   const ch = postsChoisis();
-  const selection = {date: ETAT.data.date, valide: new Date().toISOString(), temps_forts: ch.map((p, i) => ({
-    n: i + 1, page: p.page.nom, page_url: p.page.url, urn: p.urn, url: p.url, date: p.date, texte: p.texte,
-    auteur: p.auteur, entete: p.entete, reprise: p.reprise, kind: p.kind, images: p.images, doc_pages: p.doc_pages, video: p.video}))};
+  const selection = selectionCourante();
   ecrire('vl-selection', selection);
   window.VL_SELECTION = selection;   // lu par Claude depuis cet onglet
   const r = await relais('selection', selection);

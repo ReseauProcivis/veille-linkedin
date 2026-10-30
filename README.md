@@ -5,7 +5,7 @@ Remplace l'app Streamlit et le `.command` du Mac de Maxime. Tout tourne dans le 
 ## Le vendredi
 
 1. Sur linkedin.com, clic sur le favori **Veille LinkedIn** : il scanne les pages de `pages.json` (environ 5 à 10 minutes) et ouvre la page de veille, qui reçoit les résultats.
-2. Sur la page, cocher les posts, les mettre dans l'ordre, puis **Valider la sélection**.
+2. Sur la page, cocher les posts, les mettre dans l'ordre, puis **Valider la sélection**. On peut retenir la photo de chaque post en cliquant dessus (pour une vidéo : « Choisir un plan de la vidéo »), sinon Claude choisit. **Télécharger la sélection (.md)** produit un fichier à transmettre à la personne qui fait les temps forts : une partie lisible, puis la sélection complète en JSON pour son Claude.
 3. Dans Claude desktop : « Fais les temps forts de la semaine » (skill à venir). Claude rédige les textes, choisit les photos, les fait valider, puis remplit les blocs Temps Fort de la NEWSLETTER HEBDO dans Dialog Insight avec la session DI de la personne (voir plus bas). Rien n’est envoyé.
 
 ## Fichiers

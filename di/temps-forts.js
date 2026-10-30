@@ -17,6 +17,9 @@
  *   VLDI.lancer(idMessage, plan)          // écrit les temps forts en tâche de fond
  *   VLDI.suivi()                          // avancement, puis rapport (ou erreur)
  *
+ * Si un temps fort de la sélection porte `photo` (choisie sur la page de veille), on la reprend telle quelle
+ * comme plan[i].image ; la planche la montre en premier, marquée « choisie ».
+ *
  * plan = [{titre, texte, linkedin, image: {url} | {video, t} }, ...] dans l'ordre de la newsletter.
  *   texte : texte brut (1 à 3 phrases). Le script le passe en entités HTML avec la typographie de DI.
  *   image.url : photo LinkedIn (ou page de document) ; image.video + image.t : plan de la vidéo à t secondes.
@@ -379,6 +382,8 @@ export async function planche(tempsForts) {
   for (const [i, t] of tempsForts.entries()) {
     // Dans un post vidéo, les images sont les miniatures : à ne pas retenir, on prend un plan de la vidéo.
     const sources = [...(t.images || []).map(x => ({url: x.url, miniature: !!t.video})), ...(t.doc_pages || []).slice(0, 3).map(url => ({url}))];
+    // Photo retenue sur la page de veille : en premier, signalée.
+    if (t.photo) sources.unshift({...t.photo, choisie: true});
     if (t.video) {
       const d = (t.video.duree_ms || 30000) / 1000;
       for (const f of [0.15, 0.4, 0.7]) sources.push({video: t.video.url, t: Math.round(d * f)});
@@ -394,7 +399,7 @@ export async function planche(tempsForts) {
       fig.style.cssText = 'margin:0;width:150px;flex:none';
       try {
         const a = await apercu(s);
-        fig.innerHTML = `<img src="${a.dataUrl}" style="width:150px;height:110px;object-fit:contain;background:#eee"><figcaption><b>${code}</b> ${s.video ? 'vidéo ' + s.t + ' s' : s.miniature ? 'miniature (non)' : a.w + 'x' + a.h}</figcaption>`;
+        fig.innerHTML = `<img src="${a.dataUrl}" style="width:150px;height:110px;object-fit:contain;background:#eee"><figcaption><b>${code}</b> ${s.choisie ? '<b style="color:#EC6608">choisie</b> ' : ''}${s.video ? 'vidéo ' + s.t + ' s' : s.miniature ? 'miniature (non)' : a.w + 'x' + a.h}</figcaption>`;
       } catch (e) {
         fig.innerHTML = `<div style="width:150px;height:110px;background:#fdd"></div><figcaption><b>${code}</b> illisible</figcaption>`;
       }
