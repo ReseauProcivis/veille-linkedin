@@ -33,6 +33,6 @@ LinkedIn change le `queryId` de la requête du fil (toutes les pages en `fil_400
 
 ## Mise en place (une seule fois)
 
-1. Dépôt public `maxtaillebois/veille-linkedin`, GitHub Pages sur `main` à la racine.
+1. Dépôt public `ReseauProcivis/veille-linkedin`, GitHub Pages sur `main` à la racine.
 2. Relais : dashboard Cloudflare → Workers → Create → coller `relay/worker.js` → secret `GH_TOKEN` (PAT fine-grained, Contents: Read and write sur ce seul dépôt). Reporter l'URL du Worker dans `config.json` (`relais`).
-3. Ouvrir `https://maxtaillebois.github.io/veille-linkedin/`, onglet « Installer le favori ».
+3. Ouvrir `https://reseauprocivis.github.io/veille-linkedin/`, onglet « Installer le favori ».

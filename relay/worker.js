@@ -13,8 +13,8 @@
  * sur le seul dépôt veille-linkedin. Puis mettre l'URL du Worker dans config.json ("relais").
  */
 
-const REPO = 'maxtaillebois/veille-linkedin';
-const ALLOWED_ORIGIN = 'https://maxtaillebois.github.io';
+const REPO = 'ReseauProcivis/veille-linkedin';
+const ALLOWED_ORIGIN = 'https://reseauprocivis.github.io';
 const MAX_OCTETS = 3 * 1024 * 1024;
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 
