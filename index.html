@@ -413,6 +413,7 @@ function supprimerPage(id) {
 $('#f-ajouter').onclick = () => {
   const nom = $('#f-nom').value.trim(), url = $('#f-url').value.trim();
   const m = url.match(/linkedin\.com\/(company|showcase)\/([^/?#]+)/);
+  if (/linkedin\.com\/in\//.test(url)) { $('#f-msg').innerHTML = '<div class="alerte">Cette adresse (…/in/…) est celle d\'un profil personnel, pas d\'une page entreprise. La veille ne suit que les pages entreprise (…/company/… ou …/showcase/…) : cherchez la page de la société sur LinkedIn.</div>'; return; }
   if (!nom || !m) { $('#f-msg').innerHTML = '<div class="alerte">Indiquez le nom et une adresse de page entreprise LinkedIn (…/company/… ou …/showcase/…).</div>'; return; }
   const slug = decodeURIComponent(m[2]);
   const deja = ETAT.pages.pages.find(p => p.slug.toLowerCase() === slug.toLowerCase());
