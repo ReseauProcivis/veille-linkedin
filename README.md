@@ -16,6 +16,7 @@ Remplace l'app Streamlit et le `.command` du Mac de Maxime. Tout tourne dans le 
 | `favori/scan.js` | Code du favori. La page le lit et fabrique le lien `javascript:` à glisser dans les favoris |
 | `pages.json` | Pages suivies (`statut: suivie`) et dormantes (`statut: dormante`) |
 | `config.json` | Identifiant de la requête LinkedIn (`queryId`), seuils, rythme des dormantes, URL du relais |
+| `skill/` | Skill Claude « temps-forts-de-la-semaine » (SKILL.md) et son paquet .zip à importer dans l’application Claude |
 | `relay/worker.js` | Relais Cloudflare : enregistre scans, sélections et liste des pages dans le dépôt (jeton GitHub côté serveur uniquement) |
 | `data/`, `selections/` | Archives écrites par le relais (`latest.json` + un fichier par date) |
 

@@ -10,7 +10,8 @@
  * puis window.VLDI :
  *   await VLDI.etat(idMessage)            // blocs Inauguré en place (titre, image, lien)
  *   await VLDI.selection()                // dernière sélection validée sur la page de veille
- *   await VLDI.planche(sel.temps_forts)   // affiche les images candidates numérotées (1.a, 1.b...)
+ *   await VLDI.infos(idMessage)           // nom du message et nombre de blocs Temps Fort
+ *   await VLDI.planche(sel.temps_forts, [0,1,2,3])   // images candidates numérotées (1.a, 1.b...), par paquets
  *   VLDI.candidat('1.b')                  // source de l'image choisie, à mettre dans plan[i].image
  *   VLDI.fermerPlanche()
  *   await VLDI.apercu(source)             // image préparée (dataURL) pour vérifier un recadrage
@@ -277,10 +278,21 @@ export async function etat(idm) {
   return out;
 }
 
+// Dernière sélection validée en ligne, gardée dans window.VL_SEL pour les appels suivants.
+// Si la sélection arrive par un fichier .md, Claude la pose lui-même : window.VL_SEL = {...}.
 export async function selection() {
   const r = await fetch(PAGE_VEILLE + 'selections/latest.json?v=' + Date.now(), {cache: 'no-store'});
   if (!r.ok) throw new Error('Aucune sélection validée en ligne (selections/latest.json).');
-  return r.json();
+  return (window.VL_SEL = await r.json());
+}
+
+// Nom du message (pour vérifier qu'on est sur la bonne NEWSLETTER HEBDO) et nombre de blocs Inauguré.
+export async function infos(idm) {
+  const h = await (await fetch(BASE + EDIT(idm), {credentials: 'include'})).text();
+  const m = h.match(/"messageName":"((?:[^"\\]|\\.)*)"/);
+  if (!m) throw new Error(`Message ${idm} illisible : session DI expirée ou projet autre que PROCIVIS.`);
+  const E = await ouvrir(idm);
+  return {message: Number(idm), nom: JSON.parse('"' + m[1] + '"'), blocs_temps_fort: inaugures(E).blocs.length};
 }
 
 export async function apercu(img) {
@@ -372,14 +384,16 @@ export function suivi() {
 // trois plans de la vidéo), numérotées « 2.c ». Claude la regarde en capture d'écran et choisit.
 let candidats = {};
 
-export async function planche(tempsForts) {
+// indices : temps forts à montrer (base 0), par paquets de 4 ou 5 pour tenir dans une capture d'écran
+// et dans les 45 s d'un appel. Les codes gardent le numéro du temps fort dans la sélection.
+export async function planche(tempsForts, indices) {
   fermerPlanche();
-  candidats = {};
   const box = document.createElement('div');
   box.id = 'vl-planche';
   box.style.cssText = 'position:fixed;inset:0;z-index:2147483647;background:#fff;overflow:auto;padding:10px;font:13px/1.3 Arial,sans-serif';
   document.body.appendChild(box);
   for (const [i, t] of tempsForts.entries()) {
+    if (indices && !indices.includes(i)) continue;
     // Dans un post vidéo, les images sont les miniatures : à ne pas retenir, on prend un plan de la vidéo.
     const sources = [...(t.images || []).map(x => ({url: x.url, miniature: !!t.video})), ...(t.doc_pages || []).slice(0, 3).map(url => ({url}))];
     // Photo retenue sur la page de veille : en premier, signalée.
@@ -421,4 +435,4 @@ export function fermerPlanche() {
 
 export const _interne = {Editeur, arbre, corps, entites, preparer, verser, inaugures};
 
-window.VLDI = {etat, selection, apercu, planche, candidat, fermerPlanche, remplir, lancer, suivi, _interne};
+window.VLDI = {etat, selection, infos, apercu, planche, candidat, fermerPlanche, remplir, lancer, suivi, _interne};
