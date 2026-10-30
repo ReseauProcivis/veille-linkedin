@@ -377,7 +377,8 @@ export async function planche(tempsForts) {
   box.style.cssText = 'position:fixed;inset:0;z-index:2147483647;background:#fff;overflow:auto;padding:10px;font:13px/1.3 Arial,sans-serif';
   document.body.appendChild(box);
   for (const [i, t] of tempsForts.entries()) {
-    const sources = [...(t.images || []).map(x => ({url: x.url})), ...(t.doc_pages || []).slice(0, 3).map(url => ({url}))];
+    // Dans un post vidéo, les images sont les miniatures : à ne pas retenir, on prend un plan de la vidéo.
+    const sources = [...(t.images || []).map(x => ({url: x.url, miniature: !!t.video})), ...(t.doc_pages || []).slice(0, 3).map(url => ({url}))];
     if (t.video) {
       const d = (t.video.duree_ms || 30000) / 1000;
       for (const f of [0.15, 0.4, 0.7]) sources.push({video: t.video.url, t: Math.round(d * f)});
@@ -393,7 +394,7 @@ export async function planche(tempsForts) {
       fig.style.cssText = 'margin:0;width:150px;flex:none';
       try {
         const a = await apercu(s);
-        fig.innerHTML = `<img src="${a.dataUrl}" style="width:150px;height:110px;object-fit:contain;background:#eee"><figcaption><b>${code}</b> ${s.video ? 'vidéo ' + s.t + ' s' : a.w + 'x' + a.h}</figcaption>`;
+        fig.innerHTML = `<img src="${a.dataUrl}" style="width:150px;height:110px;object-fit:contain;background:#eee"><figcaption><b>${code}</b> ${s.video ? 'vidéo ' + s.t + ' s' : s.miniature ? 'miniature (non)' : a.w + 'x' + a.h}</figcaption>`;
       } catch (e) {
         fig.innerHTML = `<div style="width:150px;height:110px;background:#fdd"></div><figcaption><b>${code}</b> illisible</figcaption>`;
       }
