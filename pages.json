@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-30T10:34:27.819Z",
+ "maj": "2026-10-30T10:34:29.344Z",
  "pages": [
   {
    "id": 1,
@@ -482,14 +482,14 @@
    "nom": "Maisons d'en France Nord",
    "url": "https://www.linkedin.com/company/maisons-d%27en-france-nord-pas-de-calais/",
    "slug": "maisons-d'en-france-nord-pas-de-calais",
-   "statut": "suivie"
+   "statut": "dormante"
   },
   {
    "id": 71,
    "nom": "Maisons ECC",
    "url": "https://www.linkedin.com/company/maisons-ecc/",
    "slug": "maisons-ecc",
-   "statut": "suivie"
+   "statut": "dormante"
   },
   {
    "id": 72,
