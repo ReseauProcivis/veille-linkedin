@@ -6,5 +6,5 @@
  "jours_limite": 8,
  "dormantes": "mensuel",
  "jours_avant_dormante": 150,
- "relais": ""
+ "relais": "https://veille-linkedin-relay.autumn-forest-8bcf.workers.dev"
 }
