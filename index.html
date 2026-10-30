@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille LinkedIn</title>
+<style>
+:root {
+  --orange: #EC6608; --orange-pale: #FDF0E6; --vert: #2E7D32; --vert-pale: #E8F5E9;
+  --jaune: #8A6100; --jaune-pale: #FFF6D6; --rouge: #B3261E; --rouge-pale: #FDECEA;
+  --texte: #222; --gris: #666; --ligne: #E3E3E3; --fond: #F6F6F4; --carte: #fff;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fond); color: var(--texte); font: 15px/1.5 -apple-system, "Segoe UI", Arial, sans-serif; }
+header { background: var(--carte); border-bottom: 3px solid var(--orange); padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; }
+header h1 { margin: 0; font-size: 20px; }
+header h1 span { color: var(--orange); }
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+nav button { border: 1px solid var(--ligne); background: var(--carte); padding: 6px 14px; border-radius: 18px; cursor: pointer; font: inherit; }
+nav button.on { background: var(--orange); border-color: var(--orange); color: #fff; }
+#infos { color: var(--gris); font-size: 13px; margin-left: auto; }
+main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 80px; }
+.vue { display: none; } .vue.on { display: block; }
+.grille { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; align-items: start; }
+@media (max-width: 900px) { .grille { grid-template-columns: 1fr; } #panier { position: static !important; } }
+.stats { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+.stat { background: var(--carte); border: 1px solid var(--ligne); border-radius: 10px; padding: 8px 14px; min-width: 110px; }
+.stat b { display: block; font-size: 22px; }
+.stat.oui b { color: var(--vert); } .stat.lim b { color: var(--jaune); } .stat.non b { color: var(--rouge); }
+.alerte { background: var(--jaune-pale); border: 1px solid #F0D98A; border-radius: 10px; padding: 10px 14px; margin-bottom: 12px; }
+.alerte h3 { margin: 0 0 6px; font-size: 15px; }
+.alerte li { margin: 4px 0; }
+.page { background: var(--carte); border: 1px solid var(--ligne); border-radius: 12px; padding: 14px 16px; margin-bottom: 14px; }
+.page-tete { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.page-tete h2 { margin: 0; font-size: 17px; }
+.page-tete a { color: var(--gris); font-size: 13px; }
+.pastille { font-size: 12px; padding: 1px 8px; border-radius: 10px; font-weight: 600; }
+.pastille.OUI { background: var(--vert-pale); color: var(--vert); }
+.pastille.LIMITE { background: var(--jaune-pale); color: var(--jaune); }
+.pastille.NON { background: var(--rouge-pale); color: var(--rouge); }
+.post { border-top: 1px solid var(--ligne); padding: 10px 0 4px; display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; }
+.post input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--orange); cursor: pointer; }
+.post.vieux { opacity: .6; }
+.post.choisi { background: var(--orange-pale); border-radius: 8px; }
+.meta { font-size: 13px; color: var(--gris); display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.meta a { color: var(--orange); }
+.badge { font-size: 12px; padding: 1px 8px; border-radius: 10px; background: #EEE; color: #444; }
+.badge.doublon { background: var(--rouge-pale); color: var(--rouge); }
+.texte { white-space: pre-wrap; margin: 6px 0; max-height: 7.5em; overflow: hidden; position: relative; }
+.texte.ouvert { max-height: none; }
+.lire { border: 0; background: none; color: var(--orange); cursor: pointer; padding: 0; font: inherit; font-size: 13px; }
+.medias { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+.medias img { height: 74px; border-radius: 6px; border: 1px solid var(--ligne); }
+#panier { position: sticky; top: 16px; background: var(--carte); border: 1px solid var(--ligne); border-radius: 12px; padding: 14px 16px; }
+#panier h2 { margin: 0 0 8px; font-size: 17px; }
+#panier ol { padding-left: 22px; margin: 0 0 12px; }
+#panier li { margin-bottom: 6px; font-size: 14px; }
+#panier li .ctl { white-space: nowrap; }
+#panier li button { border: 1px solid var(--ligne); background: #fff; border-radius: 6px; cursor: pointer; padding: 0 6px; margin-left: 2px; }
+.btn { background: var(--orange); color: #fff; border: 0; border-radius: 8px; padding: 10px 16px; font: inherit; font-weight: 600; cursor: pointer; width: 100%; }
+.btn.second { background: #fff; color: var(--orange); border: 1px solid var(--orange); width: auto; padding: 6px 12px; font-weight: 500; }
+.btn:disabled { opacity: .5; cursor: default; }
+.note { font-size: 13px; color: var(--gris); }
+.ok { background: var(--vert-pale); border: 1px solid #B9DDBB; border-radius: 10px; padding: 10px 14px; margin-top: 12px; }
+#scanbox { background: var(--carte); border: 1px solid var(--ligne); border-radius: 12px; padding: 24px; max-width: 640px; margin: 40px auto; text-align: center; }
+#scanbar { height: 10px; background: #EEE; border-radius: 5px; overflow: hidden; margin: 14px 0; }
+#scanbar div { height: 100%; width: 0; background: var(--orange); transition: width .3s; }
+table { width: 100%; border-collapse: collapse; background: var(--carte); border: 1px solid var(--ligne); border-radius: 12px; overflow: hidden; }
+th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--ligne); font-size: 14px; vertical-align: top; }
+th { background: #FAFAFA; }
+td a { color: var(--orange); word-break: break-all; }
+.form { background: var(--carte); border: 1px solid var(--ligne); border-radius: 12px; padding: 14px 16px; margin-bottom: 16px; display: flex; gap: 10px; flex-wrap: wrap; align-items: end; }
+.form label { display: flex; flex-direction: column; font-size: 13px; color: var(--gris); gap: 3px; flex: 1 1 240px; }
+.form input { font: inherit; padding: 7px 9px; border: 1px solid #CCC; border-radius: 7px; }
+.favori { display: inline-block; background: var(--orange); color: #fff; padding: 10px 18px; border-radius: 22px; font-weight: 700; text-decoration: none; cursor: grab; }
+.etapes li { margin: 8px 0; }
+.vide { color: var(--gris); padding: 30px; text-align: center; background: var(--carte); border-radius: 12px; border: 1px dashed #CCC; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Veille <span>LinkedIn</span> du réseau</h1>
+  <nav>
+    <button data-vue="selection" class="on">Sélection</button>
+    <button data-vue="pages">Pages suivies</button>
+    <button data-vue="installer">Installer le favori</button>
+  </nav>
+  <div id="infos"></div>
+</header>
+<main>
+  <section id="v-scan" class="vue">
+    <div id="scanbox">
+      <h2 id="scantitre">Connexion à l'onglet LinkedIn…</h2>
+      <div id="scanbar"><div></div></div>
+      <div id="scanmsg" class="note">Laissez l'onglet LinkedIn ouvert pendant le scan (environ 5 minutes).</div>
+    </div>
+  </section>
+
+  <section id="v-selection" class="vue on">
+    <div class="grille">
+      <div id="liste"></div>
+      <aside id="panier">
+        <h2>Temps forts retenus (<span id="nb">0</span>)</h2>
+        <ol id="choix"></ol>
+        <p class="note" id="choix-vide">Cochez les posts à mettre dans la newsletter. L'ordre ici sera l'ordre de la newsletter.</p>
+        <button class="btn" id="valider" disabled>Valider la sélection</button>
+        <div id="valide"></div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="v-pages" class="vue">
+    <div class="form">
+      <label>Nom de la société<input id="f-nom" placeholder="Ex. : Procivis Bretagne"></label>
+      <label>Adresse de la page LinkedIn<input id="f-url" placeholder="https://www.linkedin.com/company/..."></label>
+      <button class="btn second" id="f-ajouter">Ajouter la page</button>
+    </div>
+    <div id="f-msg"></div>
+    <table id="t-pages"></table>
+  </section>
+
+  <section id="v-installer" class="vue">
+    <div class="page">
+      <h2>Installer le favori (une seule fois)</h2>
+      <ol class="etapes">
+        <li>Dans Chrome, affichez la barre de favoris : <b>Ctrl + Maj + B</b> (Windows) ou <b>Cmd + Maj + B</b> (Mac).</li>
+        <li>Glissez ce bouton dans la barre de favoris : <a class="favori" id="lien-favori" href="#">Veille LinkedIn</a></li>
+      </ol>
+      <h2>Chaque vendredi</h2>
+      <ol class="etapes">
+        <li>Ouvrez <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">linkedin.com</a>, connecté à votre compte.</li>
+        <li>Cliquez sur le favori <b>Veille LinkedIn</b>. Cette page s'ouvre dans un nouvel onglet et le scan démarre (environ 5 minutes). Si Chrome bloque la fenêtre, autorisez les pop-up pour linkedin.com puis recliquez.</li>
+        <li>Cochez les posts à retenir dans l'onglet <b>Sélection</b>, mettez-les dans l'ordre, puis cliquez sur <b>Valider la sélection</b>.</li>
+        <li>Dans l'application Claude, demandez : <b>« Fais les temps forts de la semaine »</b>.</li>
+      </ol>
+      <p class="note">Si le favori a été mis à jour, supprimez l'ancien et glissez à nouveau le bouton ci-dessus.</p>
+    </div>
+  </section>
+</main>
+
+<script>
+const ETAT = {config: null, pages: null, data: null, choix: [], vue: 'selection'};
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+const MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+const dateFr = iso => { const [a, m, j] = iso.split('-').map(Number); return j + ' ' + MOIS[m - 1] + ' ' + a; };
+const aujourdhui = () => { const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+const lire = k => { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } };
+const ecrire = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+
+async function json(url) {
+  try { const r = await fetch(url + '?t=' + Date.now(), {cache: 'no-store'}); return r.ok ? await r.json() : null; } catch (e) { return null; }
+}
+
+// Envoi au relais Cloudflare, qui enregistre dans le dépôt GitHub (aucun jeton dans cette page).
+async function relais(action, contenu) {
+  if (!ETAT.config.relais) return {ok: false, raison: 'relais non configuré'};
+  try {
+    const r = await fetch(ETAT.config.relais, {method: 'POST', headers: {'content-type': 'application/json'}, body: JSON.stringify({action, contenu})});
+    return r.ok ? {ok: true} : {ok: false, raison: 'erreur ' + r.status};
+  } catch (e) { return {ok: false, raison: String(e)}; }
+}
+
+// ---------------------------------------------------------------- démarrage
+(async function init() {
+  ETAT.config = await json('config.json');
+  const pj = await json('pages.json');
+  const local = lire('vl-pages');
+  ETAT.pages = (local && pj && local.maj >= pj.maj) ? local : pj;
+  const distant = await json('data/latest.json');
+  const loc = lire('vl-data');
+  ETAT.data = (loc && (!distant || loc.genere >= distant.genere)) ? loc : distant;
+  const sel = lire('vl-choix');
+  if (sel && ETAT.data && sel.date === ETAT.data.date) ETAT.choix = sel.posts.map(p => p.urn);
+  installerFavori();
+  document.querySelectorAll('nav button').forEach(b => b.onclick = () => montrer(b.dataset.vue));
+  if (location.hash === '#scan' && window.opener) lancerScan();
+  else { montrer('selection'); }
+})();
+
+function montrer(v) {
+  ETAT.vue = v;
+  document.querySelectorAll('.vue').forEach(s => s.classList.toggle('on', s.id === 'v-' + v));
+  document.querySelectorAll('nav button').forEach(b => b.classList.toggle('on', b.dataset.vue === v));
+  if (v === 'selection') rendreSelection();
+  if (v === 'pages') rendrePages();
+  $('#infos').textContent = ETAT.data ? 'Scan du ' + dateFr(ETAT.data.date) + ' · ' + ETAT.data.resultats.length + ' pages' : 'Aucun scan pour l\'instant';
+}
+
+// ---------------------------------------------------------------- favori
+async function installerFavori() {
+  try {
+    const src = await (await fetch('favori/scan.js', {cache: 'no-store'})).text();
+    const page = location.origin + location.pathname.replace(/index\.html$/, '');
+    const code = src.split('\n').filter(l => !/^\s*\/\//.test(l)).join('\n')
+      .replace('__ORIGIN__', location.origin).replace('__PAGE__', page);
+    $('#lien-favori').href = 'javascript:' + encodeURIComponent(code);
+    $('#lien-favori').onclick = e => { e.preventDefault(); alert('Glissez ce bouton dans la barre de favoris de Chrome (ne cliquez pas dessus ici).'); };
+  } catch (e) { $('#lien-favori').textContent = 'Favori indisponible'; }
+}
+
+// ---------------------------------------------------------------- scan (page ouverte par le favori)
+function pagesAScanner() {
+  const toutes = ETAT.pages.pages;
+  const suivies = toutes.filter(p => p.statut === 'suivie');
+  const dormantes = toutes.filter(p => p.statut === 'dormante');
+  const mois = aujourdhui().slice(0, 7);
+  const dejaCeMois = ETAT.data && ETAT.data.dormantes_scannees && ETAT.data.date.slice(0, 7) === mois;
+  const avecDormantes = ETAT.config.dormantes === 'hebdo' || (ETAT.config.dormantes === 'mensuel' && !dejaCeMois);
+  return {liste: avecDormantes ? suivies.concat(dormantes) : suivies, avecDormantes};
+}
+
+function lancerScan() {
+  montrer('scan');
+  const {liste, avecDormantes} = pagesAScanner();
+  const recus = new Map();
+  let total = liste.length, ack = false;
+  const tick = setInterval(() => {
+    if (ack) return clearInterval(tick);
+    window.opener && window.opener.postMessage({type: 'vl-start', pages: liste, config: ETAT.config}, 'https://www.linkedin.com');
+  }, 700);
+  window.addEventListener('message', e => {
+    if (e.origin !== 'https://www.linkedin.com' || !e.data) return;
+    const m = e.data;
+    if (m.type === 'vl-ack') { ack = true; total = m.total || total; $('#scantitre').textContent = 'Scan en cours…'; }
+    if (m.type === 'vl-page') {
+      recus.set(m.result.id, m.result);
+      $('#scanbar div').style.width = Math.round(100 * recus.size / total) + '%';
+      $('#scanmsg').textContent = recus.size + ' / ' + total + ' : ' + m.result.nom;
+    }
+    if (m.type === 'vl-end') {
+      const resultats = liste.map(p => recus.get(p.id)).filter(Boolean);
+      ETAT.data = {date: aujourdhui(), genere: new Date().toISOString(), duree_ms: m.ms, dormantes_scannees: avecDormantes, resultats};
+      ecrire('vl-data', ETAT.data);
+      ETAT.choix = [];
+      ecrire('vl-choix', null);
+      relais('data', ETAT.data).then(r => { if (!r.ok) console.warn('Scan non archivé :', r.raison); });
+      history.replaceState(null, '', location.pathname);
+      montrer('selection');
+    }
+  });
+  setTimeout(() => { if (!ack) $('#scanmsg').textContent = 'Pas de réponse de l\'onglet LinkedIn. Fermez cette page, retournez sur linkedin.com et recliquez sur le favori.'; }, 15000);
+}
+
+// ---------------------------------------------------------------- sélection
+function tousLesPosts() {
+  const out = [];
+  if (!ETAT.data) return out;
+  for (const r of ETAT.data.resultats) for (const p of r.posts || []) out.push(Object.assign({page: r}, p));
+  return out;
+}
+
+function doublons() {
+  // Republications : même début de texte sous deux pages différentes.
+  const cle = t => (t || '').replace(/\s+/g, ' ').trim().slice(0, 120).toLowerCase();
+  const vus = new Map(), res = new Map();
+  for (const p of tousLesPosts()) {
+    const k = cle(p.texte); if (k.length < 40) continue;
+    if (vus.has(k) && vus.get(k).page.id !== p.page.id) { res.set(p.urn, vus.get(k).page.nom); res.set(vus.get(k).urn, p.page.nom); }
+    else vus.set(k, p);
+  }
+  return res;
+}
+
+function alertes() {
+  const r = ETAT.data.resultats, cfg = ETAT.config, out = [];
+  const reveillees = r.filter(x => x.statut === 'dormante' && x.dernier_ts && (Date.now() - x.dernier_ts) / 864e5 < cfg.jours_avant_dormante);
+  const endormies = r.filter(x => x.statut === 'suivie' && !x.erreur && (!x.dernier_ts || (Date.now() - x.dernier_ts) / 864e5 > cfg.jours_avant_dormante));
+  const erreurs = r.filter(x => x.erreur);
+  if (reveillees.length) out.push('<div class="alerte"><h3>Pages dormantes qui publient à nouveau</h3><ul>' + reveillees.map(x =>
+    '<li>' + esc(x.nom) + ' : dernier post il y a ' + esc(x.dernier_post) + ' <button class="btn second" data-statut="suivie" data-id="' + x.id + '">Remettre dans le scan hebdo</button></li>').join('') + '</ul></div>');
+  if (endormies.length) out.push('<div class="alerte"><h3>Pages sans publication depuis plus de ' + Math.round(cfg.jours_avant_dormante / 30) + ' mois</h3><ul>' + endormies.map(x =>
+    '<li>' + esc(x.nom) + ' : ' + (x.dernier_ts ? 'dernier post il y a ' + esc(x.dernier_post) : 'aucun post') + ' <button class="btn second" data-statut="dormante" data-id="' + x.id + '">Passer en dormante</button></li>').join('') + '</ul></div>');
+  if (erreurs.length) out.push('<div class="alerte"><h3>Pages non lues</h3><ul>' + erreurs.map(x =>
+    '<li>' + esc(x.nom) + ' (' + esc(x.erreur) + ') : <a href="' + esc(x.url) + '" target="_blank" rel="noopener">vérifier l\'adresse</a></li>').join('') + '</ul></div>');
+  return out.join('');
+}
+
+function rendreSelection() {
+  const L = $('#liste');
+  if (!ETAT.data) { L.innerHTML = '<div class="vide">Aucun scan pour l\'instant. Ouvrez linkedin.com et cliquez sur le favori <b>Veille LinkedIn</b> (onglet « Installer le favori »).</div>'; rendrePanier(); return; }
+  const r = ETAT.data.resultats;
+  const n = s => r.filter(x => x.actif === s && !x.erreur).length;
+  const dbl = doublons();
+  const jours = t => (Date.now() - t) / 864e5;
+  let h = '<div class="stats"><div class="stat"><b>' + r.length + '</b>pages lues</div><div class="stat oui"><b>' + n('OUI') + '</b>actives (7 j)</div>' +
+    '<div class="stat lim"><b>' + n('LIMITE') + '</b>limite (8 j)</div><div class="stat non"><b>' + n('NON') + '</b>sans post récent</div></div>';
+  h += alertes();
+  const actives = r.filter(x => (x.actif === 'OUI' || x.actif === 'LIMITE') && (x.posts || []).length)
+    .sort((a, b) => (a.actif === b.actif ? 0 : a.actif === 'OUI' ? -1 : 1) || b.dernier_ts - a.dernier_ts);
+  for (const pg of actives) {
+    h += '<div class="page"><div class="page-tete"><h2>' + esc(pg.nom) + '</h2><span class="pastille ' + pg.actif + '">' + (pg.actif === 'OUI' ? 'active' : 'limite') + '</span>' +
+      '<a href="' + esc(pg.url) + '" target="_blank" rel="noopener">voir la page</a></div>';
+    for (const p of pg.posts) {
+      const on = ETAT.choix.includes(p.urn);
+      const media = (p.images || []).slice(0, 5).map(i => '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(i.url) + '" alt="">').join('') +
+        ((p.doc_pages || []).length ? '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(p.doc_pages[0]) + '" alt="">' : '');
+      const badges = [];
+      if (p.video) badges.push('<span class="badge">vidéo</span>');
+      if ((p.doc_pages || []).length) badges.push('<span class="badge">document ' + p.doc_pages.length + ' p.</span>');
+      if (p.reprise) badges.push('<span class="badge">republie ' + esc(p.reprise.auteur) + '</span>');
+      if (dbl.has(p.urn)) badges.push('<span class="badge doublon">même texte que ' + esc(dbl.get(p.urn)) + '</span>');
+      h += '<div class="post' + (on ? ' choisi' : '') + (jours(p.ts) > ETAT.config.jours_actif ? ' vieux' : '') + '"><input type="checkbox" data-urn="' + p.urn + '"' + (on ? ' checked' : '') + '>' +
+        '<div><div class="meta"><span>il y a ' + esc(p.date) + '</span><a href="' + esc(p.url) + '" target="_blank" rel="noopener">voir le post</a>' + badges.join('') + '</div>' +
+        '<div class="texte">' + esc(p.texte) + '</div>' + (p.texte && p.texte.length > 380 ? '<button class="lire">Lire la suite</button>' : '') +
+        (media ? '<div class="medias">' + media + '</div>' : '') + '</div></div>';
+    }
+    h += '</div>';
+  }
+  if (!actives.length) h += '<div class="vide">Aucune page active cette semaine.</div>';
+  L.innerHTML = h;
+  L.querySelectorAll('input[data-urn]').forEach(c => c.onchange = () => {
+    const u = c.dataset.urn;
+    if (c.checked && !ETAT.choix.includes(u)) ETAT.choix.push(u);
+    if (!c.checked) ETAT.choix = ETAT.choix.filter(x => x !== u);
+    c.closest('.post').classList.toggle('choisi', c.checked);
+    memoriserChoix(); rendrePanier();
+  });
+  L.querySelectorAll('.lire').forEach(b => b.onclick = () => { const t = b.previousElementSibling; t.classList.toggle('ouvert'); b.textContent = t.classList.contains('ouvert') ? 'Réduire' : 'Lire la suite'; });
+  L.querySelectorAll('button[data-statut]').forEach(b => b.onclick = () => changerStatut(Number(b.dataset.id), b.dataset.statut));
+  rendrePanier();
+}
+
+function postsChoisis() {
+  const tous = new Map(tousLesPosts().map(p => [p.urn, p]));
+  return ETAT.choix.map(u => tous.get(u)).filter(Boolean);
+}
+
+function memoriserChoix() {
+  ecrire('vl-choix', {date: ETAT.data.date, posts: postsChoisis().map(p => ({urn: p.urn}))});
+}
+
+function rendrePanier() {
+  const ch = postsChoisis();
+  $('#nb').textContent = ch.length;
+  $('#choix-vide').style.display = ch.length ? 'none' : '';
+  $('#valider').disabled = !ch.length;
+  $('#choix').innerHTML = ch.map((p, i) => '<li>' + esc(p.page.nom) + ' <span class="note">(' + esc(p.date) + ')</span> <span class="ctl">' +
+    '<button data-m="-1" data-i="' + i + '" title="Monter">↑</button><button data-m="1" data-i="' + i + '" title="Descendre">↓</button><button data-x="' + i + '" title="Retirer">×</button></span></li>').join('');
+  $('#choix').querySelectorAll('button').forEach(b => b.onclick = () => {
+    const i = Number(b.dataset.i ?? b.dataset.x);
+    if (b.dataset.x !== undefined) ETAT.choix.splice(i, 1);
+    else { const j = i + Number(b.dataset.m); if (j < 0 || j >= ETAT.choix.length) return; [ETAT.choix[i], ETAT.choix[j]] = [ETAT.choix[j], ETAT.choix[i]]; }
+    memoriserChoix(); rendreSelection();
+  });
+}
+
+$('#valider').onclick = async () => {
+  const ch = postsChoisis();
+  const selection = {date: ETAT.data.date, valide: new Date().toISOString(), temps_forts: ch.map((p, i) => ({
+    n: i + 1, page: p.page.nom, page_url: p.page.url, urn: p.urn, url: p.url, date: p.date, texte: p.texte,
+    auteur: p.auteur, entete: p.entete, reprise: p.reprise, kind: p.kind, images: p.images, doc_pages: p.doc_pages, video: p.video}))};
+  ecrire('vl-selection', selection);
+  window.VL_SELECTION = selection;   // lu par Claude depuis cet onglet
+  const r = await relais('selection', selection);
+  $('#valide').innerHTML = '<div class="ok"><b>Sélection validée : ' + ch.length + (ch.length > 1 ? ' temps forts' : ' temps fort') + '.</b><br>' +
+    'Dans l\'application Claude, demandez : « Fais les temps forts de la semaine ». Gardez cet onglet ouvert.' +
+    (r.ok ? '' : '<br><span class="note">Sélection gardée dans ce navigateur (archivage en ligne : ' + esc(r.raison) + ').</span>') + '</div>';
+};
+
+// ---------------------------------------------------------------- pages suivies
+function dernierResultat(id) { return ETAT.data ? ETAT.data.resultats.find(x => x.id === id) : null; }
+
+function rendrePages() {
+  const P = ETAT.pages.pages.slice().sort((a, b) => (a.statut === b.statut ? a.nom.localeCompare(b.nom, 'fr') : a.statut === 'suivie' ? -1 : 1));
+  $('#t-pages').innerHTML = '<tr><th>Société</th><th>Page LinkedIn</th><th>Statut</th><th>Dernier post</th><th></th></tr>' + P.map(p => {
+    const r = dernierResultat(p.id);
+    return '<tr><td>' + esc(p.nom) + '</td><td><a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(decodeURIComponent(p.url).replace('https://www.linkedin.com', '')) + '</a></td>' +
+      '<td>' + (p.statut === 'suivie' ? 'scan hebdo' : 'dormante (scan ' + (ETAT.config.dormantes === 'hebdo' ? 'hebdo' : 'mensuel') + ')') + '</td>' +
+      '<td>' + (r ? esc(r.erreur ? 'erreur : ' + r.erreur : r.dernier_post) : '') + '</td>' +
+      '<td><button class="btn second" data-statut="' + (p.statut === 'suivie' ? 'dormante' : 'suivie') + '" data-id="' + p.id + '">' + (p.statut === 'suivie' ? 'Passer en dormante' : 'Remettre en hebdo') + '</button></td></tr>';
+  }).join('');
+  $('#t-pages').querySelectorAll('button[data-statut]').forEach(b => b.onclick = () => changerStatut(Number(b.dataset.id), b.dataset.statut));
+}
+
+async function enregistrerPages(message) {
+  ETAT.pages.maj = new Date().toISOString();
+  ecrire('vl-pages', ETAT.pages);
+  const r = await relais('pages', ETAT.pages);
+  $('#f-msg').innerHTML = '<div class="' + (r.ok ? 'ok' : 'alerte') + '">' + esc(message) + (r.ok ? ' Enregistré en ligne.' : ' Enregistré dans ce navigateur seulement (' + esc(r.raison) + ').') + '</div>';
+  if (ETAT.vue === 'selection') rendreSelection(); else rendrePages();
+}
+
+function changerStatut(id, statut) {
+  const p = ETAT.pages.pages.find(x => x.id === id);
+  if (!p) return;
+  p.statut = statut;
+  enregistrerPages(p.nom + (statut === 'suivie' ? ' revient dans le scan hebdo.' : ' passe en dormante.'));
+}
+
+$('#f-ajouter').onclick = () => {
+  const nom = $('#f-nom').value.trim(), url = $('#f-url').value.trim();
+  const m = url.match(/linkedin\.com\/(company|showcase)\/([^/?#]+)/);
+  if (!nom || !m) { $('#f-msg').innerHTML = '<div class="alerte">Indiquez le nom et une adresse de page entreprise LinkedIn (…/company/… ou …/showcase/…).</div>'; return; }
+  const slug = decodeURIComponent(m[2]);
+  const deja = ETAT.pages.pages.find(p => p.slug.toLowerCase() === slug.toLowerCase());
+  if (deja) { $('#f-msg').innerHTML = '<div class="alerte">Cette page est déjà suivie : ' + esc(deja.nom) + '.</div>'; return; }
+  const id = Math.max(0, ...ETAT.pages.pages.map(p => p.id)) + 1;
+  ETAT.pages.pages.push({id, nom, url: 'https://www.linkedin.com/' + m[1] + '/' + m[2] + '/', slug, statut: 'suivie', ajoutee: aujourdhui()});
+  $('#f-nom').value = ''; $('#f-url').value = '';
+  enregistrerPages(nom + ' est ajoutée : elle sera lue au prochain scan.');
+};
+</script>
+</body>
+</html>

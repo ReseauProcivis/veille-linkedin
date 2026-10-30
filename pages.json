@@ -1,0 +1,551 @@
+{
+ "maj": "2026-10-30",
+ "pages": [
+  {
+   "id": 1,
+   "nom": "Maisons d'en France Bourgogne",
+   "url": "https://www.linkedin.com/company/maisonsdenfrance-bourgogne/",
+   "slug": "maisonsdenfrance-bourgogne",
+   "statut": "suivie"
+  },
+  {
+   "id": 2,
+   "nom": "Cabinet Cartallier",
+   "url": "https://www.linkedin.com/company/cabinet-cartallier/",
+   "slug": "cabinet-cartallier",
+   "statut": "suivie"
+  },
+  {
+   "id": 3,
+   "nom": "Immo de France CABINET EVEN DU FOU",
+   "url": "https://www.linkedin.com/company/even-du-fou/",
+   "slug": "even-du-fou",
+   "statut": "suivie"
+  },
+  {
+   "id": 4,
+   "nom": "COOPERATIVE IMMOBILIERE DE BRETAGNE",
+   "url": "https://www.linkedin.com/company/groupecib/",
+   "slug": "groupecib",
+   "statut": "suivie"
+  },
+  {
+   "id": 5,
+   "nom": "SECIB",
+   "url": "https://www.linkedin.com/company/secib-immobilier/",
+   "slug": "secib-immobilier",
+   "statut": "suivie"
+  },
+  {
+   "id": 6,
+   "nom": "CONSTRUCTION IMMOBILIERE FAMILIALE DE NANTES",
+   "url": "https://www.linkedin.com/company/groupe-cif/",
+   "slug": "groupe-cif",
+   "statut": "suivie"
+  },
+  {
+   "id": 7,
+   "nom": "CIFP promotion immobilière",
+   "url": "https://www.linkedin.com/company/cifp-promotion-immobiliere/",
+   "slug": "cifp-promotion-immobiliere",
+   "statut": "suivie"
+  },
+  {
+   "id": 8,
+   "nom": "CIFV",
+   "url": "https://www.linkedin.com/company/compagnie-immobilière-cifv/",
+   "slug": "compagnie-immobilière-cifv",
+   "statut": "suivie"
+  },
+  {
+   "id": 9,
+   "nom": "Forézienne de Promotion",
+   "url": "https://www.linkedin.com/company/forezienne-de-promotion/",
+   "slug": "forezienne-de-promotion",
+   "statut": "suivie"
+  },
+  {
+   "id": 10,
+   "nom": "JBM Maisons Individuelles",
+   "url": "https://www.linkedin.com/company/maisons-jbm/",
+   "slug": "maisons-jbm",
+   "statut": "suivie"
+  },
+  {
+   "id": 11,
+   "nom": "Gibert Immobilier",
+   "url": "https://www.linkedin.com/company/gibert-immobilier/",
+   "slug": "gibert-immobilier",
+   "statut": "suivie"
+  },
+  {
+   "id": 12,
+   "nom": "IDF Forez Velay",
+   "url": "https://www.linkedin.com/company/immo-de-france-cifv/",
+   "slug": "immo-de-france-cifv",
+   "statut": "suivie"
+  },
+  {
+   "id": 13,
+   "nom": "Bâtir et Loger",
+   "url": "https://www.linkedin.com/company/batir-et-loger/",
+   "slug": "batir-et-loger",
+   "statut": "suivie"
+  },
+  {
+   "id": 14,
+   "nom": "Procivis Nouvelle Aquitaine",
+   "url": "https://www.linkedin.com/company/procivis-nouvelle-aquitaine/",
+   "slug": "procivis-nouvelle-aquitaine",
+   "statut": "suivie"
+  },
+  {
+   "id": 15,
+   "nom": "OFS PNA",
+   "url": "https://www.linkedin.com/company/ofs-procivis-en-nouvelle-aquitaine/",
+   "slug": "ofs-procivis-en-nouvelle-aquitaine",
+   "statut": "suivie"
+  },
+  {
+   "id": 16,
+   "nom": "L'abri familial",
+   "url": "https://www.linkedin.com/company/l-abri-familial/",
+   "slug": "l-abri-familial",
+   "statut": "suivie"
+  },
+  {
+   "id": 17,
+   "nom": "Construction horizontale",
+   "url": "https://www.linkedin.com/company/constructionhorizontale/",
+   "slug": "constructionhorizontale",
+   "statut": "suivie"
+  },
+  {
+   "id": 18,
+   "nom": "IGC",
+   "url": "https://www.linkedin.com/company/igc-construction/",
+   "slug": "igc-construction",
+   "statut": "suivie"
+  },
+  {
+   "id": 19,
+   "nom": "SOVI",
+   "url": "https://www.linkedin.com/company/sudouestvillages-sovi/",
+   "slug": "sudouestvillages-sovi",
+   "statut": "suivie"
+  },
+  {
+   "id": 20,
+   "nom": "Maisons d'en France Sud Pyrénées",
+   "url": "https://www.linkedin.com/company/maisonsdenfrance-sudpyrenees/",
+   "slug": "maisonsdenfrance-sudpyrenees",
+   "statut": "suivie"
+  },
+  {
+   "id": 21,
+   "nom": "Maisons d'en France Sud Ouest",
+   "url": "https://www.linkedin.com/company/maisons-den-france-sud-ouest/",
+   "slug": "maisons-den-france-sud-ouest",
+   "statut": "suivie"
+  },
+  {
+   "id": 22,
+   "nom": "IMMO de FRANCE AQUITAINE",
+   "url": "https://www.linkedin.com/company/immo-de-france-aquitaine/",
+   "slug": "immo-de-france-aquitaine",
+   "statut": "suivie"
+  },
+  {
+   "id": 23,
+   "nom": "PROCIVIS ALSACE",
+   "url": "https://www.linkedin.com/company/procivis-alsace/",
+   "slug": "procivis-alsace",
+   "statut": "suivie"
+  },
+  {
+   "id": 24,
+   "nom": "Amélogis",
+   "url": "https://www.linkedin.com/company/amelogis/",
+   "slug": "amelogis",
+   "statut": "suivie"
+  },
+  {
+   "id": 25,
+   "nom": "Gambetta Promotion",
+   "url": "https://www.linkedin.com/company/groupe-gambetta/",
+   "slug": "groupe-gambetta",
+   "statut": "suivie"
+  },
+  {
+   "id": 26,
+   "nom": "Groupe Habiter Alpes",
+   "url": "https://www.linkedin.com/company/groupe-cis-73/",
+   "slug": "groupe-cis-73",
+   "statut": "suivie"
+  },
+  {
+   "id": 27,
+   "nom": "CIS Promotion",
+   "url": "https://www.linkedin.com/company/cis-promotion/",
+   "slug": "cis-promotion",
+   "statut": "suivie"
+  },
+  {
+   "id": 28,
+   "nom": "CIS IMMOBILIER",
+   "url": "https://www.linkedin.com/company/cis-immobilier/",
+   "slug": "cis-immobilier",
+   "statut": "suivie"
+  },
+  {
+   "id": 29,
+   "nom": "4807 Immobilier",
+   "url": "https://www.linkedin.com/company/4807-immobilier-sas/",
+   "slug": "4807-immobilier-sas",
+   "statut": "suivie"
+  },
+  {
+   "id": 30,
+   "nom": "Groupe CISN",
+   "url": "https://www.linkedin.com/company/groupecisn/",
+   "slug": "groupecisn",
+   "statut": "suivie"
+  },
+  {
+   "id": 31,
+   "nom": "Edifides",
+   "url": "https://www.linkedin.com/company/edifides/",
+   "slug": "edifides",
+   "statut": "suivie"
+  },
+  {
+   "id": 32,
+   "nom": "Evel immobilier",
+   "url": "https://www.linkedin.com/company/evel-immobilier/",
+   "slug": "evel-immobilier",
+   "statut": "suivie"
+  },
+  {
+   "id": 33,
+   "nom": "Groupe FDI",
+   "url": "https://www.linkedin.com/company/fdi-groupe/",
+   "slug": "fdi-groupe",
+   "statut": "suivie"
+  },
+  {
+   "id": 34,
+   "nom": "SACICAP DE PROVENCE",
+   "url": "https://www.linkedin.com/company/procivis-provence/",
+   "slug": "procivis-provence",
+   "statut": "dormante"
+  },
+  {
+   "id": 35,
+   "nom": "IMMO de FRANCE NORMANDIE",
+   "url": "https://www.linkedin.com/company/immo-de-france-normandie/",
+   "slug": "immo-de-france-normandie",
+   "statut": "dormante"
+  },
+  {
+   "id": 36,
+   "nom": "Immo de France Hauts-de-France",
+   "url": "https://www.linkedin.com/company/immodefrancehdf/",
+   "slug": "immodefrancehdf",
+   "statut": "suivie"
+  },
+  {
+   "id": 37,
+   "nom": "Groupe Midi Habitat",
+   "url": "https://www.linkedin.com/company/groupe-midi-habitat/",
+   "slug": "groupe-midi-habitat",
+   "statut": "suivie"
+  },
+  {
+   "id": 38,
+   "nom": "IDF Midi Habitat ADB",
+   "url": "https://www.linkedin.com/company/midihabitat/",
+   "slug": "midihabitat",
+   "statut": "suivie"
+  },
+  {
+   "id": 39,
+   "nom": "Pierre Passion",
+   "url": "https://www.linkedin.com/company/procivis-midi-pyr%C3%A9n%C3%A9es/",
+   "slug": "procivis-midi-pyrénées",
+   "statut": "suivie"
+  },
+  {
+   "id": 40,
+   "nom": "SACICAP TOULOUSE-PYRENEES",
+   "url": "https://www.linkedin.com/company/procivis-sud-massif-central-toulouse-pyrenees/",
+   "slug": "procivis-sud-massif-central-toulouse-pyrenees",
+   "statut": "suivie"
+  },
+  {
+   "id": 41,
+   "nom": "Eclisse promotion",
+   "url": "https://www.linkedin.com/company/eclisse-promotion/",
+   "slug": "eclisse-promotion",
+   "statut": "suivie"
+  },
+  {
+   "id": 42,
+   "nom": "SMC habitat",
+   "url": "https://www.linkedin.com/company/sud-massif-central-habitat/",
+   "slug": "sud-massif-central-habitat",
+   "statut": "suivie"
+  },
+  {
+   "id": 43,
+   "nom": "OFS STON",
+   "url": "https://www.linkedin.com/company/ofs-ston/",
+   "slug": "ofs-ston",
+   "statut": "suivie"
+  },
+  {
+   "id": 44,
+   "nom": "Aveyron Habitat",
+   "url": "https://www.linkedin.com/company/aveyron-habitat/",
+   "slug": "aveyron-habitat",
+   "statut": "dormante"
+  },
+  {
+   "id": 45,
+   "nom": "IMMO de FRANCE SMC RODEZ (FERNAND RATIER)",
+   "url": "https://www.linkedin.com/company/immo-de-france-smc/",
+   "slug": "immo-de-france-smc",
+   "statut": "suivie"
+  },
+  {
+   "id": 46,
+   "nom": "Procivis Bretagne",
+   "url": "https://www.linkedin.com/company/procivis-bretagne/",
+   "slug": "procivis-bretagne",
+   "statut": "suivie"
+  },
+  {
+   "id": 47,
+   "nom": "Polimmo Développement",
+   "url": "https://www.linkedin.com/company/groupe-polimmo/",
+   "slug": "groupe-polimmo",
+   "statut": "suivie"
+  },
+  {
+   "id": 48,
+   "nom": "Maisons d'en France Bretagne",
+   "url": "https://www.linkedin.com/company/maisons-d%27en-france-bretagne/",
+   "slug": "maisons-d'en-france-bretagne",
+   "statut": "suivie"
+  },
+  {
+   "id": 49,
+   "nom": "Polimmo la Maison",
+   "url": "https://www.linkedin.com/company/polimmo-la-maison-bzh/",
+   "slug": "polimmo-la-maison-bzh",
+   "statut": "suivie"
+  },
+  {
+   "id": 50,
+   "nom": "Polimmo Promotion Aménagement",
+   "url": "https://www.linkedin.com/company/polimmo-promotion-amenagement/",
+   "slug": "polimmo-promotion-amenagement",
+   "statut": "suivie"
+  },
+  {
+   "id": 51,
+   "nom": "Groupe Polylogis",
+   "url": "https://www.linkedin.com/company/polylogis/",
+   "slug": "polylogis",
+   "statut": "suivie"
+  },
+  {
+   "id": 52,
+   "nom": "Polylogis - LogiH",
+   "url": "https://www.linkedin.com/company/logih-logicap/",
+   "slug": "logih-logicap",
+   "statut": "suivie"
+  },
+  {
+   "id": 53,
+   "nom": "LOGIH Normandie",
+   "url": "https://www.linkedin.com/company/logihnormandie/",
+   "slug": "logihnormandie",
+   "statut": "suivie"
+  },
+  {
+   "id": 54,
+   "nom": "Immo de France Paris",
+   "url": "https://www.linkedin.com/company/immo-de-france-paris-ile-de-france/",
+   "slug": "immo-de-france-paris-ile-de-france",
+   "statut": "suivie"
+  },
+  {
+   "id": 55,
+   "nom": "Plurimmo",
+   "url": "https://www.linkedin.com/company/plurimmo-promotion/",
+   "slug": "plurimmo-promotion",
+   "statut": "suivie"
+  },
+  {
+   "id": 56,
+   "nom": "Pluralis",
+   "url": "https://www.linkedin.com/company/pluralis-habitat/",
+   "slug": "pluralis-habitat",
+   "statut": "suivie"
+  },
+  {
+   "id": 57,
+   "nom": "Groupe Procivis Ouest",
+   "url": "https://www.linkedin.com/company/groupeprocivisouest/",
+   "slug": "groupeprocivisouest",
+   "statut": "suivie"
+  },
+  {
+   "id": 59,
+   "nom": "OFS Procivis sud",
+   "url": "https://www.linkedin.com/company/organisme-de-foncier-solidaire-procivis-sud/",
+   "slug": "organisme-de-foncier-solidaire-procivis-sud",
+   "statut": "dormante"
+  },
+  {
+   "id": 60,
+   "nom": "IMMO DE FRANCE AIN",
+   "url": "https://www.linkedin.com/company/immo-de-france-ain/",
+   "slug": "immo-de-france-ain",
+   "statut": "suivie"
+  },
+  {
+   "id": 61,
+   "nom": "SLCI",
+   "url": "https://www.linkedin.com/company/slci-groupe/",
+   "slug": "slci-groupe",
+   "statut": "suivie"
+  },
+  {
+   "id": 62,
+   "nom": "Maisons Axial",
+   "url": "https://www.linkedin.com/company/maisons-axial/",
+   "slug": "maisons-axial",
+   "statut": "suivie"
+  },
+  {
+   "id": 63,
+   "nom": "SEFI Lotissement",
+   "url": "https://www.linkedin.com/company/sefi-terrains/",
+   "slug": "sefi-terrains",
+   "statut": "suivie"
+  },
+  {
+   "id": 64,
+   "nom": "SLCI Promotion",
+   "url": "https://www.linkedin.com/company/slcipromotion/",
+   "slug": "slcipromotion",
+   "statut": "suivie"
+  },
+  {
+   "id": 65,
+   "nom": "Régie Simonneau",
+   "url": "https://www.linkedin.com/company/r%C3%A9gie-simonneau-lyon/",
+   "slug": "régie-simonneau-lyon",
+   "statut": "suivie"
+  },
+  {
+   "id": 66,
+   "nom": "Régie Lescuyer et associés",
+   "url": "https://www.linkedin.com/company/regie-lescuyer/",
+   "slug": "regie-lescuyer",
+   "statut": "suivie"
+  },
+  {
+   "id": 67,
+   "nom": "Groupe Tisserin",
+   "url": "https://www.linkedin.com/company/groupe-tisserin/",
+   "slug": "groupe-tisserin",
+   "statut": "suivie"
+  },
+  {
+   "id": 68,
+   "nom": "TISSERIN Maisons Individuelles",
+   "url": "https://www.linkedin.com/company/tisserin-maison-individuelle/",
+   "slug": "tisserin-maison-individuelle",
+   "statut": "suivie"
+  },
+  {
+   "id": 69,
+   "nom": "Maisons d'en Flandre",
+   "url": "https://www.linkedin.com/company/maisons-d%27en-flandre/",
+   "slug": "maisons-d'en-flandre",
+   "statut": "suivie"
+  },
+  {
+   "id": 70,
+   "nom": "Maisons d'en France Nord",
+   "url": "https://www.linkedin.com/company/maisons-d%27en-france-nord-pas-de-calais/",
+   "slug": "maisons-d'en-france-nord-pas-de-calais",
+   "statut": "suivie"
+  },
+  {
+   "id": 71,
+   "nom": "Maisons ECC",
+   "url": "https://www.linkedin.com/company/maisons-ecc/",
+   "slug": "maisons-ecc",
+   "statut": "suivie"
+  },
+  {
+   "id": 72,
+   "nom": "Nacarat",
+   "url": "https://www.linkedin.com/company/nacarat/",
+   "slug": "nacarat",
+   "statut": "suivie"
+  },
+  {
+   "id": 73,
+   "nom": "Tisserin Habitat",
+   "url": "https://www.linkedin.com/company/tisserin-habitat/",
+   "slug": "tisserin-habitat",
+   "statut": "suivie"
+  },
+  {
+   "id": 74,
+   "nom": "Tisserin Promotion",
+   "url": "https://www.linkedin.com/company/tisserin-promotion/",
+   "slug": "tisserin-promotion",
+   "statut": "suivie"
+  },
+  {
+   "id": 75,
+   "nom": "VALRIM",
+   "url": "https://www.linkedin.com/company/groupe-valrim/",
+   "slug": "groupe-valrim",
+   "statut": "suivie"
+  },
+  {
+   "id": 76,
+   "nom": "Maisons Liberté",
+   "url": "https://www.linkedin.com/showcase/maisons-libert%C3%A9---groupe-valrim/",
+   "slug": "maisons-liberté---groupe-valrim",
+   "statut": "suivie"
+  },
+  {
+   "id": 77,
+   "nom": "Valrim aménagement",
+   "url": "https://www.linkedin.com/showcase/valrim-am%C3%A9nagement/",
+   "slug": "valrim-aménagement",
+   "statut": "suivie"
+  },
+  {
+   "id": 78,
+   "nom": "L'Immobilière Valrim",
+   "url": "https://www.linkedin.com/company/l'immobili%C3%A8re-valrim/",
+   "slug": "l'immobilière-valrim",
+   "statut": "suivie"
+  },
+  {
+   "id": 79,
+   "nom": "Habitat dauphinois",
+   "url": "https://www.linkedin.com/showcase/habitat-dauphinois---groupe-valrim/",
+   "slug": "habitat-dauphinois---groupe-valrim",
+   "statut": "suivie"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "queryId": "voyagerFeedDashOrganizationalPageUpdates.4b61268474488dcce2c5bc6b89543614",
+ "pause_ms": 1200,
+ "posts_par_page": 2,
+ "jours_actif": 7,
+ "jours_limite": 8,
+ "dormantes": "mensuel",
+ "jours_avant_dormante": 150,
+ "relais": ""
+}
