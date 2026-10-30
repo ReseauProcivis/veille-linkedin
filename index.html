@@ -262,17 +262,25 @@ function doublons() {
   return res;
 }
 
+// Statut actuel de la page dans la liste (il a pu changer depuis le scan), null si elle a été supprimée.
+function statutActuel(id) {
+  const p = ETAT.pages.pages.find(x => x.id === id);
+  return p ? p.statut : null;
+}
+
 function alertes() {
   const r = ETAT.data.resultats, cfg = ETAT.config, out = [];
-  const reveillees = r.filter(x => x.statut === 'dormante' && x.dernier_ts && (Date.now() - x.dernier_ts) / 864e5 < cfg.jours_avant_dormante);
-  const endormies = r.filter(x => x.statut === 'suivie' && !x.erreur && (!x.dernier_ts || (Date.now() - x.dernier_ts) / 864e5 > cfg.jours_avant_dormante));
-  const erreurs = r.filter(x => x.erreur);
+  const reveillees = r.filter(x => statutActuel(x.id) === 'dormante' && x.dernier_ts && (Date.now() - x.dernier_ts) / 864e5 < cfg.jours_avant_dormante);
+  const endormies = r.filter(x => statutActuel(x.id) === 'suivie' && !x.erreur && (!x.dernier_ts || (Date.now() - x.dernier_ts) / 864e5 > cfg.jours_avant_dormante));
+  const erreurs = r.filter(x => x.erreur && statutActuel(x.id));
+  if (ETAT.annonce) out.push(ETAT.annonce);
   if (reveillees.length) out.push('<div class="alerte"><h3>Pages dormantes qui publient à nouveau</h3><ul>' + reveillees.map(x =>
     '<li>' + esc(x.nom) + ' : dernier post il y a ' + esc(x.dernier_post) + ' <button class="btn second" data-statut="suivie" data-id="' + x.id + '">Remettre dans le scan hebdo</button></li>').join('') + '</ul></div>');
   if (endormies.length) out.push('<div class="alerte"><h3>Pages sans publication depuis plus de ' + Math.round(cfg.jours_avant_dormante / 30) + ' mois</h3><ul>' + endormies.map(x =>
     '<li>' + esc(x.nom) + ' : ' + (x.dernier_ts ? 'dernier post il y a ' + esc(x.dernier_post) : 'aucun post') + ' <button class="btn second" data-statut="dormante" data-id="' + x.id + '">Passer en dormante</button></li>').join('') + '</ul></div>');
   if (erreurs.length) out.push('<div class="alerte"><h3>Pages non lues</h3><ul>' + erreurs.map(x =>
-    '<li>' + esc(x.nom) + ' (' + esc(x.erreur) + ') : <a href="' + esc(x.url) + '" target="_blank" rel="noopener">vérifier l\'adresse</a></li>').join('') + '</ul></div>');
+    '<li>' + esc(x.nom) + ' (' + esc(x.erreur) + ') : <a href="' + esc(x.url) + '" target="_blank" rel="noopener">vérifier l\'adresse</a> ' +
+    '<button class="btn second" data-supprimer="' + x.id + '">Supprimer de la liste</button></li>').join('') + '</ul></div>');
   return out.join('');
 }
 
@@ -318,6 +326,7 @@ function rendreSelection() {
   });
   L.querySelectorAll('.lire').forEach(b => b.onclick = () => { const t = b.previousElementSibling; t.classList.toggle('ouvert'); b.textContent = t.classList.contains('ouvert') ? 'Réduire' : 'Lire la suite'; });
   L.querySelectorAll('button[data-statut]').forEach(b => b.onclick = () => changerStatut(Number(b.dataset.id), b.dataset.statut));
+  L.querySelectorAll('button[data-supprimer]').forEach(b => b.onclick = () => supprimerPage(Number(b.dataset.supprimer)));
   rendrePanier();
 }
 
@@ -368,16 +377,22 @@ function rendrePages() {
     return '<tr><td>' + esc(p.nom) + '</td><td><a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(decodeURIComponent(p.url).replace('https://www.linkedin.com', '')) + '</a></td>' +
       '<td>' + (p.statut === 'suivie' ? 'scan hebdo' : 'dormante (scan ' + (ETAT.config.dormantes === 'hebdo' ? 'hebdo' : 'mensuel') + ')') + '</td>' +
       '<td>' + (r ? esc(r.erreur ? 'erreur : ' + r.erreur : r.dernier_post) : '') + '</td>' +
-      '<td><button class="btn second" data-statut="' + (p.statut === 'suivie' ? 'dormante' : 'suivie') + '" data-id="' + p.id + '">' + (p.statut === 'suivie' ? 'Passer en dormante' : 'Remettre en hebdo') + '</button></td></tr>';
+      '<td><button class="btn second" data-statut="' + (p.statut === 'suivie' ? 'dormante' : 'suivie') + '" data-id="' + p.id + '">' + (p.statut === 'suivie' ? 'Passer en dormante' : 'Remettre en hebdo') + '</button>' +
+      (r && r.erreur ? ' <button class="btn second" data-supprimer="' + p.id + '">Supprimer</button>' : '') + '</td></tr>';
   }).join('');
   $('#t-pages').querySelectorAll('button[data-statut]').forEach(b => b.onclick = () => changerStatut(Number(b.dataset.id), b.dataset.statut));
+  $('#t-pages').querySelectorAll('button[data-supprimer]').forEach(b => b.onclick = () => supprimerPage(Number(b.dataset.supprimer)));
 }
 
+// Le message s'affiche dans l'onglet où l'on a cliqué : en haut des alertes de la sélection, ou sous le formulaire des pages.
 async function enregistrerPages(message) {
   ETAT.pages.maj = new Date().toISOString();
   ecrire('vl-pages', ETAT.pages);
+  ETAT.annonce = '<div class="ok">' + esc(message) + ' Enregistrement…</div>';
+  if (ETAT.vue === 'selection') rendreSelection(); else rendrePages();
   const r = await relais('pages', ETAT.pages);
-  $('#f-msg').innerHTML = '<div class="' + (r.ok ? 'ok' : 'alerte') + '">' + esc(message) + (r.ok ? ' Enregistré en ligne.' : ' Enregistré dans ce navigateur seulement (' + esc(r.raison) + ').') + '</div>';
+  ETAT.annonce = '<div class="' + (r.ok ? 'ok' : 'alerte') + '">' + esc(message) + (r.ok ? ' Enregistré en ligne.' : ' Enregistré dans ce navigateur seulement (' + esc(r.raison) + ').') + '</div>';
+  $('#f-msg').innerHTML = ETAT.annonce;
   if (ETAT.vue === 'selection') rendreSelection(); else rendrePages();
 }
 
@@ -386,6 +401,13 @@ function changerStatut(id, statut) {
   if (!p) return;
   p.statut = statut;
   enregistrerPages(p.nom + (statut === 'suivie' ? ' revient dans le scan hebdo.' : ' passe en dormante.'));
+}
+
+function supprimerPage(id) {
+  const p = ETAT.pages.pages.find(x => x.id === id);
+  if (!p || !confirm('Retirer « ' + p.nom + ' » de la liste des pages ? Elle ne sera plus scannée.')) return;
+  ETAT.pages.pages = ETAT.pages.pages.filter(x => x.id !== id);
+  enregistrerPages(p.nom + ' est retirée de la liste.');
 }
 
 $('#f-ajouter').onclick = () => {
