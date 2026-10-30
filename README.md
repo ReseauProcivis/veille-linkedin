@@ -6,7 +6,7 @@ Remplace l'app Streamlit et le `.command` du Mac de Maxime. Tout tourne dans le 
 
 1. Sur linkedin.com, clic sur le favori **Veille LinkedIn** : il scanne les pages de `pages.json` (environ 5 à 10 minutes) et ouvre la page de veille, qui reçoit les résultats.
 2. Sur la page, cocher les posts, les mettre dans l'ordre, puis **Valider la sélection**.
-3. Dans Claude desktop : « Fais les temps forts de la semaine » (skill à venir). Claude rédige les textes, choisit les photos, les fait valider, puis remplit les blocs Temps Fort de la NEWSLETTER HEBDO dans Dialog Insight avec la session DI de la personne. Rien n'est envoyé.
+3. Dans Claude desktop : « Fais les temps forts de la semaine » (skill à venir). Claude rédige les textes, choisit les photos, les fait valider, puis remplit les blocs Temps Fort de la NEWSLETTER HEBDO dans Dialog Insight avec la session DI de la personne (voir plus bas). Rien n’est envoyé.
 
 ## Fichiers
 
@@ -18,6 +18,18 @@ Remplace l'app Streamlit et le `.command` du Mac de Maxime. Tout tourne dans le 
 | `config.json` | Identifiant de la requête LinkedIn (`queryId`), seuils, rythme des dormantes, URL du relais |
 | `relay/worker.js` | Relais Cloudflare : enregistre scans, sélections et liste des pages dans le dépôt (jeton GitHub côté serveur uniquement) |
 | `data/`, `selections/` | Archives écrites par le relais (`latest.json` + un fichier par date) |
+
+## Remplissage de Dialog Insight (`di/temps-forts.js`)
+
+Claude le charge dans un onglet DI connecté au projet PROCIVIS (`await import('https://reseauprocivis.github.io/veille-linkedin/di/temps-forts.js?v=' + Date.now())`), puis :
+
+1. `await VLDI.selection()` lit `selections/latest.json` ;
+2. `await VLDI.planche(sel.temps_forts)` affiche les images candidates numérotées (photos, pages de document, trois plans de chaque vidéo ; les miniatures de vidéo sont marquées « non »), Claude choisit avec une capture d'écran, `VLDI.candidat('2.b')` donne la source ;
+3. `VLDI.lancer(idMessage, plan)` puis `VLDI.suivi()` toutes les 30 s : images ramenées à 900 px et versées dans la médiathèque, blocs Inauguré remplis dans l'ordre, blocs manquants créés en alternant image à gauche / à droite, blocs en trop retirés, séparateur à 0 sur le dernier, relecture de chaque bloc. Aucun envoi.
+
+`plan = [{titre, texte, linkedin, image}]`, texte brut : le script le passe en entités HTML avec les insécables. Recharger l'éditeur DI après coup. Testé le 30/10/2026 sur la copie 17266 du numéro du 16/10 (12 blocs ramenés à 6, puis 7, puis 6).
+
+Piège : DI répond `InternalError` si le Content-Type est `...;charset=UTF-8` sans espace (ce que `fetch` met seul pour un `URLSearchParams`). Le script envoie une chaîne avec l'en-tête de jQuery.
 
 ## Pourquoi un favori et une fenêtre ouverte
 
