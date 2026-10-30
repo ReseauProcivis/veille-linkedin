@@ -23,6 +23,9 @@ const BASE = location.origin;
 const EDIT = id => `/gw/contact/template-visual-editor/editor/message/${id}`;
 const CMD = c => `/gw/contact/template-visual-editor/v1.0/${c}.ofsys`;
 const XR = {'X-Requested-With': 'XMLHttpRequest'};
+// DI renvoie InternalError avec le Content-Type que fetch pose seul pour un URLSearchParams
+// (« ...;charset=UTF-8 », sans espace) : on envoie une chaîne avec l'en-tête de jQuery.
+const FORM = {...XR, 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'};
 const BSET = 'aeab3dcc-dce8-41ef-890f-46c0e875e53c';
 const INAUG = {
   img: '619bbcd0-66f4-45a2-bb6d-9f523954578a',   // Bloc Inauguré : Image à gauche + Texte
@@ -69,7 +72,7 @@ class Editeur {
   async call(cmd, data = {}) {
     const corps = new URLSearchParams({controlMode: 2, arguments: this.args, hashes: JSON.stringify(this.hashes),
       pageHash: this.ph, blocksetsHash: this.bh, tsCache: '', culture: 'fr-CA', ...data});
-    const r = await fetch(BASE + CMD(cmd), {method: 'POST', credentials: 'include', headers: XR, body: corps});
+    const r = await fetch(BASE + CMD(cmd), {method: 'POST', credentials: 'include', headers: FORM, body: corps.toString()});
     const t = await r.text();
     try { return JSON.parse(t); } catch (e) { throw new Error(`Réponse non JSON à ${cmd} (HTTP ${r.status}) : session DI probablement expirée.`); }
   }
@@ -151,10 +154,10 @@ async function verser(blob, nom, idm, w, h) {
   const f0 = (r.files || [])[0] || {};
   if (!f0.ofsys_idFile || !f0.url_abs || f0.error) throw new Error('Téléversement refusé : ' + JSON.stringify(f0).slice(0, 200));
   const conf = [{idFile: f0.ofsys_idFile, fKey: f0.ofsys_fKey, fileName: f0.ofsys_fileName, imageWidth: w, imageHeight: h}];
-  const rc = await (await fetch(BASE + CMD('hosted-files/confirmFiles'), {method: 'POST', credentials: 'include', headers: XR,
+  const rc = await (await fetch(BASE + CMD('hosted-files/confirmFiles'), {method: 'POST', credentials: 'include', headers: FORM,
     body: new URLSearchParams({files: JSON.stringify(conf), categoryId: '', cbUseExpiry: 'false', rbUseDefaultExpiry: 'false',
       rbUseCustomExpiry: 'false', customExpiryDateTime: '', isMessageAttachment: 'false', idFileToReplace: '',
-      idHostedFileFolder: '', permissionContext: '1'})})).json();
+      idHostedFileFolder: '', permissionContext: '1'}).toString()})).json();
   if (rc.status !== 'ok') throw new Error('Confirmation du fichier refusée : ' + JSON.stringify(rc).slice(0, 200));
   return {id: f0.ofsys_idFile, url: f0.url_abs};
 }
