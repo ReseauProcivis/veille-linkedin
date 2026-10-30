@@ -10,8 +10,12 @@
  * puis window.VLDI :
  *   await VLDI.etat(idMessage)            // blocs Inauguré en place (titre, image, lien)
  *   await VLDI.selection()                // dernière sélection validée sur la page de veille
+ *   await VLDI.planche(sel.temps_forts)   // affiche les images candidates numérotées (1.a, 1.b...)
+ *   VLDI.candidat('1.b')                  // source de l'image choisie, à mettre dans plan[i].image
+ *   VLDI.fermerPlanche()
  *   await VLDI.apercu(source)             // image préparée (dataURL) pour vérifier un recadrage
- *   await VLDI.remplir(idMessage, plan)   // écrit les temps forts, renvoie un rapport
+ *   VLDI.lancer(idMessage, plan)          // écrit les temps forts en tâche de fond
+ *   VLDI.suivi()                          // avancement, puis rapport (ou erreur)
  *
  * plan = [{titre, texte, linkedin, image: {url} | {video, t} }, ...] dans l'ordre de la newsletter.
  *   texte : texte brut (1 à 3 phrases). Le script le passe en entités HTML avec la typographie de DI.
@@ -336,10 +340,79 @@ export async function remplir(idm, plan, options = {}) {
 
   await E.refresh();
   const fin = inaugures(E).blocs;
-  return {message: idm, blocs: fin.length, ecarts, journal: [...journal], sauvegarde_avant: avant,
+  return {message: idm, blocs: fin.length, ecarts, images: urls, journal: [...journal], sauvegarde_avant: avant,
     rappel: 'Recharger l\'éditeur DI (F5) avant d\'y toucher : il ne voit pas les modifications faites par le script.'};
+}
+
+// Un remplissage complet dure plusieurs minutes, plus que l'attente d'un appel Claude in Chrome (45 s) :
+// lancer() rend la main tout de suite, suivi() dit où on en est.
+let tache = null;
+
+export function lancer(idm, plan, options) {
+  if (tache && tache.etat === 'en cours') throw new Error('Un remplissage est déjà en cours.');
+  tache = {etat: 'en cours', debut: Date.now()};
+  remplir(idm, plan, options)
+    .then(r => Object.assign(tache, {etat: 'fini', rapport: r}))
+    .catch(e => Object.assign(tache, {etat: 'erreur', erreur: e.message}));
+  return 'lancé';
+}
+
+export function suivi() {
+  if (!tache) return {etat: 'rien'};
+  return {etat: tache.etat, secondes: Math.round((Date.now() - tache.debut) / 1000), journal: [...journal],
+    rapport: tache.rapport, erreur: tache.erreur};
+}
+
+// ------------------------------------------------------------------ planche des images candidates
+
+// Affiche sur la page toutes les images possibles de chaque temps fort (photos, pages de document,
+// trois plans de la vidéo), numérotées « 2.c ». Claude la regarde en capture d'écran et choisit.
+let candidats = {};
+
+export async function planche(tempsForts) {
+  fermerPlanche();
+  candidats = {};
+  const box = document.createElement('div');
+  box.id = 'vl-planche';
+  box.style.cssText = 'position:fixed;inset:0;z-index:2147483647;background:#fff;overflow:auto;padding:10px;font:13px/1.3 Arial,sans-serif';
+  document.body.appendChild(box);
+  for (const [i, t] of tempsForts.entries()) {
+    const sources = [...(t.images || []).map(x => ({url: x.url})), ...(t.doc_pages || []).slice(0, 3).map(url => ({url}))];
+    if (t.video) {
+      const d = (t.video.duree_ms || 30000) / 1000;
+      for (const f of [0.15, 0.4, 0.7]) sources.push({video: t.video.url, t: Math.round(d * f)});
+    }
+    const ligne = document.createElement('div');
+    ligne.style.cssText = 'display:flex;gap:6px;align-items:flex-start;margin-bottom:8px;border-bottom:1px solid #ddd;padding-bottom:6px';
+    ligne.innerHTML = `<div style="width:110px;flex:none"><b>${i + 1}</b> ${t.page || t.titre || ''}</div>`;
+    box.appendChild(ligne);
+    for (const [k, s] of sources.slice(0, 8).entries()) {
+      const code = `${i + 1}.${'abcdefgh'[k]}`;
+      candidats[code] = s;
+      const fig = document.createElement('figure');
+      fig.style.cssText = 'margin:0;width:150px;flex:none';
+      try {
+        const a = await apercu(s);
+        fig.innerHTML = `<img src="${a.dataUrl}" style="width:150px;height:110px;object-fit:contain;background:#eee"><figcaption><b>${code}</b> ${s.video ? 'vidéo ' + s.t + ' s' : a.w + 'x' + a.h}</figcaption>`;
+      } catch (e) {
+        fig.innerHTML = `<div style="width:150px;height:110px;background:#fdd"></div><figcaption><b>${code}</b> illisible</figcaption>`;
+      }
+      ligne.appendChild(fig);
+    }
+  }
+  return Object.keys(candidats);
+}
+
+export function candidat(code) {
+  if (!candidats[code]) throw new Error('Image inconnue : ' + code);
+  return {...candidats[code]};
+}
+
+export function fermerPlanche() {
+  const b = document.getElementById('vl-planche');
+  if (b) b.remove();
 }
 
 export const _interne = {Editeur, arbre, corps, entites, preparer, verser, inaugures};
 
-window.VLDI = {etat, selection, apercu, remplir, _interne};
+window.VLDI = {etat, selection, apercu, planche, candidat, fermerPlanche, remplir, lancer, suivi, _interne};
