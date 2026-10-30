@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-30T10:30:00.441Z",
+ "maj": "2026-10-30T10:30:10.475Z",
  "pages": [
   {
    "id": 1,
@@ -76,7 +76,7 @@
    "nom": "Gibert Immobilier",
    "url": "https://www.linkedin.com/company/gibert-immobilier/",
    "slug": "gibert-immobilier",
-   "statut": "suivie"
+   "statut": "dormante"
   },
   {
    "id": 12,
