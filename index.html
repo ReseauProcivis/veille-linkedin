@@ -54,11 +54,29 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 80px; }
 .medias img.cliquable { cursor: pointer; }
 .medias img.cliquable:hover { outline: 2px solid var(--orange-pale); }
 .medias img.photo-choisie { outline: 3px solid var(--orange); outline-offset: 1px; }
-.medias .miniature { opacity: .45; }
 .aide-photo { font-size: 12px; color: var(--gris); margin: 2px 0 6px; }
-.lecteur { margin: 6px 0; }
-.lecteur video { max-width: 100%; max-height: 320px; border-radius: 6px; background: #000; display: block; }
-.lecteur .btn.second { margin-top: 6px; }
+/* Liseuse : une image en grand, une coche pour la retenir (une seule par post). */
+#liseuse[hidden] { display: none; }
+#liseuse { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; }
+#liseuse .l-fond { position: absolute; inset: 0; background: rgba(0, 0, 0, .78); }
+#liseuse .l-boite { position: relative; background: var(--carte); border-radius: 12px; width: min(1100px, calc(100vw - 32px)); max-height: calc(100vh - 32px); display: flex; flex-direction: column; overflow: hidden; }
+#liseuse .l-tete { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 1px solid var(--ligne); }
+#liseuse .l-tete b { font-size: 16px; }
+#liseuse .l-tete span { color: var(--gris); font-size: 13px; }
+#liseuse .l-fermer { margin-left: auto; border: 0; background: none; font-size: 28px; line-height: 1; cursor: pointer; color: var(--gris); }
+#liseuse .l-media { position: relative; background: #111; display: flex; align-items: center; justify-content: center; min-height: 240px; }
+#liseuse .l-media img, #liseuse .l-media video { display: block; max-width: 100%; max-height: calc(100vh - 230px); object-fit: contain; }
+#liseuse .l-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 64px; border: 0; border-radius: 8px; background: rgba(255, 255, 255, .85); font-size: 30px; cursor: pointer; }
+#liseuse .l-nav:disabled { display: none; }
+#liseuse .l-prec { left: 10px; } #liseuse .l-suiv { right: 10px; }
+#liseuse .l-pied { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding: 10px 14px; border-top: 1px solid var(--ligne); }
+#liseuse .l-coche { display: flex; align-items: center; gap: 8px; font-weight: 600; cursor: pointer; }
+#liseuse .l-coche input { width: 22px; height: 22px; accent-color: var(--orange); cursor: pointer; }
+#liseuse .l-vignettes { display: flex; gap: 6px; flex-wrap: wrap; margin-left: auto; }
+#liseuse .l-vignettes img, #liseuse .l-vignettes .l-vid { height: 46px; border-radius: 5px; border: 2px solid transparent; cursor: pointer; opacity: .7; }
+#liseuse .l-vignettes .l-vid { width: 70px; background: #222; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; }
+#liseuse .l-vignettes .courante { opacity: 1; border-color: var(--texte); }
+#liseuse .l-vignettes .retenue { border-color: var(--orange); opacity: 1; }
 #panier li img { height: 30px; vertical-align: middle; border-radius: 4px; margin-left: 4px; }
 #exporter { margin-top: 8px; width: 100%; }
 #panier { position: sticky; top: 16px; background: var(--carte); border: 1px solid var(--ligne); border-radius: 12px; padding: 14px 16px; }
@@ -159,6 +177,18 @@ td a { color: var(--orange); word-break: break-all; }
     </div>
   </section>
 </main>
+
+<div id="liseuse" hidden>
+  <div class="l-fond"></div>
+  <div class="l-boite" role="dialog" aria-modal="true" aria-labelledby="l-titre">
+    <div class="l-tete"><b id="l-titre"></b><span id="l-compte"></span><button class="l-fermer" id="l-fermer" title="Fermer (Échap)">×</button></div>
+    <div class="l-media"><button class="l-nav l-prec" id="l-prec" title="Précédente (←)">‹</button><div id="l-zone"></div><button class="l-nav l-suiv" id="l-suiv" title="Suivante (→)">›</button></div>
+    <div class="l-pied">
+      <label class="l-coche"><input type="checkbox" id="l-check"><span id="l-libelle"></span></label>
+      <div class="l-vignettes" id="l-vignettes"></div>
+    </div>
+  </div>
+</div>
 
 <script>
 // photos : photo retenue pour la newsletter, par post ({url} ou {video, t} pour un plan de vidéo).
@@ -350,49 +380,118 @@ function rendreSelection() {
     memoriserChoix(); rendrePanier();
   });
   L.querySelectorAll('.lire').forEach(b => b.onclick = () => { const t = b.previousElementSibling; t.classList.toggle('ouvert'); b.textContent = t.classList.contains('ouvert') ? 'Réduire' : 'Lire la suite'; });
-  L.querySelectorAll('img[data-photo]').forEach(img => img.onclick = () => choisirPhoto(img.closest('.post').querySelector('input').dataset.urn, {url: img.dataset.photo}));
-  L.querySelectorAll('button[data-plan]').forEach(b => b.onclick = () => ouvrirLecteur(b));
+  L.querySelectorAll('[data-diapo]').forEach(el => el.onclick = () => ouvrirLiseuse(el.closest('.post').querySelector('input').dataset.urn, Number(el.dataset.diapo)));
   L.querySelectorAll('button[data-statut]').forEach(b => b.onclick = () => changerStatut(Number(b.dataset.id), b.dataset.statut));
   L.querySelectorAll('button[data-supprimer]').forEach(b => b.onclick = () => supprimerPage(Number(b.dataset.supprimer)));
   rendrePanier();
 }
 
-// Vignettes d'un post. Cliquer une photo (ou une page de document) la retient pour la newsletter et coche le post.
-// Dans un post vidéo, l'image est la miniature : on ne la propose pas, on choisit un plan dans la vidéo.
-function medias(p) {
-  const ph = ETAT.photos[p.urn];
-  const vignette = (url, titre) => '<img loading="lazy" referrerpolicy="no-referrer" class="cliquable' + (ph && ph.url === url ? ' photo-choisie' : '') +
-    '" data-photo="' + esc(url) + '" title="' + titre + '" src="' + esc(url) + '" alt="">';
-  let h = '';
-  if (p.video) {
-    h += (p.images || []).slice(0, 1).map(i => '<img loading="lazy" referrerpolicy="no-referrer" class="miniature" title="Miniature de la vidéo" src="' + esc(i.url) + '" alt="">').join('');
-    h += '<div><button class="btn second" data-plan="' + esc(p.urn) + '">' + (ph && ph.video ? 'Plan choisi à ' + ph.t + ' s : changer' : 'Choisir un plan de la vidéo') + '</button></div>';
-  } else {
-    h += (p.images || []).slice(0, 8).map(i => vignette(i.url, 'Prendre cette photo pour la newsletter')).join('');
-  }
-  h += (p.doc_pages || []).slice(0, 3).map(u => vignette(u, 'Prendre cette page du document pour la newsletter')).join('');
-  if (!h) return '';
-  return h + '<div class="aide-photo" style="flex-basis:100%">' + (ph ? 'Photo retenue pour la newsletter (encadrée).' :
-    p.video ? 'Choisissez un plan de la vidéo, ou laissez Claude le choisir.' : 'Cliquez une image pour la retenir, ou laissez Claude choisir.') + '</div>';
+// Images proposables d'un post, dans l'ordre : la vidéo (on y choisit un plan, jamais sa miniature),
+// les photos, puis les pages du document.
+function diapos(p) {
+  const d = [];
+  if (p.video) d.push({type: 'video', url: p.video.url, apercu: (p.images || [])[0] && p.images[0].url});
+  else for (const i of (p.images || []).slice(0, 8)) d.push({type: 'photo', url: i.url});
+  for (const u of (p.doc_pages || []).slice(0, 3)) d.push({type: 'doc', url: u});
+  return d;
 }
 
-function choisirPhoto(urn, photo) {
-  ETAT.photos[urn] = photo;
-  if (!ETAT.choix.includes(urn)) ETAT.choix.push(urn);
+const estRetenue = (ph, d) => !!ph && (d.type === 'video' ? !!ph.video : ph.url === d.url);
+
+// Vignettes d'un post : un clic ouvre la liseuse, où l'on retient l'image d'une coche.
+function medias(p) {
+  const ph = ETAT.photos[p.urn];
+  const d = diapos(p);
+  if (!d.length) return '';
+  const h = d.map((x, i) => x.type === 'video'
+    ? (x.apercu ? '<img loading="lazy" referrerpolicy="no-referrer" class="cliquable' + (estRetenue(ph, x) ? ' photo-choisie' : '') + '" data-diapo="' + i + '" title="Ouvrir la vidéo pour choisir un plan" src="' + esc(x.apercu) + '" alt="Vidéo">'
+      : '<button class="btn second" data-diapo="' + i + '">Ouvrir la vidéo</button>')
+    : '<img loading="lazy" referrerpolicy="no-referrer" class="cliquable' + (estRetenue(ph, x) ? ' photo-choisie' : '') + '" data-diapo="' + i + '" title="Voir en grand" src="' + esc(x.url) + '" alt="">').join('');
+  const aide = ph ? (ph.video ? 'Plan de la vidéo retenu à ' + String(ph.t).replace('.', ',') + ' s (encadré).' : 'Image retenue pour la newsletter (encadrée).') :
+    p.video ? 'Cliquez la vidéo pour en choisir un plan, ou laissez Claude le choisir.' : 'Cliquez une image pour la voir en grand et la retenir, ou laissez Claude choisir.';
+  return h + '<div class="aide-photo" style="flex-basis:100%">' + aide + '</div>';
+}
+
+// Une seule image retenue par post : en cocher une remplace la précédente, la décocher n'en laisse aucune.
+function retenirPhoto(urn, photo) {
+  if (photo) {
+    ETAT.photos[urn] = photo;
+    if (!ETAT.choix.includes(urn)) ETAT.choix.push(urn);
+  } else delete ETAT.photos[urn];
   memoriserChoix(); rendreSelection();
 }
 
-function ouvrirLecteur(b) {
-  const urn = b.dataset.plan;
-  const p = tousLesPosts().find(x => x.urn === urn);
-  const zone = b.parentElement;
-  const ph = ETAT.photos[urn];
-  zone.innerHTML = '<div class="lecteur"><video controls muted preload="metadata" src="' + esc(p.video.url) + (ph && ph.video ? '#t=' + ph.t : '') + '"></video>' +
-    '<button class="btn second">Prendre ce plan</button> <span class="note">Mettez la vidéo en pause sur une image nette, sans texte coupé.</span></div>';
-  const v = zone.querySelector('video');
-  v.onerror = () => { zone.innerHTML = '<span class="note">Vidéo illisible (lien LinkedIn expiré ?). Claude choisira un plan.</span>'; };
-  zone.querySelector('button').onclick = () => choisirPhoto(urn, {video: p.video.url, t: Math.round(v.currentTime * 10) / 10});
+// ---------------------------------------------------------------- liseuse
+const LIS = {urn: null, post: null, d: [], i: 0};
+
+function ouvrirLiseuse(urn, i) {
+  LIS.post = tousLesPosts().find(x => x.urn === urn);
+  if (!LIS.post) return;
+  LIS.urn = urn; LIS.d = diapos(LIS.post); LIS.i = i || 0;
+  $('#l-titre').textContent = LIS.post.page.nom;
+  $('#liseuse').hidden = false;
+  document.body.style.overflow = 'hidden';
+  montrerDiapo();
 }
+
+function fermerLiseuse() {
+  const v = $('#l-zone video'); if (v) v.pause();
+  $('#liseuse').hidden = true;
+  document.body.style.overflow = '';
+}
+
+function montrerDiapo() {
+  const d = LIS.d[LIS.i], ph = ETAT.photos[LIS.urn];
+  $('#l-compte').textContent = LIS.d.length > 1 ? (LIS.i + 1) + ' / ' + LIS.d.length : '';
+  $('#l-prec').disabled = LIS.i === 0;
+  $('#l-suiv').disabled = LIS.i === LIS.d.length - 1;
+  const coche = $('#l-check'), libelle = $('#l-libelle');
+  coche.checked = estRetenue(ph, d);
+  if (d.type === 'video') {
+    $('#l-zone').innerHTML = '<video controls muted playsinline preload="metadata" src="' + esc(d.url) + '"></video>';
+    const v = $('#l-zone video');
+    const instant = () => (Math.round(v.currentTime * 10) / 10).toString().replace('.', ',');
+    const dire = () => { libelle.textContent = coche.checked ? 'Plan retenu à ' + String(ETAT.photos[LIS.urn].t).replace('.', ',') + ' s (décochez pour en prendre un autre)' : 'Retenir ce plan (à ' + instant() + ' s)'; };
+    v.addEventListener('loadedmetadata', () => { if (ph && ph.video) v.currentTime = ph.t; dire(); });
+    v.addEventListener('timeupdate', dire);
+    v.addEventListener('seeked', dire);
+    v.onerror = () => { $('#l-zone').innerHTML = '<p style="color:#fff;padding:30px">Vidéo illisible (lien LinkedIn expiré ?). Claude choisira un plan.</p>'; };
+    coche.onchange = () => { retenirPhoto(LIS.urn, coche.checked ? {video: d.url, t: Math.round(v.currentTime * 10) / 10} : null); v.pause(); dire(); vignettesLiseuse(); };
+    dire();
+  } else {
+    $('#l-zone').innerHTML = '<img referrerpolicy="no-referrer" src="' + esc(d.url) + '" alt="">';
+    libelle.textContent = d.type === 'doc' ? 'Retenir cette page du document pour la newsletter' : 'Retenir cette photo pour la newsletter';
+    coche.onchange = () => { retenirPhoto(LIS.urn, coche.checked ? {url: d.url} : null); vignettesLiseuse(); };
+  }
+  vignettesLiseuse();
+}
+
+function vignettesLiseuse() {
+  const ph = ETAT.photos[LIS.urn];
+  $('#l-vignettes').innerHTML = LIS.d.length < 2 ? '' : LIS.d.map((d, i) => {
+    const cl = (i === LIS.i ? ' courante' : '') + (estRetenue(ph, d) ? ' retenue' : '');
+    return d.type === 'video' ? '<div class="l-vid' + cl + '" data-i="' + i + '">vidéo</div>'
+      : '<img referrerpolicy="no-referrer" class="' + cl.trim() + '" data-i="' + i + '" src="' + esc(d.url) + '" alt="">';
+  }).join('');
+  $('#l-vignettes').querySelectorAll('[data-i]').forEach(el => el.onclick = () => allerA(Number(el.dataset.i)));
+}
+
+function allerA(i) {
+  if (i < 0 || i >= LIS.d.length) return;
+  const v = $('#l-zone video'); if (v) v.pause();
+  LIS.i = i; montrerDiapo();
+}
+
+$('#l-fermer').onclick = fermerLiseuse;
+$('#liseuse .l-fond').onclick = fermerLiseuse;
+$('#l-prec').onclick = () => allerA(LIS.i - 1);
+$('#l-suiv').onclick = () => allerA(LIS.i + 1);
+document.addEventListener('keydown', e => {
+  if ($('#liseuse').hidden) return;
+  if (e.key === 'Escape') fermerLiseuse();
+  else if (e.key === 'ArrowLeft' && e.target.tagName !== 'VIDEO') allerA(LIS.i - 1);
+  else if (e.key === 'ArrowRight' && e.target.tagName !== 'VIDEO') allerA(LIS.i + 1);
+});
 
 function postsChoisis() {
   const tous = new Map(tousLesPosts().map(p => [p.urn, p]));
@@ -409,7 +508,7 @@ function rendrePanier() {
   $('#choix-vide').style.display = ch.length ? 'none' : '';
   $('#valider').disabled = !ch.length;
   $('#exporter').disabled = !ch.length;
-  const vignette = p => { const ph = ETAT.photos[p.urn]; return !ph ? '' : ph.url ? '<img referrerpolicy="no-referrer" src="' + esc(ph.url) + '" alt="">' : ' <span class="note">plan ' + ph.t + ' s</span>'; };
+  const vignette = p => { const ph = ETAT.photos[p.urn]; return !ph ? '' : ph.url ? '<img referrerpolicy="no-referrer" src="' + esc(ph.url) + '" alt="">' : ' <span class="note">plan ' + String(ph.t).replace('.', ',') + ' s</span>'; };
   $('#choix').innerHTML = ch.map((p, i) => '<li>' + esc(p.page.nom) + ' <span class="note">(' + esc(p.date) + ')</span>' + vignette(p) + ' <span class="ctl">' +
     '<button data-m="-1" data-i="' + i + '" title="Monter">↑</button><button data-m="1" data-i="' + i + '" title="Descendre">↓</button><button data-x="' + i + '" title="Retirer">×</button></span></li>').join('');
   $('#choix').querySelectorAll('button').forEach(b => b.onclick = () => {
