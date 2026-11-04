@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-04T08:48:11.000Z",
+ "maj": "2026-11-04T08:53:25.000Z",
  "pages": [
   {
    "id": 1,
@@ -43,11 +43,11 @@
   },
   {
    "id": 6,
-   "nom": "CONSTRUCTION IMMOBILIERE FAMILIALE DE NANTES",
+   "nom": "Groupe CIF",
    "url": "https://www.linkedin.com/company/groupe-cif/",
    "slug": "groupe-cif",
    "statut": "suivie",
-   "groupe": "CIF Nantes"
+   "groupe": "Groupe CIF"
   },
   {
    "id": 7,
@@ -267,11 +267,11 @@
   },
   {
    "id": 34,
-   "nom": "SACICAP DE PROVENCE",
+   "nom": "Procivis Sud",
    "url": "https://www.linkedin.com/company/procivis-provence/",
    "slug": "procivis-provence",
    "statut": "suivie",
-   "groupe": "Procivis Provence"
+   "groupe": "Procivis Sud"
   },
   {
    "id": 35,
@@ -455,7 +455,7 @@
    "url": "https://www.linkedin.com/company/organisme-de-foncier-solidaire-procivis-sud/",
    "slug": "organisme-de-foncier-solidaire-procivis-sud",
    "statut": "suivie",
-   "groupe": "Procivis Provence"
+   "groupe": "Procivis Sud"
   },
   {
    "id": 60,

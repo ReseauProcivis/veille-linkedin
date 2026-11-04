@@ -237,6 +237,11 @@ async function relais(action, contenu) {
   const distant = await json('data/latest.json');
   const loc = lire('vl-data');
   ETAT.data = (loc && (!distant || loc.genere >= distant.genere)) ? loc : distant;
+  // Le nom affiché est celui de la liste des pages (une page renommée l'est aussi dans le dernier scan).
+  if (ETAT.data && ETAT.pages) for (const r of ETAT.data.resultats) {
+    const p = ETAT.pages.pages.find(x => x.id === r.id);
+    if (p) r.nom = p.nom;
+  }
   const sel = lire('vl-choix');
   if (sel && ETAT.data && sel.date === ETAT.data.date) {
     ETAT.choix = sel.posts.map(p => p.urn);
