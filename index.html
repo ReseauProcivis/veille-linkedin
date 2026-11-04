@@ -69,10 +69,13 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 80px; }
 #liseuse .l-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 64px; border: 0; border-radius: 8px; background: rgba(255, 255, 255, .85); font-size: 30px; cursor: pointer; }
 #liseuse .l-nav:disabled { display: none; }
 #liseuse .l-prec { left: 10px; } #liseuse .l-suiv { right: 10px; }
-#liseuse .l-pied { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding: 10px 14px; border-top: 1px solid var(--ligne); }
-#liseuse .l-coche { display: flex; align-items: center; gap: 8px; font-weight: 600; cursor: pointer; }
-#liseuse .l-coche input { width: 22px; height: 22px; accent-color: var(--orange); cursor: pointer; }
-#liseuse .l-vignettes { display: flex; gap: 6px; flex-wrap: wrap; margin-left: auto; }
+#liseuse .l-pied { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 12px 14px; border-top: 1px solid var(--ligne); }
+#liseuse .l-coche { display: flex; align-items: center; gap: 12px; padding: 10px 22px; border: 2px solid var(--orange); border-radius: 30px; background: var(--orange-pale);
+  color: var(--orange); font-size: 18px; font-weight: 700; cursor: pointer; text-align: center; }
+#liseuse .l-coche:hover { background: #FBE2CF; }
+#liseuse .l-coche input { width: 26px; height: 26px; flex: none; accent-color: var(--orange); cursor: pointer; }
+#liseuse .l-vignettes { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+#liseuse .l-vignettes:empty { display: none; }
 #liseuse .l-vignettes img, #liseuse .l-vignettes .l-vid { height: 46px; border-radius: 5px; border: 2px solid transparent; cursor: pointer; opacity: .7; }
 #liseuse .l-vignettes .l-vid { width: 70px; background: #222; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; }
 #liseuse .l-vignettes .courante { opacity: 1; border-color: var(--texte); }
