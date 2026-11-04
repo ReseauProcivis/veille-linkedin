@@ -32,7 +32,15 @@ main { max-width: 1280px; margin: 0 auto; padding: 20px 16px 80px; }
 .alerte li { margin: 4px 0; }
 .page { background: var(--carte); border: 1px solid var(--ligne); border-radius: 12px; padding: 14px 16px; margin-bottom: 14px; }
 .page-tete { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
-.page-tete h2 { margin: 0; font-size: 17px; }
+.page-tete h2, .page-tete h3 { margin: 0; font-size: 17px; }
+.groupe { border-left: 4px solid var(--ligne); padding-left: 12px; margin-bottom: 22px; }
+.groupe.a-retenu { border-left-color: var(--orange); }
+.g-tete { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 0 0 8px; }
+.g-tete h2 { margin: 0; font-size: 19px; }
+.g-ok { font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 10px; background: var(--orange-pale); color: var(--orange); }
+.g-trop { font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 10px; background: var(--rouge-pale); color: var(--rouge); }
+.groupe .page { margin-bottom: 10px; }
+#panier .meme-groupe { display: block; font-size: 12px; color: var(--rouge); }
 .page-tete a { color: var(--gris); font-size: 13px; }
 .pastille { font-size: 12px; padding: 1px 8px; border-radius: 10px; font-weight: 600; }
 .pastille.OUI { background: var(--vert-pale); color: var(--vert); }
@@ -102,7 +110,8 @@ th { background: #FAFAFA; }
 td a { color: var(--orange); word-break: break-all; }
 .form { background: var(--carte); border: 1px solid var(--ligne); border-radius: 12px; padding: 14px 16px; margin-bottom: 16px; display: flex; gap: 10px; flex-wrap: wrap; align-items: end; }
 .form label { display: flex; flex-direction: column; font-size: 13px; color: var(--gris); gap: 3px; flex: 1 1 240px; }
-.form input { font: inherit; padding: 7px 9px; border: 1px solid #CCC; border-radius: 7px; }
+.form input, .in-groupe { font: inherit; padding: 7px 9px; border: 1px solid #CCC; border-radius: 7px; }
+.in-groupe { width: 100%; min-width: 190px; font-size: 13px; padding: 4px 7px; }
 .favori { display: inline-block; background: var(--orange); color: #fff; padding: 10px 18px; border-radius: 22px; font-weight: 700; text-decoration: none; cursor: grab; }
 .etapes li { margin: 8px 0; }
 .vide { color: var(--gris); padding: 30px; text-align: center; background: var(--carte); border-radius: 12px; border: 1px dashed #CCC; }
@@ -146,6 +155,8 @@ td a { color: var(--orange); word-break: break-all; }
     <div class="form">
       <label>Nom de la société<input id="f-nom" placeholder="Ex. : Procivis Bretagne"></label>
       <label>Adresse de la page LinkedIn<input id="f-url" placeholder="https://www.linkedin.com/company/..."></label>
+      <label>Groupement (SACICAP ou holding)<input id="f-groupe" list="dl-groupes" placeholder="Ex. : Procivis Nouvelle Aquitaine"></label>
+      <datalist id="dl-groupes"></datalist>
       <button class="btn second" id="f-ajouter">Ajouter la page</button>
     </div>
     <div id="f-msg"></div>
@@ -355,32 +366,59 @@ function rendreSelection() {
   h += alertes();
   const actives = r.filter(x => (x.actif === 'OUI' || x.actif === 'LIMITE') && (x.posts || []).length)
     .sort((a, b) => (a.actif === b.actif ? 0 : a.actif === 'OUI' ? -1 : 1) || b.dernier_ts - a.dernier_ts);
+  // Un bloc par groupement (SACICAP ou holding), le plus récent en premier : un seul post par groupement suffit d'habitude.
+  const groupes = new Map();
   for (const pg of actives) {
-    h += '<div class="page"><div class="page-tete"><h2>' + esc(pg.nom) + '</h2><span class="pastille ' + pg.actif + '">' + (pg.actif === 'OUI' ? 'active' : 'limite') + '</span>' +
-      '<a href="' + esc(pg.url) + '" target="_blank" rel="noopener">voir la page</a></div>';
-    for (const p of pg.posts) {
-      const on = ETAT.choix.includes(p.urn);
-      const media = medias(p);
-      const badges = [];
-      if (p.video) badges.push('<span class="badge">vidéo</span>');
-      if ((p.doc_pages || []).length) badges.push('<span class="badge">document ' + p.doc_pages.length + ' p.</span>');
-      if (p.reprise) badges.push('<span class="badge">republie ' + esc(p.reprise.auteur) + '</span>');
-      if (dbl.has(p.urn)) badges.push('<span class="badge doublon">même texte que ' + esc(dbl.get(p.urn)) + '</span>');
-      h += '<div class="post' + (on ? ' choisi' : '') + (jours(p.ts) > ETAT.config.jours_actif ? ' vieux' : '') + '"><input type="checkbox" data-urn="' + p.urn + '"' + (on ? ' checked' : '') + '>' +
-        '<div><div class="meta"><span>il y a ' + esc(p.date) + '</span><a href="' + esc(p.url) + '" target="_blank" rel="noopener">voir le post</a>' + badges.join('') + '</div>' +
-        '<div class="texte">' + esc(p.texte) + '</div>' + (p.texte && p.texte.length > 380 ? '<button class="lire">Lire la suite</button>' : '') +
-        (media ? '<div class="medias">' + media + '</div>' : '') + '</div></div>';
-    }
-    h += '</div>';
+    const g = groupeDe(pg.id);
+    if (!groupes.has(g)) groupes.set(g, []);
+    groupes.get(g).push(pg);
+  }
+  const retenus = new Set(ETAT.choix);
+  const blocs = [...groupes.entries()].sort((a, b) => Math.max(...b[1].map(x => x.dernier_ts)) - Math.max(...a[1].map(x => x.dernier_ts)));
+  for (const [g, pages] of blocs) {
+    const n = pages.reduce((s, pg) => s + pg.posts.filter(p => retenus.has(p.urn)).length, 0);
+    h += '<section class="groupe' + (n ? ' a-retenu' : '') + '"><div class="g-tete"><h2>' + esc(g) + '</h2><span class="note">' + pages.length + (pages.length > 1 ? ' pages actives' : ' page active') + '</span>' +
+      (n === 1 ? '<span class="g-ok">1 post retenu</span>' : n > 1 ? '<span class="g-trop">' + n + ' posts retenus dans ce groupement</span>' : '') + '</div>';
+    for (const pg of pages) h += pageHtml(pg, dbl, jours);
+    h += '</section>';
   }
   if (!actives.length) h += '<div class="vide">Aucune page active cette semaine.</div>';
   L.innerHTML = h;
+  brancherListe(L);
+}
+
+// Groupement de la page dans la liste suivie (il peut changer depuis le scan).
+function groupeDe(id) {
+  const p = ETAT.pages.pages.find(x => x.id === id);
+  return (p && p.groupe) || 'Sans groupement';
+}
+
+function pageHtml(pg, dbl, jours) {
+  let h = '<div class="page"><div class="page-tete"><h3>' + esc(pg.nom) + '</h3><span class="pastille ' + pg.actif + '">' + (pg.actif === 'OUI' ? 'active' : 'limite') + '</span>' +
+    '<a href="' + esc(pg.url) + '" target="_blank" rel="noopener">voir la page</a></div>';
+  for (const p of pg.posts) {
+    const on = ETAT.choix.includes(p.urn);
+    const media = medias(p);
+    const badges = [];
+    if (p.video) badges.push('<span class="badge">vidéo</span>');
+    if ((p.doc_pages || []).length) badges.push('<span class="badge">document ' + p.doc_pages.length + ' p.</span>');
+    if (p.reprise) badges.push('<span class="badge">republie ' + esc(p.reprise.auteur) + '</span>');
+    if (dbl.has(p.urn)) badges.push('<span class="badge doublon">même texte que ' + esc(dbl.get(p.urn)) + '</span>');
+    h += '<div class="post' + (on ? ' choisi' : '') + (jours(p.ts) > ETAT.config.jours_actif ? ' vieux' : '') + '"><input type="checkbox" data-urn="' + p.urn + '"' + (on ? ' checked' : '') + '>' +
+      '<div><div class="meta"><span>il y a ' + esc(p.date) + '</span><a href="' + esc(p.url) + '" target="_blank" rel="noopener">voir le post</a>' + badges.join('') + '</div>' +
+      '<div class="texte">' + esc(p.texte) + '</div>' + (p.texte && p.texte.length > 380 ? '<button class="lire">Lire la suite</button>' : '') +
+      (media ? '<div class="medias">' + media + '</div>' : '') + '</div></div>';
+  }
+  h += '</div>';
+  return h;
+}
+
+function brancherListe(L) {
   L.querySelectorAll('input[data-urn]').forEach(c => c.onchange = () => {
     const u = c.dataset.urn;
     if (c.checked && !ETAT.choix.includes(u)) ETAT.choix.push(u);
     if (!c.checked) ETAT.choix = ETAT.choix.filter(x => x !== u);
-    c.closest('.post').classList.toggle('choisi', c.checked);
-    memoriserChoix(); rendrePanier();
+    memoriserChoix(); rendreSelection();   // met aussi à jour le compte du groupement
   });
   L.querySelectorAll('.lire').forEach(b => b.onclick = () => { const t = b.previousElementSibling; t.classList.toggle('ouvert'); b.textContent = t.classList.contains('ouvert') ? 'Réduire' : 'Lire la suite'; });
   L.querySelectorAll('[data-diapo]').forEach(el => el.onclick = () => ouvrirLiseuse(el.closest('.post').querySelector('input').dataset.urn, Number(el.dataset.diapo)));
@@ -512,8 +550,9 @@ function rendrePanier() {
   $('#valider').disabled = !ch.length;
   $('#exporter').disabled = !ch.length;
   const vignette = p => { const ph = ETAT.photos[p.urn]; return !ph ? '' : ph.url ? '<img referrerpolicy="no-referrer" src="' + esc(ph.url) + '" alt="">' : ' <span class="note">plan ' + String(ph.t).replace('.', ',') + ' s</span>'; };
+  const meme = (p, i) => { const j = ch.findIndex((q, k) => k !== i && groupeDe(q.page.id) === groupeDe(p.page.id)); return j < 0 ? '' : '<span class="meme-groupe">même groupement que le n° ' + (j + 1) + ' (' + esc(groupeDe(p.page.id)) + ')</span>'; };
   $('#choix').innerHTML = ch.map((p, i) => '<li>' + esc(p.page.nom) + ' <span class="note">(' + esc(p.date) + ')</span>' + vignette(p) + ' <span class="ctl">' +
-    '<button data-m="-1" data-i="' + i + '" title="Monter">↑</button><button data-m="1" data-i="' + i + '" title="Descendre">↓</button><button data-x="' + i + '" title="Retirer">×</button></span></li>').join('');
+    '<button data-m="-1" data-i="' + i + '" title="Monter">↑</button><button data-m="1" data-i="' + i + '" title="Descendre">↓</button><button data-x="' + i + '" title="Retirer">×</button></span>' + meme(p, i) + '</li>').join('');
   $('#choix').querySelectorAll('button').forEach(b => b.onclick = () => {
     const i = Number(b.dataset.i ?? b.dataset.x);
     if (b.dataset.x !== undefined) ETAT.choix.splice(i, 1);
@@ -525,7 +564,7 @@ function rendrePanier() {
 // photo : choix fait sur la page ({url} ou {video, t}), sinon null et Claude choisit.
 function selectionCourante() {
   return {date: ETAT.data.date, valide: new Date().toISOString(), temps_forts: postsChoisis().map((p, i) => ({
-    n: i + 1, page: p.page.nom, page_url: p.page.url, urn: p.urn, url: p.url, date: p.date, texte: p.texte,
+    n: i + 1, page: p.page.nom, groupe: groupeDe(p.page.id), page_url: p.page.url, urn: p.urn, url: p.url, date: p.date, texte: p.texte,
     auteur: p.auteur, entete: p.entete, reprise: p.reprise, kind: p.kind, images: p.images, doc_pages: p.doc_pages, video: p.video,
     photo: ETAT.photos[p.urn] || null}))};
 }
@@ -540,7 +579,7 @@ function selectionMarkdown(s) {
     'À faire : ouvrir l\'application Claude, joindre ce fichier et demander « Fais les temps forts de la semaine avec cette sélection ». ' +
     'Les liens des images LinkedIn expirent au bout de quelques semaines : traiter le fichier dans la semaine.', ''];
   for (const t of s.temps_forts) {
-    L.push('## ' + t.n + '. ' + t.page, '', '- Post : ' + t.url + ' (il y a ' + t.date + ')', '- Image : ' + decrit(t));
+    L.push('## ' + t.n + '. ' + t.page, '', '- Groupement : ' + t.groupe, '- Post : ' + t.url + ' (il y a ' + t.date + ')', '- Image : ' + decrit(t));
     if (t.reprise) L.push('- Republie : ' + t.reprise.auteur);
     L.push('', ...String(t.texte || '').split('\n').map(l => '> ' + l), '');
   }
@@ -572,10 +611,12 @@ $('#valider').onclick = async () => {
 function dernierResultat(id) { return ETAT.data ? ETAT.data.resultats.find(x => x.id === id) : null; }
 
 function rendrePages() {
-  const P = ETAT.pages.pages.slice().sort((a, b) => (a.statut === b.statut ? a.nom.localeCompare(b.nom, 'fr') : a.statut === 'suivie' ? -1 : 1));
-  $('#t-pages').innerHTML = '<tr><th>Société</th><th>Page LinkedIn</th><th>Statut</th><th>Dernier post</th><th></th></tr>' + P.map(p => {
+  const P = ETAT.pages.pages.slice().sort((a, b) => (a.statut === b.statut ? 0 : a.statut === 'suivie' ? -1 : 1) ||
+    (a.groupe || '~').localeCompare(b.groupe || '~', 'fr') || a.nom.localeCompare(b.nom, 'fr'));
+  $('#dl-groupes').innerHTML = listeGroupes().map(g => '<option value="' + esc(g) + '">').join('');
+  $('#t-pages').innerHTML = '<tr><th>Société</th><th>Groupement</th><th>Page LinkedIn</th><th>Statut</th><th>Dernier post</th><th></th></tr>' + P.map(p => {
     const r = dernierResultat(p.id);
-    return '<tr><td>' + esc(p.nom) + '</td><td><a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(decodeURIComponent(p.url).replace('https://www.linkedin.com', '')) + '</a></td>' +
+    return '<tr><td>' + esc(p.nom) + '</td><td><input class="in-groupe" list="dl-groupes" data-groupe="' + p.id + '" value="' + esc(p.groupe || '') + '" placeholder="à renseigner"></td><td><a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(decodeURIComponent(p.url).replace('https://www.linkedin.com', '')) + '</a></td>' +
       '<td>' + (p.statut === 'suivie' ? 'scan hebdo' : 'dormante (scan ' + (ETAT.config.dormantes === 'hebdo' ? 'hebdo' : 'mensuel') + ')') + '</td>' +
       '<td>' + (r ? esc(r.erreur ? 'erreur : ' + r.erreur : r.dernier_post) : '') + '</td>' +
       '<td><button class="btn second" data-statut="' + (p.statut === 'suivie' ? 'dormante' : 'suivie') + '" data-id="' + p.id + '">' + (p.statut === 'suivie' ? 'Passer en dormante' : 'Remettre en hebdo') + '</button>' +
@@ -583,6 +624,19 @@ function rendrePages() {
   }).join('');
   $('#t-pages').querySelectorAll('button[data-statut]').forEach(b => b.onclick = () => changerStatut(Number(b.dataset.id), b.dataset.statut));
   $('#t-pages').querySelectorAll('button[data-supprimer]').forEach(b => b.onclick = () => supprimerPage(Number(b.dataset.supprimer)));
+  $('#t-pages').querySelectorAll('input[data-groupe]').forEach(i => i.onchange = () => changerGroupe(Number(i.dataset.groupe), i.value));
+}
+
+function listeGroupes() {
+  return [...new Set(ETAT.pages.pages.map(p => p.groupe).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'fr'));
+}
+
+function changerGroupe(id, groupe) {
+  const p = ETAT.pages.pages.find(x => x.id === id);
+  groupe = groupe.trim();
+  if (!p || (p.groupe || '') === groupe) return;
+  if (groupe) p.groupe = groupe; else delete p.groupe;
+  enregistrerPages(p.nom + (groupe ? ' est rattachée à ' + groupe + '.' : ' n\'a plus de groupement.'));
 }
 
 // Le message s'affiche dans l'onglet où l'on a cliqué : en haut des alertes de la sélection, ou sous le formulaire des pages.
@@ -620,7 +674,9 @@ $('#f-ajouter').onclick = () => {
   const deja = ETAT.pages.pages.find(p => p.slug.toLowerCase() === slug.toLowerCase());
   if (deja) { $('#f-msg').innerHTML = '<div class="alerte">Cette page est déjà suivie : ' + esc(deja.nom) + '.</div>'; return; }
   const id = Math.max(0, ...ETAT.pages.pages.map(p => p.id)) + 1;
-  ETAT.pages.pages.push({id, nom, url: 'https://www.linkedin.com/' + m[1] + '/' + m[2] + '/', slug, statut: 'suivie', ajoutee: aujourdhui()});
+  const groupe = $('#f-groupe').value.trim();
+  ETAT.pages.pages.push(Object.assign({id, nom, url: 'https://www.linkedin.com/' + m[1] + '/' + m[2] + '/', slug, statut: 'suivie', ajoutee: aujourdhui()}, groupe ? {groupe} : {}));
+  $('#f-groupe').value = '';
   $('#f-nom').value = ''; $('#f-url').value = '';
   enregistrerPages(nom + ' est ajoutée : elle sera lue au prochain scan.');
 };
