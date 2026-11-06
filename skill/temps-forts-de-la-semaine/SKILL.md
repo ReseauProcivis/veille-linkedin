@@ -37,13 +37,17 @@ Erreur « session DI expirée ou projet autre que PROCIVIS » : la personne se r
 ### 2. Lire la sélection
 
 - Cas habituel : `const sel = await VLDI.selection()`. La sélection validée est lue en ligne et gardée dans `window.VL_SEL`.
-- Si la personne a joint un fichier `temps-forts-….md` : le bloc JSON en fin de fichier est la sélection. Comparer sa date et ses posts avec `VLDI.selection()`. S'ils sont identiques, utiliser la version en ligne. Sinon, poser le JSON du fichier : `window.VL_SEL = {...}`.
+- Si la personne a joint un fichier `temps-forts-….md` : le bloc JSON en fin de fichier est la sélection. Comparer sa date et ses posts avec `VLDI.selection()`. S'ils sont identiques, utiliser la version en ligne. Sinon, poser le JSON du fichier : `window.VL_SEL = {...}`, puis `VLDI.melanger()`.
+
+**L'ordre de la newsletter est toujours aléatoire.** La page de veille range les posts par groupement : sans tirage, on retrouverait le même ordre chaque semaine. `VLDI.selection()` tire l'ordre au hasard une fois par sélection (en évitant deux posts d'un même groupement à la suite) et numérote `VL_SEL.temps_forts` dans cet ordre (`n` = 1, 2, 3…). Un nouvel appel rend le même ordre. Garder cet ordre jusqu'au bout : ne pas le retrier, ni reprendre l'ordre de la page ou du fichier .md. Si la personne demande un autre ordre, `VLDI.melanger()` en tire un nouveau.
+
+Une sélection validée avant la purge du vendredi (5 h 30) est refusée : faire la veille de la semaine et valider la sélection.
 
 Ne renvoyer dans la conversation que l'essentiel (numéro, page, date, texte, nombre d'images, `photo`), pas les adresses des images.
 
 ### 3. Rédiger les textes
 
-Pour chaque temps fort, dans l'ordre de la sélection :
+Pour chaque temps fort, dans l'ordre tiré au hasard (`VL_SEL.temps_forts`) :
 
 - **Titre** : le nom de la société tel qu'on l'écrit dans le réseau (« Groupe Procivis Ouest », « Edifidès », « Immo de France Hauts-de-France »). Si le post est une republication (`reprise`), le titre est la société qui publie la page, et le texte cite l'auteur d'origine si c'est utile.
 - **Texte** : 1 à 3 phrases, 300 à 450 caractères. Factuel, au présent ou au passé composé, à la troisième personne.
@@ -90,7 +94,7 @@ Montrer dans la conversation, pour chaque temps fort : numéro, titre, texte, ph
 ### 6. Remplir Dialog Insight
 
 ```js
-const plan = [ {titre, texte, linkedin: t.url, image: <source>}, ... ];   // dans l'ordre de la newsletter
+const plan = VL_SEL.temps_forts.map(t => ({titre, texte, linkedin: t.url, image: <source>}));   // ordre aléatoire de VL_SEL
 VLDI.lancer(<id>, plan)
 ```
 

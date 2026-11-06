@@ -5,7 +5,7 @@ Remplace l'app Streamlit et le `.command` du Mac de Maxime. Tout tourne dans le 
 ## Le vendredi
 
 1. Sur linkedin.com, clic sur le favori **Veille LinkedIn** : il scanne les pages de `pages.json` (environ 5 à 10 minutes) et ouvre la page de veille, qui reçoit les résultats.
-2. Sur la page, cocher les posts, les mettre dans l'ordre, puis **Valider la sélection**. Un clic sur une image l’ouvre en grand dans une liseuse (flèches pour passer de l’une à l’autre) ; une coche y retient l’image pour la newsletter, une seule par post (pour une vidéo : un plan choisi dans le lecteur). Sans choix, Claude choisit. **Télécharger la sélection (.md)** produit un fichier à transmettre à la personne qui fait les temps forts : une partie lisible, puis la sélection complète en JSON pour son Claude.
+2. Sur la page, cocher les posts, puis **Valider la sélection** (l'ordre de la newsletter est tiré au hasard par `VLDI.selection()`). Un clic sur une image l’ouvre en grand dans une liseuse (flèches pour passer de l’une à l’autre) ; une coche y retient l’image pour la newsletter, une seule par post (pour une vidéo : un plan choisi dans le lecteur). Sans choix, Claude choisit. **Télécharger la sélection (.md)** produit un fichier à transmettre à la personne qui fait les temps forts : une partie lisible, puis la sélection complète en JSON pour son Claude.
 3. Dans Claude desktop : « Fais les temps forts de la semaine » (skill à venir). Claude rédige les textes, choisit les photos, les fait valider, puis remplit les blocs Temps Fort de la NEWSLETTER HEBDO dans Dialog Insight avec la session DI de la personne (voir plus bas). Rien n’est envoyé.
 
 La sélection ne propose que les posts publiés dans les 7 jours (`jours_actif`) qui précèdent le scan.

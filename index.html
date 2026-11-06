@@ -142,7 +142,7 @@ td a { color: var(--orange); word-break: break-all; }
       <aside id="panier">
         <h2>Temps forts retenus (<span id="nb">0</span>)</h2>
         <ol id="choix"></ol>
-        <p class="note" id="choix-vide">Cochez les posts à mettre dans la newsletter. L'ordre ici sera l'ordre de la newsletter.</p>
+        <p class="note" id="choix-vide">Cochez les posts à mettre dans la newsletter. Leur ordre dans la newsletter est tiré au hasard au moment de l'intégration.</p>
         <button class="btn" id="valider" disabled>Valider la sélection</button>
         <button class="btn second" id="exporter" disabled>Télécharger la sélection (.md)</button>
         <p class="note">Fichier à transmettre à la personne qui fait les temps forts : elle le donne à son application Claude.</p>
@@ -174,7 +174,7 @@ td a { color: var(--orange); word-break: break-all; }
       <ol class="etapes">
         <li>Ouvrez <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">linkedin.com</a>, connecté à votre compte.</li>
         <li>Cliquez sur le favori <b>Veille LinkedIn</b>. Cette page s'ouvre dans un nouvel onglet et le scan démarre (environ 5 minutes). Si Chrome bloque la fenêtre, autorisez les pop-up pour linkedin.com puis recliquez.</li>
-        <li>Cochez les posts à retenir dans l'onglet <b>Sélection</b>, mettez-les dans l'ordre, puis cliquez sur <b>Valider la sélection</b>.</li>
+        <li>Cochez les posts à retenir dans l'onglet <b>Sélection</b>, puis cliquez sur <b>Valider la sélection</b>. Claude tire leur ordre au hasard au moment de l'intégration.</li>
         <li>Dans Chrome, ouvrez la NEWSLETTER HEBDO de la semaine dans l'éditeur Dialog Insight (projet PROCIVIS).</li>
         <li>Dans l'application Claude, demandez : <b>« Fais les temps forts de la semaine »</b>. Claude rédige les textes, choisit les photos, vous les fait valider, puis remplit la rubrique Temps Fort. Il n'envoie rien.</li>
       </ol>
@@ -583,7 +583,7 @@ function rendrePanier() {
   const vignette = p => { const ph = ETAT.photos[p.urn]; return !ph ? '' : ph.url ? '<img referrerpolicy="no-referrer" src="' + esc(ph.url) + '" alt="">' : ' <span class="note">plan ' + String(ph.t).replace('.', ',') + ' s</span>'; };
   const meme = (p, i) => { const j = ch.findIndex((q, k) => k !== i && groupeDe(q.page.id) === groupeDe(p.page.id)); return j < 0 ? '' : '<span class="meme-groupe">même groupement que le n° ' + (j + 1) + ' (' + esc(groupeDe(p.page.id)) + ')</span>'; };
   $('#choix').innerHTML = ch.map((p, i) => '<li>' + esc(p.page.nom) + ' <span class="note">(' + esc(p.date) + ')</span>' + vignette(p) + ' <span class="ctl">' +
-    '<button data-m="-1" data-i="' + i + '" title="Monter">↑</button><button data-m="1" data-i="' + i + '" title="Descendre">↓</button><button data-x="' + i + '" title="Retirer">×</button></span>' + meme(p, i) + '</li>').join('');
+    '<button data-x="' + i + '" title="Retirer">×</button></span>' + meme(p, i) + '</li>').join('');
   $('#choix').querySelectorAll('button').forEach(b => b.onclick = () => {
     const i = Number(b.dataset.i ?? b.dataset.x);
     if (b.dataset.x !== undefined) ETAT.choix.splice(i, 1);
@@ -606,7 +606,7 @@ function selectionMarkdown(s) {
     (t.doc_pages || []).includes(t.photo.url) ? 'page ' + (t.doc_pages.indexOf(t.photo.url) + 1) + ' du document' :
     'photo ' + ((t.images || []).findIndex(i => i.url === t.photo.url) + 1) + ' du post';
   const L = ['# Temps forts : sélection du ' + dateFr(s.date), '',
-    s.temps_forts.length + (s.temps_forts.length > 1 ? ' temps forts' : ' temps fort') + ', dans l\'ordre de la newsletter.', '',
+    s.temps_forts.length + (s.temps_forts.length > 1 ? ' temps forts' : ' temps fort') + ', ordre de la newsletter tiré au hasard par Claude.', '',
     'À faire : ouvrir l\'application Claude, joindre ce fichier et demander « Fais les temps forts de la semaine avec cette sélection ». ' +
     'Les liens des images LinkedIn expirent au bout de quelques semaines : traiter le fichier dans la semaine.', ''];
   for (const t of s.temps_forts) {

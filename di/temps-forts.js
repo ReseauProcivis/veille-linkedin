@@ -9,7 +9,8 @@
  *   await import('https://reseauprocivis.github.io/veille-linkedin/di/temps-forts.js?v=' + Date.now())
  * puis window.VLDI :
  *   await VLDI.etat(idMessage)            // blocs Inauguré en place (titre, image, lien)
- *   await VLDI.selection()                // dernière sélection validée sur la page de veille
+ *   await VLDI.selection()                // dernière sélection validée sur la page de veille, en ordre aléatoire
+ *   VLDI.melanger()                       // tire l'ordre aléatoire d'une sélection posée à la main (fichier .md)
  *   await VLDI.infos(idMessage)           // nom du message et nombre de blocs Temps Fort
  *   await VLDI.planche(sel.temps_forts, [0,1,2,3])   // images candidates numérotées (1.a, 1.b...), par paquets
  *   VLDI.candidat('1.b')                  // source de l'image choisie, à mettre dans plan[i].image
@@ -303,8 +304,26 @@ export async function selection() {
   if (sel.purge || !(sel.temps_forts || []).length || heureParis(new Date(sel.valide)) < dernierePurge())
     throw new Error('Aucune sélection validée cette semaine : la dernière (' + sel.date + ') a été purgée le vendredi ' +
       dernierePurge().slice(0, 10) + ' à 5 h 30. Faire la veille et valider la sélection sur ' + PAGE_VEILLE +
-      ', puis relancer. Si la personne a joint un fichier temps-forts-….md, poser son JSON : window.VL_SEL = {...}.');
-  return (window.VL_SEL = sel);
+      ', puis relancer. Si la personne a joint un fichier temps-forts-….md, poser son JSON (window.VL_SEL = {...}) puis VLDI.melanger().');
+  // Même sélection déjà lue : même ordre.
+  if (window.VL_SEL && window.VL_SEL.ordre_aleatoire && window.VL_SEL.valide === sel.valide) return window.VL_SEL;
+  return melanger(sel);
+}
+
+// Ordre aléatoire, tiré une fois par sélection : la page de veille range les posts par groupement, ce qui
+// donnerait le même ordre chaque semaine. Évite si possible deux posts d'un même groupement à la suite.
+// L'ordre tiré est gardé dans window.VL_SEL (n = 1, 2, 3...) : c'est l'ordre de la newsletter.
+export function melanger(sel = window.VL_SEL) {
+  const hasard = n => crypto.getRandomValues(new Uint32Array(1))[0] % n;
+  const tirer = () => {
+    const t = sel.temps_forts.slice();
+    for (let i = t.length - 1; i > 0; i--) { const j = hasard(i + 1); [t[i], t[j]] = [t[j], t[i]]; }
+    return t;
+  };
+  const voisins = t => t.slice(1).filter((x, i) => x.groupe && x.groupe === t[i].groupe).length;
+  let t = tirer();
+  for (let essai = 0; essai < 200 && voisins(t); essai++) t = tirer();
+  return (window.VL_SEL = Object.assign({}, sel, {ordre_aleatoire: true, temps_forts: t.map((x, i) => Object.assign({}, x, {n: i + 1}))}));
 }
 
 // Nom du message (pour vérifier qu'on est sur la bonne NEWSLETTER HEBDO) et nombre de blocs Inauguré.
@@ -456,4 +475,4 @@ export function fermerPlanche() {
 
 export const _interne = {Editeur, arbre, corps, entites, preparer, verser, inaugures};
 
-window.VLDI = {etat, selection, infos, apercu, planche, candidat, fermerPlanche, remplir, lancer, suivi, _interne};
+window.VLDI = {etat, selection, melanger, infos, apercu, planche, candidat, fermerPlanche, remplir, lancer, suivi, _interne};
