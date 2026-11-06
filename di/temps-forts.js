@@ -278,12 +278,33 @@ export async function etat(idm) {
   return out;
 }
 
+// Purge du vendredi 5 h 30 (heure de Paris) : même règle que la page de veille.
+const heureParis = d => {
+  const p = Object.fromEntries(new Intl.DateTimeFormat('fr-FR', {timeZone: 'Europe/Paris', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hourCycle: 'h23'}).formatToParts(d).map(x => [x.type, x.value]));
+  return p.year + '-' + p.month + '-' + p.day + ' ' + p.hour + ':' + p.minute;
+};
+function dernierePurge() {
+  const m = heureParis(new Date());
+  const j = new Date(m.slice(0, 10) + 'T12:00:00Z');
+  let recul = (j.getUTCDay() + 2) % 7;
+  if (recul === 0 && m.slice(11) < '05:30') recul = 7;
+  j.setUTCDate(j.getUTCDate() - recul);
+  return j.toISOString().slice(0, 10) + ' 05:30';
+}
+
 // Dernière sélection validée en ligne, gardée dans window.VL_SEL pour les appels suivants.
 // Si la sélection arrive par un fichier .md, Claude la pose lui-même : window.VL_SEL = {...}.
+// Une sélection validée avant la purge du vendredi n'est pas celle de la semaine : refusée.
 export async function selection() {
   const r = await fetch(PAGE_VEILLE + 'selections/latest.json?v=' + Date.now(), {cache: 'no-store'});
   if (!r.ok) throw new Error('Aucune sélection validée en ligne (selections/latest.json).');
-  return (window.VL_SEL = await r.json());
+  const sel = await r.json();
+  if (sel.purge || !(sel.temps_forts || []).length || heureParis(new Date(sel.valide)) < dernierePurge())
+    throw new Error('Aucune sélection validée cette semaine : la dernière (' + sel.date + ') a été purgée le vendredi ' +
+      dernierePurge().slice(0, 10) + ' à 5 h 30. Faire la veille et valider la sélection sur ' + PAGE_VEILLE +
+      ', puis relancer. Si la personne a joint un fichier temps-forts-….md, poser son JSON : window.VL_SEL = {...}.');
+  return (window.VL_SEL = sel);
 }
 
 // Nom du message (pour vérifier qu'on est sur la bonne NEWSLETTER HEBDO) et nombre de blocs Inauguré.

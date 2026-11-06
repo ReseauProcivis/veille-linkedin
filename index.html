@@ -215,6 +215,27 @@ const aujourdhui = () => { const d = new Date(); return d.getFullYear() + '-' + 
 const lire = k => { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } };
 const ecrire = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
 
+// ---------------------------------------------------------------- purge du vendredi
+// Chaque vendredi à 5 h 30 (heure de Paris), la veille de la semaine passée est purgée : la page ne propose plus
+// un scan fait avant cette heure, même gardé dans ce navigateur. Côté dépôt, outils/purge_vendredi.py (lancé par
+// .github/workflows/purge-vendredi.yml) remplace data/latest.json et selections/latest.json par une marque de purge.
+const heureParis = d => {
+  const p = Object.fromEntries(new Intl.DateTimeFormat('fr-FR', {timeZone: 'Europe/Paris', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hourCycle: 'h23'}).formatToParts(d).map(x => [x.type, x.value]));
+  return p.year + '-' + p.month + '-' + p.day + ' ' + p.hour + ':' + p.minute;
+};
+function dernierePurge() {   // « AAAA-MM-JJ 05:30 », heure de Paris du dernier vendredi 5 h 30 passé
+  const m = heureParis(new Date());
+  const j = new Date(m.slice(0, 10) + 'T12:00:00Z');
+  let recul = (j.getUTCDay() + 2) % 7;   // jours depuis vendredi
+  if (recul === 0 && m.slice(11) < '05:30') recul = 7;
+  j.setUTCDate(j.getUTCDate() - recul);
+  return j.toISOString().slice(0, 10) + ' 05:30';
+}
+const perimee = d => !!d && (!!d.purge || heureParis(new Date(d.genere)) < dernierePurge());
+// Seuls les posts des 7 derniers jours (jours_actif) au moment du scan sont proposés.
+const recents = r => (r.posts || []).filter(p => (Date.parse(ETAT.data.genere) - p.ts) / 864e5 <= ETAT.config.jours_actif);
+
 async function json(url) {
   try { const r = await fetch(url + '?t=' + Date.now(), {cache: 'no-store'}); return r.ok ? await r.json() : null; } catch (e) { return null; }
 }
@@ -237,6 +258,8 @@ async function relais(action, contenu) {
   const distant = await json('data/latest.json');
   const loc = lire('vl-data');
   ETAT.data = (loc && (!distant || loc.genere >= distant.genere)) ? loc : distant;
+  // Scan d'avant la purge du vendredi : gardé à part (pages dormantes, dernier post), plus proposé à la sélection.
+  if (perimee(ETAT.data)) { ETAT.precedent = ETAT.data; ETAT.data = null; }
   // Le nom affiché est celui de la liste des pages (une page renommée l'est aussi dans le dernier scan).
   if (ETAT.data && ETAT.pages) for (const r of ETAT.data.resultats) {
     const p = ETAT.pages.pages.find(x => x.id === r.id);
@@ -259,7 +282,8 @@ function montrer(v) {
   document.querySelectorAll('nav button').forEach(b => b.classList.toggle('on', b.dataset.vue === v));
   if (v === 'selection') rendreSelection();
   if (v === 'pages') rendrePages();
-  $('#infos').textContent = ETAT.data ? 'Scan du ' + dateFr(ETAT.data.date) + ' · ' + ETAT.data.resultats.length + ' pages' : 'Aucun scan pour l\'instant';
+  $('#infos').textContent = ETAT.data ? 'Scan du ' + dateFr(ETAT.data.date) + ' · ' + ETAT.data.resultats.length + ' pages' :
+    ETAT.precedent ? 'Purge du vendredi ' + dateFr(dernierePurge().slice(0, 10)) + ' à 5 h 30 · aucun scan cette semaine' : 'Aucun scan pour l\'instant';
 }
 
 // ---------------------------------------------------------------- favori
@@ -280,7 +304,8 @@ function pagesAScanner() {
   const suivies = toutes.filter(p => p.statut === 'suivie');
   const dormantes = toutes.filter(p => p.statut === 'dormante');
   const mois = aujourdhui().slice(0, 7);
-  const dejaCeMois = ETAT.data && ETAT.data.dormantes_scannees && ETAT.data.date.slice(0, 7) === mois;
+  const ref = ETAT.data || ETAT.precedent;
+  const dejaCeMois = ref && ref.dormantes_scannees && ref.date.slice(0, 7) === mois;
   const avecDormantes = ETAT.config.dormantes === 'hebdo' || (ETAT.config.dormantes === 'mensuel' && !dejaCeMois);
   return {liste: avecDormantes ? suivies.concat(dormantes) : suivies, avecDormantes};
 }
@@ -321,7 +346,7 @@ function lancerScan() {
 function tousLesPosts() {
   const out = [];
   if (!ETAT.data) return out;
-  for (const r of ETAT.data.resultats) for (const p of r.posts || []) out.push(Object.assign({page: r}, p));
+  for (const r of ETAT.data.resultats) for (const p of recents(r)) out.push(Object.assign({page: r}, p));
   return out;
 }
 
@@ -361,6 +386,7 @@ function alertes() {
 
 function rendreSelection() {
   const L = $('#liste');
+  if (!ETAT.data && ETAT.precedent) { L.innerHTML = '<div class="vide">La veille de la semaine passée a été purgée vendredi à 5 h 30.<br>Ouvrez linkedin.com et cliquez sur le favori <b>Veille LinkedIn</b> pour lancer celle de cette semaine (onglet « Installer le favori »).</div>'; rendrePanier(); return; }
   if (!ETAT.data) { L.innerHTML = '<div class="vide">Aucun scan pour l\'instant. Ouvrez linkedin.com et cliquez sur le favori <b>Veille LinkedIn</b> (onglet « Installer le favori »).</div>'; rendrePanier(); return; }
   const r = ETAT.data.resultats;
   const n = s => r.filter(x => x.actif === s && !x.erreur).length;
@@ -369,7 +395,7 @@ function rendreSelection() {
   let h = '<div class="stats"><div class="stat"><b>' + r.length + '</b>pages lues</div><div class="stat oui"><b>' + n('OUI') + '</b>actives (7 j)</div>' +
     '<div class="stat lim"><b>' + n('LIMITE') + '</b>limite (8 j)</div><div class="stat non"><b>' + n('NON') + '</b>sans post récent</div></div>';
   h += alertes();
-  const actives = r.filter(x => (x.actif === 'OUI' || x.actif === 'LIMITE') && (x.posts || []).length)
+  const actives = r.filter(x => (x.actif === 'OUI' || x.actif === 'LIMITE') && recents(x).length)
     .sort((a, b) => (a.actif === b.actif ? 0 : a.actif === 'OUI' ? -1 : 1) || b.dernier_ts - a.dernier_ts);
   // Un bloc par groupement (SACICAP ou holding), le plus récent en premier : un seul post par groupement suffit d'habitude.
   const groupes = new Map();
@@ -401,7 +427,7 @@ function groupeDe(id) {
 function pageHtml(pg, dbl, jours) {
   let h = '<div class="page"><div class="page-tete"><h3>' + esc(pg.nom) + '</h3><span class="pastille ' + pg.actif + '">' + (pg.actif === 'OUI' ? 'active' : 'limite') + '</span>' +
     '<a href="' + esc(pg.url) + '" target="_blank" rel="noopener">voir la page</a></div>';
-  for (const p of pg.posts) {
+  for (const p of recents(pg)) {
     const on = ETAT.choix.includes(p.urn);
     const media = medias(p);
     const badges = [];
@@ -613,7 +639,7 @@ $('#valider').onclick = async () => {
 };
 
 // ---------------------------------------------------------------- pages suivies
-function dernierResultat(id) { return ETAT.data ? ETAT.data.resultats.find(x => x.id === id) : null; }
+function dernierResultat(id) { const d = ETAT.data || ETAT.precedent; return d ? d.resultats.find(x => x.id === id) : null; }
 
 function rendrePages() {
   const P = ETAT.pages.pages.slice().sort((a, b) => (a.statut === b.statut ? 0 : a.statut === 'suivie' ? -1 : 1) ||

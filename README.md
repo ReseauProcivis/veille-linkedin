@@ -8,6 +8,16 @@ Remplace l'app Streamlit et le `.command` du Mac de Maxime. Tout tourne dans le 
 2. Sur la page, cocher les posts, les mettre dans l'ordre, puis **Valider la sélection**. Un clic sur une image l’ouvre en grand dans une liseuse (flèches pour passer de l’une à l’autre) ; une coche y retient l’image pour la newsletter, une seule par post (pour une vidéo : un plan choisi dans le lecteur). Sans choix, Claude choisit. **Télécharger la sélection (.md)** produit un fichier à transmettre à la personne qui fait les temps forts : une partie lisible, puis la sélection complète en JSON pour son Claude.
 3. Dans Claude desktop : « Fais les temps forts de la semaine » (skill à venir). Claude rédige les textes, choisit les photos, les fait valider, puis remplit les blocs Temps Fort de la NEWSLETTER HEBDO dans Dialog Insight avec la session DI de la personne (voir plus bas). Rien n’est envoyé.
 
+La sélection ne propose que les posts publiés dans les 7 jours (`jours_actif`) qui précèdent le scan.
+
+## Purge du vendredi à 5 h 30
+
+Chaque vendredi à 5 h 30 (heure de Paris), la veille de la semaine passée est purgée : la page affiche « purgée » jusqu'au nouveau scan, et `VLDI.selection()` refuse une sélection validée avant cette heure (Claude ne peut plus remplir la newsletter avec les temps forts de la semaine précédente).
+
+- `.github/workflows/purge-vendredi.yml` lance `outils/purge_vendredi.py` le vendredi à 3 h 30, 4 h 30 et 5 h 30 UTC (heure d'été, heure d'hiver, rattrapage). Le script ne purge qu'à partir de 5 h 30 à Paris et une seule fois : il remplace `data/latest.json` et `selections/latest.json` par une marque `{"purge": true, ...}`. Les archives datées restent.
+- La page et le script DI appliquent la même règle de leur côté : un scan ou une sélection d'avant le dernier vendredi 5 h 30 n'est plus proposé, même si GitHub est en retard ou si le navigateur en garde une copie.
+- Purger à la main : onglet Actions du dépôt, « Purge du vendredi », Run workflow. Un scan fait après 5 h 30 n'est jamais purgé.
+
 ## Fichiers
 
 | Fichier | Rôle |
@@ -19,6 +29,7 @@ Remplace l'app Streamlit et le `.command` du Mac de Maxime. Tout tourne dans le 
 | `skill/` | Skill Claude « temps-forts-de-la-semaine » (SKILL.md) et son paquet .zip à importer dans l’application Claude |
 | `relay/worker.js` | Relais Cloudflare : enregistre scans, sélections et liste des pages dans le dépôt (jeton GitHub côté serveur uniquement) |
 | `data/`, `selections/` | Archives écrites par le relais (`latest.json` + un fichier par date) |
+| `outils/purge_vendredi.py`, `.github/workflows/purge-vendredi.yml` | Purge du vendredi à 5 h 30 (voir plus haut) |
 
 ## Remplissage de Dialog Insight (`di/temps-forts.js`)
 

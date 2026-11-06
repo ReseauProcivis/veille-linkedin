@@ -1,0 +1,36 @@
+# Purge du vendredi : vide le tableau de bord de la veille LinkedIn chaque vendredi à 5 h 30, heure de Paris.
+# GitHub ne connaît que l'heure UTC : trois passages (3 h 30, 4 h 30 et 5 h 30 UTC) couvrent l'heure d'été,
+# l'heure d'hiver et un éventuel retard de GitHub. Le script ne purge qu'à partir de 5 h 30 à Paris et une seule fois.
+# Lancement à la main : onglet Actions du dépôt, « Purge du vendredi », Run workflow.
+name: Purge du vendredi
+
+on:
+  schedule:
+    - cron: '30 3 * * 5'
+    - cron: '30 4 * * 5'
+    - cron: '30 5 * * 5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency: purge-vendredi
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Purger le scan et la sélection de la semaine passée
+        run: python3 outils/purge_vendredi.py
+      - name: Enregistrer dans le dépôt et republier la page
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add data/latest.json selections/latest.json
+          if git diff --cached --quiet; then echo "Rien à purger."; exit 0; fi
+          git -c user.name="Purge du vendredi" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -m "Purge du vendredi $(TZ=Europe/Paris date +%F)"
+          git push
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" --silent || echo "Republication demandée par le push seul."
