@@ -1,0 +1,3296 @@
+{
+ "date": "2026-11-13",
+ "genere": "2026-11-13T08:39:55.834Z",
+ "duree_ms": 236131,
+ "dormantes_scannees": false,
+ "resultats": [
+  {
+   "id": 1,
+   "nom": "Maisons d'en France Bourgogne",
+   "url": "https://www.linkedin.com/company/maisonsdenfrance-bourgogne/",
+   "statut": "suivie",
+   "company_id": "11208965",
+   "nom_linkedin": "Maisons d'en France Bourgogne",
+   "n_trouves": 9,
+   "dernier_ts": 1793265896533,
+   "dernier_post": "2 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 2,
+   "nom": "Cabinet Cartallier",
+   "url": "https://www.linkedin.com/company/cabinet-cartallier/",
+   "statut": "suivie",
+   "company_id": "98325721",
+   "nom_linkedin": "Cabinet Cartallier - Chalon sur Saône",
+   "n_trouves": 9,
+   "dernier_ts": 1793871795872,
+   "dernier_post": "1 sem.",
+   "actif": "LIMITE",
+   "n_7j": 0,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7524043648913670145",
+     "ts": 1793871795872,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524043648913670145",
+     "texte": "Opportunité à saisir très rapidement entre CHALON et BEAUNE !\n\nhttps://lnkd.in/eAtpSRi2",
+     "entete": "",
+     "auteur": "Cabinet Cartallier - Chalon sur Saône",
+     "reprise": null,
+     "date": "1 sem.",
+     "kind": [
+      "articleComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQHPVpvaZZxYyw/articleshare-shrink_1280_800/B4EaGrFQupHMAg-/0/1793871647046?e=1795165200&v=beta&t=PL6E4EYFdYE39-JsJLprROL0iJlRAewte3ODSAzCQMs",
+       "w": 1066,
+       "h": 800
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7509204510704242688",
+     "ts": 1790333869625,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7509204510704242688",
+     "texte": "🍂🏡 C'est la rentrée !\n\nLa rentrée est souvent le moment où les projets prennent forme et si c'était aussi le bon moment pour concrétiser votre projet immobilier à Chalon-sur-Saône et ses environs ? ✨\n\nQue vous envisagiez de vendre votre maison, votre appartement ou de réaliser un investissement locatif, être bien accompagné fait toute la différence.\n\nAvec le Cabinet Cartallier :\n\n🤝 Un accompagnement personnalisé à chaque étape de votre projet\n📍 Une parfaite connaissance du marché immobilier chalonnais\n🏡 Une équipe de proximité à votre écoute pour vous conseiller et vous guider\n\n✨ Parlons ensemble de votre projet immobilier et donnons-lui toutes les chances de réussir.\n\n#CabinetCartallier #ImmobilierChalon #ChalonSurSaone #ProjetImmobilier",
+     "entete": "",
+     "auteur": "Cabinet Cartallier - Chalon sur Saône",
+     "reprise": null,
+     "date": "2 mois",
+     "kind": [
+      "documentComponent"
+     ],
+     "images": [],
+     "doc_pages": [
+      "https://media.licdn.com/dms/image/v2/D4E1FAQHQon_A_c_3Vw/feedshare-document-cover-images_1920/B4EaDYNofWKQBQ-/0/1790333848590?e=1795165200&v=beta&t=NIzDtZNxUX7t_VoH8maBXnS2SDm4XFjNF-7OSzqXpIE",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQHQon_A_c_3Vw/feedshare-document-cover-images_1920/B4EaDYNofWKQBQ-/1/1790333848590?e=1795165200&v=beta&t=pwX7H4j5pf6xw-LPKnaTfqJNtdEThigztkJJQhpyNxE",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQHQon_A_c_3Vw/feedshare-document-cover-images_1920/B4EaDYNofWKQBQ-/2/1790333848590?e=1795165200&v=beta&t=9ap8mwASZi0RsilwzYYwV_y9O-6YbLRnM-pFX91Cg7A"
+     ],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "nom": "Immo de France CABINET EVEN DU FOU",
+   "url": "https://www.linkedin.com/company/even-du-fou/",
+   "statut": "suivie",
+   "company_id": "105695451",
+   "nom_linkedin": "Cabinet Even du Fou",
+   "n_trouves": 9,
+   "dernier_ts": 1794207639806,
+   "dernier_post": "4 j",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525452280469282816",
+     "ts": 1794207639806,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525452280469282816",
+     "texte": "[ARTICLE DE LA SEMAINE 🗞️]\n\nAcheter comptant ou emprunter : quelle est la meilleure stratégie ? 🏡\n\nAcheter sans crédit permet d'éviter les intérêts et les frais liés à l'emprunt. Mais payer comptant n'est pas forcément la solution la plus avantageuse selon votre situation.\n\nUn article à découvrir pour mieux comprendre les différences entre ces deux stratégies et faire un choix adapté à votre projet immobilier. 🔑\nhttps://lnkd.in/d77B4GQn",
+     "entete": "",
+     "auteur": "Cabinet Even du Fou",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4D10AQFRPd5k6-Bk3w/image-shrink_1280/B4DaG_G4O_IcAY-/0/1794207614620?e=1795165200&v=beta&t=U6rAQgW2Bgtk1D8auN5cmvPecXV_XWEx1TxKhCXi4CA",
+       "w": 1080,
+       "h": 1080
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7524455662047621122",
+     "ts": 1793970027458,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524455662047621122",
+     "texte": "Une maison sans jardin peut-elle quand même séduire les acheteurs ? 🏡\n\nOui, car l’absence d’extérieur ne représente pas forcément un frein pour tous les profils. Certains acquéreurs privilégient davantage la proximité des commerces et des transports, un entretien réduit ou encore un budget plus accessible.\n\nLors de la vente, l’essentiel est donc de valoriser les véritables points forts du bien plutôt que de chercher à masquer l’absence de jardin. Une petite cour, une terrasse ou un balcon, lorsqu’ils existent, peuvent également être aménagés et mis en valeur pour créer un espace extérieur agréable. 🌿\n\nVous souhaitez vendre une maison sans jardin ?\n\n#immobilier #venteimmobiliere #maison #estimationimmobiliere #valorisationimmobiliere #conseilimmobilier",
+     "entete": "",
+     "auteur": "Cabinet Even du Fou",
+     "reprise": null,
+     "date": "7 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4D10AQEipridQ3zKnQ/image-shrink_1280/B4DaGw8dY7H8AY-/0/1793970001957?e=1795165200&v=beta&t=YtMgqKHZ_CPp3PX6E4WA0KOpc44Un5pLRauyiLUfqxA",
+       "w": 1080,
+       "h": 1080
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "nom": "COOPERATIVE IMMOBILIERE DE BRETAGNE",
+   "url": "https://www.linkedin.com/company/groupecib/",
+   "statut": "suivie",
+   "company_id": "11008347",
+   "nom_linkedin": "CIB - Coopérative Immobilière de Bretagne",
+   "n_trouves": 9,
+   "dernier_ts": 1794236157373,
+   "dernier_post": "4 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525571891814666240",
+     "ts": 1794236157373,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525571891814666240",
+     "texte": "🎖️ Une chose est sûre : bâtir des lieux de vie accessibles est une affaire de collectif. Depuis longtemps déjà, notre coopérative s’attache à créer et à nourrir des partenariats en ce sens avec différents acteurs bretons et nationaux de l’habitat. \n \n➡️ C'est d’ailleurs toute la philosophie de notre société BSB - LES FOYERS, qui place l'humain au cœur de son action. Pour chaque projet de foyer, de résidence pour jeunes, d'Ehpad ou de structure dédiée aux personnes en situation de handicap, elle s'associe à un gestionnaire spécialisé. \nUne complémentarité essentielle qui permet de concevoir des lieux adaptés aux besoins des publics accueillis, mais aussi aux missions de ceux qui les accompagnent. \n \nCes liens se construisent sur un temps long : échanges réguliers, entretien du parc, réflexion sur les rénovations, élaboration de nouveaux projets... La relation avec nos partenaires dépasse largement la livraison d'un bâtiment. En substance, elle se base sur une confiance mutuelle ainsi qu’une vision partagée ! 🙌 \n \nUn exemple ? L'association ASSOCIATION STEREDENN, partenaire de BSB-Les Foyers, avec qui nous avons inauguré récemment une nouvelle résidence Habitat Jeune à Ville de Taden (35) composé de 146 logements. 📍 \n \nEn bref, notre vision repose sur un travail coopératif. Une manière très concrète d'incarner les valeurs portées par nos équipes : la solidarité, l'engagement et la volonté d'agir collectivement au service des territoires et des Bretons !",
+     "entete": "",
+     "auteur": "CIB - Coopérative Immobilière de Bretagne",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGaNu00vxZl7A/feedshare-image-high-res/B4EaHAzwUEHQAY-/0/1794236155557?e=1796256000&v=beta&t=F07XE451Fb2DiwQMi7JcW4XXekvkGLvrIxFNk_Blclg",
+       "w": 2048,
+       "h": 1365
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEPdjGkHu_O_g/feedshare-image-high-res/B4EaHAzwVnI0AU-/0/1794236155652?e=1796256000&v=beta&t=eum_JjOo9aJMFCsw_JkL6O9xwm0WrDfAGdyZ4uoC99A",
+       "w": 2048,
+       "h": 1365
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQG2MNbEn1sDGw/feedshare-image-high-res/B4EaHAzwUyHMAQ-/0/1794236155548?e=1796256000&v=beta&t=RZLL6fj1S-pOCbrKj2uqSZnWdz4Ba8UugF9coswvlfQ",
+       "w": 2048,
+       "h": 1365
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQE1Rgye4Rcn-A/feedshare-image-high-res/B4EaHAzwVsIIAQ-/0/1794236155697?e=1796256000&v=beta&t=Vp0k15T9_2WfDlo7vEuWx4fQ8cYhkfXbQokhxpqWq4k",
+       "w": 2048,
+       "h": 1365
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEkMwMQjJ0E_g/feedshare-image-high-res/B4EaHAzwQlHQAQ-/0/1794236155218?e=1796256000&v=beta&t=1AERCS0wz4LPhMXTaKnoFfK_O9kcrRoz1glK4D1YoKQ",
+       "w": 2048,
+       "h": 1365
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7524019131424108544",
+     "ts": 1793865950447,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524019131424108544",
+     "texte": "🌱 𝗔𝗩𝗘𝗡𝗜𝗥 - 𝗣𝗼𝘀𝗲 𝗱𝗲 𝗹𝗮 𝟭𝗲̀𝗿𝗲 𝗽𝗶𝗲𝗿𝗿𝗲 𝗱𝗲 𝟮𝟰 𝗹𝗼𝗴𝗲𝗺𝗲𝗻𝘁𝘀 𝗽𝗿𝗼𝗺𝗲𝘁𝘁𝗲𝘂𝗿𝘀 !\nMercredi dernier, sous un beau soleil automnal, aux côtés de la commune de Quessoy, nos partenaires financiers ont symboliquement participé à la pose d'un premier mur en ossature bois, dans le futur écoquartier Le Verger. \n\n𝘈𝘶 𝘱𝘳𝘰𝘨𝘳𝘢𝘮𝘮𝘦 : 2 bâtiments de 12 logements locatifs, \"𝘶𝘯 𝘱𝘳𝘰𝘫𝘦𝘵 𝘱𝘢𝘴 𝘤𝘰𝘮𝘮𝘦 𝘭𝘦𝘴 𝘢𝘶𝘵𝘳𝘦𝘴, 𝘢̀ 𝘭'𝘢𝘮𝘣𝘪𝘵𝘪𝘰𝘯 𝘦𝘯𝘷𝘪𝘳𝘰𝘯𝘯𝘦𝘮𝘦𝘯𝘵𝘢𝘭𝘦 𝘧𝘰𝘳𝘵𝘦\", comme l'a rappelé le maire de Quessoy, Jean-Luc Gouyette.\n\n𝗣𝗼𝘂𝗿𝗾𝘂𝗼𝗶 𝗲𝘀𝘁-𝗰𝗲 𝘂𝗻𝗲 𝗰𝗼𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻 𝗱'𝗮𝘃𝗲𝗻𝗶𝗿 ?\n\n👉 𝗨𝗻𝗲 𝗼𝗳𝗳𝗿𝗲 𝗱𝗶𝘃𝗲𝗿𝘀𝗶𝗳𝗶𝗲́𝗲, 𝗮𝗱𝗮𝗽𝘁𝗲́𝗲 𝗮̀ 𝘁𝗼𝘂𝘀 𝗹𝗲𝘀 𝗽𝗮𝗿𝗰𝗼𝘂𝗿𝘀 𝗱𝗲 𝘃𝗶𝗲\nDu T2 au T4, 1 400 m² habitables, pour accueillir familles, personnes seules et seniors. Quatre logements en rez-de-chaussée seront adaptés aux personnes à mobilité réduite (PMR).\n\n➡️ Des loggias de 2,50 m x 2,50 m pour aussi un bel espace extérieur !\n\n👉 𝗗𝗲𝘀 𝗯𝗮̂𝘁𝗶𝗺𝗲𝗻𝘁𝘀 𝘀𝗼𝗯𝗿𝗲𝘀 𝗲𝗻 𝗲́𝗻𝗲𝗿𝗴𝗶𝗲\nStructure mixte bois-béton, isolation en matériaux biosourcés (laine de bois, ouate de cellulose), orientation bioclimatique plein sud, forte étanchéité à l'air, ventilation double flux avec récupération de chaleur. \n\n➡️ Des charges réduites pour les habitants !\n\n👉 𝗘𝗧 𝗦𝗨𝗥𝗧𝗢𝗨𝗧, 𝘂𝗻 𝗵𝗮𝗯𝗶𝘁𝗮𝘁 𝗾𝘂𝗶 𝗽𝗿𝗲́𝘀𝗲𝗿𝘃𝗲 𝗹𝗮 𝗿𝗲𝘀𝘀𝗼𝘂𝗿𝗰𝗲 𝗲𝗻 𝗲𝗮𝘂💧\nLa préservation de l'eau est un enjeu environnemental majeur qui nous invite à repenser les équipements et les usages au sein même de nos logements.\n𝘗𝘰𝘶𝘳 𝘭𝘢 𝘱𝘳𝘦𝘮𝘪𝘦̀𝘳𝘦 𝘧𝘰𝘪𝘴, 𝘯𝘰𝘶𝘴 𝘦𝘹𝘱𝘦́𝘳𝘪𝘮𝘦𝘯𝘵𝘰𝘯𝘴 𝘭'𝘪𝘯𝘴𝘵𝘢𝘭𝘭𝘢𝘵𝘪𝘰𝘯 𝘥𝘦 𝘵𝘰𝘪𝘭𝘦𝘵𝘵𝘦𝘴 𝘴𝘦̀𝘤𝘩𝘦𝘴 𝘢̀ 𝘴𝘦́𝘱𝘢𝘳𝘢𝘵𝘪𝘰𝘯 𝘥'𝘶𝘳𝘪𝘯𝘦.\n\n➡️ Une initiative concrète pour réduire le recours à l'eau potable !\n\n👉 𝗨𝗻 𝗶𝗻𝘃𝗲𝘀𝘁𝗶𝘀𝘀𝗲𝗺𝗲𝗻𝘁 𝗱𝗲 𝟯,𝟴 𝗺𝗶𝗹𝗹𝗶𝗼𝗻𝘀 𝗱'𝗲𝘂𝗿𝗼𝘀, 𝘀𝗼𝘂𝘁𝗲𝗻𝘂 𝗽𝗮𝗿 𝗱𝗲𝘀 𝗽𝗮𝗿𝘁𝗲𝗻𝗮𝗶𝗿𝗲𝘀 𝗲𝗻𝗴𝗮𝗴𝗲́𝘀 :\nBanque des Territoires - Groupe Caisse des Dépôts et Action Logement par leurs prêts, ainsi que Préfecture des Côtes d'Armor - Caisse de Garantie du Logement Locatif Social (CGLLS), la commune de Quessoy, Lamballe Terre & Mer Agglomération par leurs subventions, ainsi que BSB - LES FOYERS.\n\nCe projet innovant est désormais lancé et avance grâce à la mobilisation de NUNC ARCHITECTES, Pierre BEOUT, Marie-Laure Turban, la maîtrise d'œuvre, les AMO et les 11 entreprises bretonnes retenues à l'issue d'un appel d'offres, pour une livraison prévisionnelle fin 2027  ! 🌱\n\nMarc LELIEVRE - Stéphane de Sallier Dupin - Thierry Andrieux - Georges Salaün  -  Thierry Savidan - Yvonnick LECLERRE  - Philippe Hercouet - Thomas Vigneron - Jérémie Noizette - Nolwenn PERON - Ludovic Gallais - - L'Union sociale pour l'habitat - CIB - Coopérative Immobilière de Bretagne\n\n#LogementSocial #HabitatDurable #SobriétéHydrique #CôtesdArmor \n#EPFBretagne #Procivis",
+     "entete": "CIB - Coopérative Immobilière de Bretagne reposted this",
+     "auteur": "BSB - LES FOYERS",
+     "reprise": null,
+     "date": "1 sem.",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFi7FgjyJCUJQ/feedshare-image-high-res/B4EaGcfKYCGkAU-/0/1793626779090?e=1796256000&v=beta&t=r4nKBotktJwNZ5uDm-VZeJtKUtLxDn0Jld409QhOWtQ",
+       "w": 2048,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHnY58Loyfjvw/feedshare-image-high-res/B4EaGcfKXeHwAU-/0/1793626778460?e=1796256000&v=beta&t=nHpcDy3Qd0UWUqfjhBOhCONvB7PXuj3hrv0s1aPAVXs",
+       "w": 2048,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQH8HIMLiMcMyQ/feedshare-image-high-res/B4EaGcfKIrHAAU-/0/1793626776366?e=1796256000&v=beta&t=cnW5mGdjaQer2vPc7Pm3tIN4R4sa1dFc-m0T8sSXIck",
+       "w": 1553,
+       "h": 827
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "nom": "SECIB",
+   "url": "https://www.linkedin.com/company/secib-immobilier/",
+   "statut": "suivie",
+   "company_id": "11182984",
+   "nom_linkedin": "SECIB IMMOBILIER",
+   "n_trouves": 9,
+   "dernier_ts": 1794496181455,
+   "dernier_post": "17 h",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526662511861989378",
+     "ts": 1794496181455,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526662511861989378",
+     "texte": "[#LANCEMENTCOMMERCIAL]🌊 𝐃𝐞́𝐜𝐨𝐮𝐯𝐫𝐞𝐳 𝐕𝐢𝐥𝐥𝐚 𝐄𝐬𝐭𝐫𝐚𝐧, 𝐧𝐨𝐭𝐫𝐞 𝐧𝐨𝐮𝐯𝐞𝐥𝐥𝐞 𝐫𝐞́𝐬𝐢𝐝𝐞𝐧𝐜𝐞 𝐚̀ 𝐒𝐚𝐢𝐧𝐭-𝐌𝐚𝐥𝐨.\nÀ Paramé, au cœur d’un environnement résidentiel et préservé, 𝑽𝒊𝒍𝒍𝒂 𝑬𝒔𝒕𝒓𝒂𝒏 propose 40 appartements du 2 au 4 pièces en accession libre, pensés pour conjuguer élégance, confort et douceur de vivre.\n🌿 Un parc arboré pour horizon, offrant à la résidence un cadre végétal rare dans la Ville de Saint-Malo.\n💒  Un environnement de caractère, marqué par la présence de la 𝗠𝗮𝗹𝗼𝘂𝗶𝗻𝗶𝗲̀𝗿𝗲 𝗱𝘂 𝗣𝗼𝗻𝘁 𝗣𝗶𝗻𝗲𝗹, édifiée au XVIIIᵉ siècle, et de sa chapelle.\n🪨 Le site est également ceint de murs en pierre, préservés et intégrés au projet, qui participent pleinement à son identité et soulignent le caractère qualitatif de cette nouvelle adresse.\n🏡 Imaginée par SELARL D ARCHITECTURE CLENET BROSSET BNR, l’architecture de 𝑽𝒊𝒍𝒍𝒂 𝑬𝒔𝒕𝒓𝒂𝒏 réinterprète avec élégance les codes des demeures malouines. Les appartements, lumineux, disposent tous d’un espace extérieur : jardin privatif, terrasse ou loggia.\n📍 À seulement 2,3 km de la plage du Sillon et 2 km de la gare de Saint-Malo, 𝑽𝒊𝒍𝒍𝒂 𝑬𝒔𝒕𝒓𝒂𝒏 offre un équilibre privilégié entre proximité de la mer, services du quotidien et sérénité.\n\n📞 Contactez dès maintenant nos équipes pour découvrir les appartements et être parmi les premiers à choisir votre futur logement à Saint-Malo.\n🔗 https://lnkd.in/eMKEq8Yr\n\nVisuels: ARTGOS 3D\nIdentité graphique et plaquette: Agence Human\n\n#Villaestran #Saintmalo #Paramé #Immobilierneuf #Appartementneuf #Architecture #BNR #Bretagne #SECIBImmobilier",
+     "entete": "",
+     "auteur": "SECIB IMMOBILIER",
+     "reprise": null,
+     "date": "17 h",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQG0CL_6ezXB8Q/feedshare-shrink_1280/B4EaHQTqraIAAM-/0/1794496179408?e=1796256000&v=beta&t=6PU1QaUare1I7qCM7uXzA7i6IlMCcZaaiq2VEonB2to",
+       "w": 1254,
+       "h": 1254
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFch_abryJuVw/feedshare-image-high-res/B4EaHQTqwRKwAQ-/0/1794496179668?e=1796256000&v=beta&t=S4Vk3eZTcYaNxVir8dgAhzegwxH35_G0HG7AhjXB0os",
+       "w": 1254,
+       "h": 1254
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGnpTslDWYCuA/feedshare-image-high-res/B4EaHQTqijGwAU-/0/1794496178655?e=1796256000&v=beta&t=x4YfgAZhO3_DGqr7NFE0xMYvunaiT98Yv6jCvoubPYk",
+       "w": 1880,
+       "h": 798
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFr4V5AZHtLEw/feedshare-image-high-res/B4EaHQTqu2IIAQ-/0/1794496179524?e=1796256000&v=beta&t=decitk46OPwpaipnMF23wO1zpx5ltFOOk_0U3hUCM0w",
+       "w": 1880,
+       "h": 1049
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525926736920842240",
+     "ts": 1794320759039,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525926736920842240",
+     "texte": "🏡 𝐃𝐞𝐯𝐞𝐧𝐢𝐫 𝐩𝐫𝐨𝐩𝐫𝐢𝐞́𝐭𝐚𝐢𝐫𝐞, 𝐜’𝐞𝐬𝐭 𝐚𝐮𝐬𝐬𝐢 𝐞̂𝐭𝐫𝐞 𝐛𝐢𝐞𝐧 𝐚𝐜𝐜𝐨𝐦𝐩𝐚𝐠𝐧𝐞́ 𝐚̀ 𝐜𝐡𝐚𝐪𝐮𝐞 𝐞́𝐭𝐚𝐩𝐞 𝐝𝐞 𝐬𝐨𝐧 𝐩𝐫𝐨𝐣𝐞𝐭.\nJeudi dernier, près de 50 futurs acquéreurs de notre programme Nature à Liffré ont répondu présents à notre réunion d’information dédiée au dispositif de 𝑷𝒓𝒆̂𝒕 𝑺𝒐𝒄𝒊𝒂𝒍 𝑳𝒐𝒄𝒂𝒕𝒊𝒐𝒏-𝑨𝒄𝒄𝒆𝒔𝒔𝒊𝒐𝒏 (𝑷𝑺𝑳𝑨).\nUne belle mobilisation qui témoigne de l’importance de ces temps d’échange dans le parcours d’accession à la propriété ! 🤝\nAux côtés de nos équipes, Christophe Gautier, adjoint à l’urbanisme de la  Ville de LIFFRE, le notaire de l’opération et GABILLARD FRANCK d'Action Logement étaient présents pour apporter des réponses concrètes aux questions des participants : fonctionnement du PSLA, solutions de financement, étapes de l’acquisition ou encore organisation de la copropriété.\nParce qu’un projet immobilier ne se résume pas à la signature d’un contrat, nous avons à cœur, d’accompagner nos acquéreurs tout au long de leur parcours, jusqu’à la remise des clés. 🔑\n\n👏 Merci à nos partenaires pour leur mobilisation et aux futurs habitants de la résidence Nature pour leur présence et la richesse des échanges !\n\n#SECIBImmobilier #PSLA #Locationaccession #Accessionàlapropriété #Liffré #Immobilier #Bretagne #rencontre #relationclient",
+     "entete": "",
+     "auteur": "SECIB IMMOBILIER",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFGYdmgTfdeXQ/feedshare-shrink_1280/B4EaHF2fEyJQAQ-/0/1794320757422?e=1796256000&v=beta&t=bSx_op4FFlNCSg3blbzYOHqh2hOpQrwI4cjJPGaGn44",
+       "w": 1201,
+       "h": 1600
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/C5603AQE4vPIxTxsaIw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1640439671493?e=1796256000&v=beta&t=u3JkSqeuFqphVMaX8B5gKzELMSok0YGALMgcYennF-c",
+       "w": 800,
+       "h": 800
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/C4D03AQEq5lwjXzfMZA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1610000062538?e=1796256000&v=beta&t=nsWUlsJ0bbbsJbvoI39lTUSa37l_p1424eghr5EK1nI",
+       "w": 560,
+       "h": 560
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFn4WWnkv2cvA/feedshare-shrink_1280/B4EaHF2e5GKgAI-/0/1794320756610?e=1796256000&v=beta&t=lG9Ilhgj71dcD1hq9yQtQ54LWpuEcuKLsTWPAssPVkE",
+       "w": 1201,
+       "h": 1600
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQH_0wiAOOhQkw/feedshare-shrink_1280/B4EaHF2fBZHMAM-/0/1794320757226?e=1796256000&v=beta&t=j_gzwWIXWEVvIB_dmEjXCFlQpdYonCs4XDL9QD1Ead8",
+       "w": 1201,
+       "h": 1600
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "nom": "Groupe CIF",
+   "url": "https://www.linkedin.com/company/groupe-cif/",
+   "statut": "suivie",
+   "company_id": "8547733",
+   "nom_linkedin": "Groupe Cif",
+   "n_trouves": 9,
+   "dernier_ts": 1794497225409,
+   "dernier_post": "17 h",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526666890522398720",
+     "ts": 1794497225409,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526666890522398720",
+     "texte": "🗓️ Ce mardi 10 novembre, notre équipe de maîtrise d’ouvrage a accompagné les premiers propriétaires de la résidence Archipel, située au cœur du nouveau quartier Doulon-Gohards, à Nantes, lors de la première phase de remises des clés. \n\nSous un beau soleil matinal, les nouveaux habitants ont ainsi découvert leur logement et commencé à écrire une nouvelle page de leur histoire. \n\nUn moment fort, qui vient concrétiser plusieurs mois de travail et d’engagement de nos équipes et partenaires, et qui marque une étape importante dans la vie de la résidence ! \n\n🎥 Retour en images sur cette belle journée !  \n\nFranck LE LUEL Barbara Lallemand Jba architecture & urbanisme Nantes Métropole Aménagement Hervé POTIN\n\n#propriétaires #neuf #appartement #résidence #immo #immobilier #accesion #achat #logements #nantes #doulon",
+     "entete": "",
+     "auteur": "Groupe Cif",
+     "reprise": null,
+     "date": "17 h",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQFiiNBwgQyyNQ/videocover-high/B4EaHQXmFyHoBM-/0/1794497213037?e=1795165200&v=beta&t=w2NpWvR-YlfT_Vlw1a74koFJcUU95DT6Kb6xqt1TXb0",
+       "w": 720,
+       "h": 1280
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQFiiNBwgQyyNQ/mp4-720p-30fp-crf28/B4EaHQXmFyHoB8-/0/1794497220612?e=1795165200&v=beta&t=YjqiXI16GVCBYvWCc19fay1KtAe6vFbcD5EEYX9dVLM",
+      "w": 720,
+      "h": 1280,
+      "duree_ms": 59266
+     }
+    },
+    {
+     "urn": "urn:li:activity:7520487261663133696",
+     "ts": 1793023887077,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7520487261663133696",
+     "texte": "📣 Le vendredi 16 octobre 2026 a marqué officiellement le début des travaux de la Résidence Joseph Desmars engagés par le Groupe CIF pour la construction de 24 logements locatifs sociaux répartis sur 2 bâtiments. \n\nIl s'agit de poursuivre une dynamique commencée dès 2013 avec la construction de la première résidence Joseph Desmars 1, comprenant 29 logements. \n\nCette pose de première pierre s’est déroulée en présence des élus, partenaires institutionnels, professionnels, riverains du quartier, venus partager ensemble ce moment symbolique. \n\nLa cérémonie a été rythmée par les interventions de : \n\nMonsieur Jean-Marie JOYEUX, Président du Groupe CIF \nMonsieur Christophe DESWARTE, Maire de Savenay \nMadame Lengyel Haraty Irani Architectes - architecte du projet \nMadame Agnès Doucet, fille de Monsieur DOUCET, fondateur de l’entreprise DOUCET Peinture et propriétaire initial du terrain \n\nJoseph Desmars est une opération réalisée avec le soutien financier de la Ville de Savenay et la Communauté de Communes Estuaire et Sillon (Communauté de Communes Estuaire et Sillon). \n\nGrâce à notre partenariat avec l'Association les eaux vives Emmaüs (Association Les Eaux Vives EMMAÜS) à Savenay, nous mettons un logement à disposition pour faciliter l’hébergement et l’insertion des personnes en situation de précarité ou de handicap psychique. \n\nNous souhaitons remercier chaleureusement pour leurs contributions financières, le Département de Loire-Atlantique, la Banque des Territoires de la Caisse des Dépôts, Action logement (Action Logement), la Ville de Savenay et la Communauté de Communes Estuaire et Sillon. \n\n👏 Merci également à l’ensemble de nos partenaires : Habitat Réuni, Les Coop'​ Hlm - Fédération nationale des sociétés coopératives d'Hlm , Action Logement, Banque des territoires, le Département de Loire-Atlantique, SDIS44 - Sapeurs-pompiers de Loire-Atlantique et entreprises en charge des travaux : MISSIONEO, FESTINI (Fabien FESTINI), PROSECO, AGASSE, LAT, TERRASSE A VIVRE, DRA, ATLANTIQUE OUVERTURES, METATECH, CMBS, ISO-TECH, MAURICE BONET, OXXOM, OPE, SRTAD, CLEAN CONCEPT \n\n🚀 Le chantier est désormais lancé !",
+     "entete": "",
+     "auteur": "Groupe Cif",
+     "reprise": null,
+     "date": "3 sem.",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFJm4YiZbdt0Q/feedshare-image-high-res/B4EaF4jTygJEAY-/0/1793023884776?e=1796256000&v=beta&t=l79-VgezsIDEXhDj0gNCAwCZkK3DP_nVeTTayFM0HKg",
+       "w": 1080,
+       "h": 1080
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHHwgzOo8xuvQ/feedshare-shrink_1280/B4EaF4jTpXIEAQ-/0/1793023884135?e=1796256000&v=beta&t=4vO7-YuSRFQnvvZ6VPwD2z1-k9kSsr090RvmtTK16kk",
+       "w": 1080,
+       "h": 1080
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQG0HEZJsPCf3w/feedshare-shrink_1280/B4EaF4jTe6IIAM-/0/1793023883493?e=1796256000&v=beta&t=L_lhNM66CxMa7ju1v1gHj3tIBvyYUcdVEItLV8ArZXc",
+       "w": 1080,
+       "h": 1080
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEsPmBaEX5Olw/feedshare-image-high-res/B4EaF4jTxlJEAU-/0/1793023884726?e=1796256000&v=beta&t=605jj5pjN_rtcHulSlnmqB5aLJp8L2sBYJMOReymslU",
+       "w": 1080,
+       "h": 1080
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEJcve9hr4kEg/feedshare-shrink_1280/B4EaF4jTgaJoAQ-/0/1793023883718?e=1796256000&v=beta&t=-e-96Ujt5Ld7PzjS7Gvzhf2S151GLc2A_fpmU9EVonk",
+       "w": 1080,
+       "h": 1080
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQG1oLE_Qw9Kuw/feedshare-shrink_1280/B4EaF4jThwG0AM-/0/1793023883696?e=1796256000&v=beta&t=iiVtqDItFuwcugc9SkqlDXSy9z9ycZjdGxPvqQPeYRY",
+       "w": 1080,
+       "h": 1080
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "nom": "CIFP promotion immobilière",
+   "url": "https://www.linkedin.com/company/cifp-promotion-immobiliere/",
+   "statut": "suivie",
+   "company_id": "35684365",
+   "nom_linkedin": "CIFP promotion immobiliere",
+   "n_trouves": 9,
+   "dernier_ts": 1794477648472,
+   "dernier_post": "23 h",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526584778897145858",
+     "ts": 1794477648472,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526584778897145858",
+     "texte": "Le 17 novembre, CIFP ouvre un nouveau chapitre de son histoire.\nMême équipe, même engagement, même ancrage provençal. \nUn nouveau nom pour le dire.\nRendez-vous mardi.\n#CIFP #NouveauChapitre #Provence",
+     "entete": "",
+     "auteur": "CIFP promotion immobiliere",
+     "reprise": null,
+     "date": "23 h",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQF9f1GF3OSvDA/feedshare-image-high-res/B4EaE_2ysJHwAU-/0/1792072690710?e=1796256000&v=beta&t=fv_MMt0dJDxN6K-zY5hbpDRsfFy1t0KxZG501EaHphc",
+       "w": 1200,
+       "h": 1200
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525859804217589761",
+     "ts": 1794304801039,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525859804217589761",
+     "texte": "Novus : en latin, le nouveau, le renouveau, l’élan.\nAprès civis, le citoyen, voici le second indice. Le citoyen et le nouveau : c’est tout l’esprit de ce qui se prépare.\nPlus qu’une lettre. Réponse le 17 novembre.\n#CIFP #NouveauChapitre #Provence",
+     "entete": "",
+     "auteur": "CIFP promotion immobiliere",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGVvur-NjmoAA/feedshare-shrink_1280/B4EaE_2Z50IwAM-/0/1792072589158?e=1796256000&v=beta&t=8CPnbe0VO2cpxZ79drLyKAg4Re3xaJJXhKx9lZlokTQ",
+       "w": 1200,
+       "h": 1200
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "nom": "CIFV",
+   "url": "https://www.linkedin.com/company/compagnie-immobilière-cifv/",
+   "statut": "suivie",
+   "company_id": "76532676",
+   "nom_linkedin": "Compagnie Immobilière CIFV",
+   "n_trouves": 9,
+   "dernier_ts": 1791796231672,
+   "dernier_post": "1 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 9,
+   "nom": "Forézienne de Promotion",
+   "url": "https://www.linkedin.com/company/forezienne-de-promotion/",
+   "statut": "suivie",
+   "company_id": "25661473",
+   "nom_linkedin": "FOREZIENNE DE PROMOTION",
+   "n_trouves": 9,
+   "dernier_ts": 1791876498434,
+   "dernier_post": "1 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 10,
+   "nom": "JBM Maisons Individuelles",
+   "url": "https://www.linkedin.com/company/maisons-jbm/",
+   "statut": "suivie",
+   "company_id": "28993607",
+   "nom_linkedin": "MAISONS JBM",
+   "n_trouves": 9,
+   "dernier_ts": 1791278626107,
+   "dernier_post": "1 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 12,
+   "nom": "IDF Forez Velay",
+   "url": "https://www.linkedin.com/company/immo-de-france-cifv/",
+   "statut": "suivie",
+   "company_id": "76566414",
+   "nom_linkedin": "IMMO de France - CIFV",
+   "n_trouves": 9,
+   "dernier_ts": 1790326835756,
+   "dernier_post": "2 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 13,
+   "nom": "Bâtir et Loger",
+   "url": "https://www.linkedin.com/company/batir-et-loger/",
+   "statut": "suivie",
+   "company_id": "26908271",
+   "nom_linkedin": "BATIR ET LOGER",
+   "n_trouves": 9,
+   "dernier_ts": 1794304626167,
+   "dernier_post": "3 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525859070751309824",
+     "ts": 1794304626167,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525859070751309824",
+     "texte": "[ INFORMATION 📍 ]\n\n📢 Nos bureaux seront exceptionnellement fermés à la clientèle, ce mercredi 11 novembre (Jour férié - Armistice).\n\n#BâtirEtLoger #Logement #Logementsocial #ProcivisLogementSocial",
+     "entete": "",
+     "auteur": "BATIR ET LOGER",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E10AQEOJXK8xckuQg/image-shrink_1280/B4EaHE47dhHwAY-/0/1794304620628?e=1795165200&v=beta&t=Z79rzDEN-Trgj03yjeFz645ybz82JFPmAFLsSNPi-bo",
+       "w": 1080,
+       "h": 1080
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7504198684172120065",
+     "ts": 1789140387576,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7504198684172120065",
+     "texte": "[𝗔 𝗟𝗔 𝗨𝗡𝗘]\n🏗️ 𝐀̀ 𝐌𝐨𝐧𝐢𝐬𝐭𝐫𝐨𝐥-𝐬𝐮𝐫-𝐋𝐨𝐢𝐫𝐞, 𝐥'𝐡𝐚𝐛𝐢𝐭𝐚𝐭 𝐬𝐞 𝐜𝐨𝐧𝐬𝐭𝐫𝐮𝐢𝐭 𝐚𝐯𝐞𝐜 𝐥𝐞 𝐭𝐞𝐫𝐫𝐢𝐭𝐨𝐢𝐫𝐞.\nCe vendredi, BATIR ET LOGER a eu le plaisir d'accueillir sur son chantier Vincent Jeanbrun, ministre de la Ville et du Logement, venu découvrir le projet porté à Monistrol-sur-Loire, en présence de Laurent Wauquiez, député de Haute-Loire, d’𝐎𝐥𝐢𝐯𝐢𝐞𝐫 𝐂𝐢𝐠𝐨𝐥𝐨𝐭𝐭𝐢, sénateur, de Yvan Cordier, préfet de Haute-Loire et de 𝐂𝐡𝐫𝐢𝐬𝐭𝐢𝐧𝐞 𝐏𝐞𝐭𝐢𝐨𝐭, maire de Monistrol-sur-Loire.\nAprès plus de cinq ans d'études, de concertation et d'adaptation, le projet est dans sa phase de réalisation et illustre pleinement la vocation de Bâtir et Loger de construire aux côtés des collectivités et des partenaires : \n🔑 22 logements sociaux \n🔑 1 logement d'internat \n🔑 des locaux dédiés à l'accompagnement médico-social\n\n💬 𝑽𝒊𝒏𝒄𝒆𝒏𝒕 𝑱𝒆𝒂𝒏𝒃𝒓𝒖𝒏, 𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒆 𝒅𝒆 𝒍𝒂 V𝒊𝒍𝒍𝒆 𝒆𝒕 𝒅𝒖 𝑳𝒐𝒈𝒆𝒎𝒆𝒏𝒕:  « 𝐶𝑒 𝑝𝑟𝑜𝑗𝑒𝑡 𝑖𝑙𝑙𝑢𝑠𝑡𝑟𝑒 𝑐𝑒 𝑞𝑢𝑒 𝑑𝑜𝑖𝑡 𝑒̂𝑡𝑟𝑒 𝑢𝑛𝑒 𝑝𝑜𝑙𝑖𝑡𝑖𝑞𝑢𝑒 𝑑𝑢 𝑙𝑜𝑔𝑒𝑚𝑒𝑛𝑡 𝑎𝑢 𝑝𝑙𝑢𝑠 𝑝𝑟𝑒̀𝑠 𝑑𝑒𝑠 𝑡𝑒𝑟𝑟𝑖𝑡𝑜𝑖𝑟𝑒𝑠 𝑎𝑣𝑒𝑐 𝑑𝑢 𝑙𝑜𝑔𝑒𝑚𝑒𝑛𝑡 𝑠𝑜𝑐𝑖𝑎𝑙, 𝑑𝑢 𝑙𝑜𝑔𝑒𝑚𝑒𝑛𝑡 𝑝𝑜𝑢𝑟 𝑙𝑒𝑠 𝑠𝑒𝑛𝑖𝑜𝑟𝑠, 𝑚𝑎𝑖𝑠 𝑎𝑢𝑠𝑠𝑖 𝑢𝑛𝑒 𝑣𝑒́𝑟𝑖𝑡𝑎𝑏𝑙𝑒 𝑚𝑖𝑥𝑖𝑡𝑒́ 𝑓𝑜𝑛𝑐𝑡𝑖𝑜𝑛𝑛𝑒𝑙𝑙𝑒, 𝑎𝑢 𝑠𝑒𝑟𝑣𝑖𝑐𝑒 𝑑𝑒 𝑙'𝑎𝑡𝑡𝑟𝑎𝑐𝑡𝑖𝑣𝑖𝑡𝑒́ 𝑑𝑒 𝑙𝑎 𝑐𝑜𝑚𝑚𝑢𝑛𝑒. 𝐿𝑒𝑠 ℎ𝑎𝑏𝑖𝑡𝑎𝑛𝑡𝑠 𝑣𝑒𝑢𝑙𝑒𝑛𝑡 𝑝𝑜𝑢𝑣𝑜𝑖𝑟 𝑠𝑒 𝑙𝑜𝑔𝑒𝑟 𝑑𝑖𝑔𝑛𝑒𝑚𝑒𝑛𝑡 𝑒𝑡 𝑐𝑜𝑛𝑓𝑜𝑟𝑡𝑎𝑏𝑙𝑒𝑚𝑒𝑛𝑡 𝑑𝑎𝑛𝑠 𝑙𝑒𝑠 𝑡𝑒𝑟𝑟𝑖𝑡𝑜𝑖𝑟𝑒𝑠 𝑞𝑢'𝑖𝑙𝑠 𝑎𝑖𝑚𝑒𝑛𝑡. 𝐴̀ 𝑛𝑜𝑢𝑠, 𝑑𝑒́𝑐𝑖𝑑𝑒𝑢𝑟𝑠 𝑝𝑢𝑏𝑙𝑖𝑐𝑠, 𝑑’𝑎𝑛𝑡𝑖𝑐𝑖𝑝𝑒𝑟 𝑐𝑒 𝑚𝑜𝑢𝑣𝑒𝑚𝑒𝑛𝑡 𝑒𝑡 𝑑𝑒 𝑙’𝑎𝑐𝑐𝑜𝑚𝑝𝑎𝑔𝑛𝑒𝑟 𝑒𝑛 𝑠𝑜𝑢𝑡𝑒𝑛𝑎𝑛𝑡 𝑙𝑒𝑠 𝑝𝑟𝑜𝑗𝑒𝑡𝑠 𝑙𝑜𝑐𝑎𝑢𝑥 𝑞𝑢𝑖 𝑐𝑜𝑛𝑡𝑟𝑖𝑏𝑢𝑒𝑛𝑡 𝑎̀ 𝑙𝑒𝑢𝑟 𝑑𝑦𝑛𝑎𝑚𝑖𝑠𝑚𝑒 𝑒𝑡 𝑎̀ 𝑙𝑒𝑢𝑟 𝑟𝑒𝑣𝑖𝑡𝑎𝑙𝑖𝑠𝑎𝑡𝑖𝑜𝑛.»\n\n💬 𝑳𝒂𝒖𝒓𝒆𝒏𝒕 𝑾𝒂𝒖𝒒𝒖𝒊𝒆𝒛, 𝒅𝒆́𝒑𝒖𝒕𝒆́ 𝒅𝒆 𝒍𝒂 𝑯𝒂𝒖𝒕𝒆-𝑳𝒐𝒊𝒓𝒆 : « 𝐴̀ 𝑀𝑜𝑛𝑖𝑠𝑡𝑟𝑜𝑙-𝑠𝑢𝑟-𝐿𝑜𝑖𝑟𝑒, 𝑎𝑣𝑒𝑐 𝑐𝑒𝑡𝑡𝑒 𝑏𝑒𝑙𝑙𝑒 𝑜𝑝𝑒́𝑟𝑎𝑡𝑖𝑜𝑛, 𝑛𝑜𝑢𝑠 𝑎𝑙𝑙𝑜𝑛𝑠 𝑙𝑜𝑔𝑒𝑟 𝑑𝑒𝑠 𝑔𝑒𝑛𝑠 𝑎𝑣𝑒𝑐 𝑢𝑛𝑒 𝑑𝑖𝑚𝑒𝑛𝑠𝑖𝑜𝑛 𝑎𝑠𝑠𝑜𝑐𝑖𝑎𝑡𝑖𝑣𝑒. 𝐶𝑒 𝑝𝑟𝑜𝑗𝑒𝑡 𝑟𝑒́ℎ𝑎𝑏𝑖𝑙𝑖𝑡𝑒 𝑎𝑢𝑠𝑠𝑖 𝑙𝑒 𝑐𝑒𝑛𝑡𝑟𝑒-𝑏𝑜𝑢𝑟𝑔 𝑑𝑒 𝑙𝑎 𝑐𝑜𝑚𝑚𝑢𝑛𝑒. 𝐶'𝑒𝑠𝑡 𝑢𝑛 𝑠𝑖𝑔𝑛𝑎𝑙 𝑓𝑜𝑟𝑡 𝑞𝑢𝑖 𝑚𝑜𝑛𝑡𝑟𝑒 𝑞𝑢'𝑎𝑣𝑒𝑐 𝑙𝑎 𝑚𝑜𝑏𝑖𝑙𝑖𝑠𝑎𝑡𝑖𝑜𝑛 𝑑𝑒𝑠 𝑎𝑐𝑡𝑒𝑢𝑟𝑠 𝑙𝑜𝑐𝑎𝑢𝑥, 𝑑𝑒𝑠 𝑜𝑝𝑒́𝑟𝑎𝑡𝑖𝑜𝑛𝑠 𝑑𝑒 𝑞𝑢𝑎𝑙𝑖𝑡𝑒́ 𝑒𝑡 𝑝𝑜𝑟𝑡𝑒𝑢𝑠𝑒𝑠 𝑑𝑒 𝑚𝑖𝑥𝑖𝑡𝑒́ 𝑝𝑒𝑢𝑣𝑒𝑛𝑡 𝑣𝑜𝑖𝑟 𝑙𝑒 𝑗𝑜𝑢𝑟. »\n👉 Merci aux collectivités, associations et partenaires mobilisés aux côtés de Bâtir et Loger pour faire avancer ensemble des projets utiles et durables pour les habitants.\n#BâtirEtLoger #CIFV #Procivis #LogementSocial #Habitat #MonistrolSurLoire #HauteLoire #Collectivités #Inclusion\nNoël Petrone Adeline BADOIL Jean DUPLAY Alexandre CONTI Adama TRAORE Jean-Luc DEMEURE Julien Corriaux Olivier MARCOUX Didier Claudinon Procivis",
+     "entete": "",
+     "auteur": "BATIR ET LOGER",
+     "reprise": null,
+     "date": "2 mois",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEbMm4G4enrxQ/feedshare-image-high-res/B4EaCRE73cHQAU-/0/1789140385533?e=1796256000&v=beta&t=X-9xuCIlXVR63UAPGzcjw_CL42-S1JVHvnT806YWA7c",
+       "w": 1772,
+       "h": 1181
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFu4U-oncIt9w/feedshare-image-high-res/B4EaCRE721IEAg-/0/1789140385580?e=1796256000&v=beta&t=bWTIDSzAssn8EJQT61oWlzqDVeKG0bt9gNoFz5Xtv5Y",
+       "w": 1772,
+       "h": 1181
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQH4XelGo9uSTg/feedshare-image-high-res/B4EaCRE72RJQAU-/0/1789140385573?e=1796256000&v=beta&t=9_p08el3JRIBdsmoW0TL9H7uCglXi0pH6dX8cwd_YW0",
+       "w": 1772,
+       "h": 1181
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQF9Npr8cFcxVQ/feedshare-image-high-res/B4EaCRE73eH8AU-/0/1789140385560?e=1796256000&v=beta&t=vVdnJxoAkiB0elG3eijFCZDYMbGHiHq23dMEhaTjZ04",
+       "w": 1772,
+       "h": 1181
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "nom": "Procivis Nouvelle Aquitaine",
+   "url": "https://www.linkedin.com/company/procivis-nouvelle-aquitaine/",
+   "statut": "suivie",
+   "company_id": "18912234",
+   "nom_linkedin": "Procivis Nouvelle Aquitaine",
+   "n_trouves": 9,
+   "dernier_ts": 1794303701900,
+   "dernier_post": "3 j",
+   "actif": "OUI",
+   "n_7j": 3,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525855194094534657",
+     "ts": 1794303701900,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525855194094534657",
+     "texte": "La responsabilité sociale d’une entreprise se construit aussi bien avec ses collaborateurs qu’auprès des territoires dans lesquels elle agit.\n\nC’est cette double dimension de notre engagement que PROCIVIS Nouvelle-Aquitaine a souhaité mettre en lumière à l’occasion de la deuxième édition des Trophées Résolution, organisés par Placéco.\n\nParmi les 38 organisations participantes, notre Groupe a été retenu parmi les finalistes dans les deux catégories auxquelles il avait candidaté, avec deux initiatives complémentaires.\n\n→ Qualité de vie au travail : Teamstarter\n\nUne démarche participative qui permet aux collaborateurs de proposer des projets, de contribuer à leur réalisation et de s’impliquer directement dans la vie du Groupe.\n\n→ Mission sociale : la Fondation d'Entreprise Procivis en Nouvelle Aquitaine \n\nCréée pour soutenir les associations de terrain, elle accompagne notamment les personnes victimes de violences familiales et les jeunes en difficulté, en portant une attention particulière à leurs besoins en matière de logement.\n\nDeux initiatives qui répondent à une même ambition : donner aux collaborateurs les moyens d’agir et renforcer notre utilité sociale auprès des habitants de nos territoires.\n\nCette démarche s’inscrit pleinement dans notre modèle coopératif et dans les engagements que nous portons désormais en tant que société à mission.\n\nMerci à Placéco pour cette deuxième édition des Trophées Résolution, qui contribue à faire connaître les initiatives RSE déployées en Nouvelle-Aquitaine.\n\nEt merci aux équipes qui font vivre ces projets au quotidien.\n\n#TrophéesRésolution #RSE #ProcivisNouvelleAquitaine #SociétéÀMission",
+     "entete": "",
+     "auteur": "Procivis Nouvelle Aquitaine",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGhe3mbSSniwQ/feedshare-shrink_1280/B4EaHE1a3mKgAI-/0/1794303700779?e=1796256000&v=beta&t=AARdjbww9zEAUJ5jja7MCCeJEnu4FGzg6gIkFlVM_bo",
+       "w": 1200,
+       "h": 1600
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525533259737317378",
+     "ts": 1794226946768,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525533259737317378",
+     "texte": "189 000 demandes de logement social en attente en Nouvelle-Aquitaine. Un chiffre qui rappelle l’ampleur des défis auxquels les acteurs de l’habitat doivent répondre collectivement.\n\nLe 16 octobre dernier, l’Union régionale Hlm en Nouvelle-Aquitaine a renouvelé sa gouvernance et réélu Muriel Boulmier à sa présidence pour un nouveau mandat de trois ans.\n\nMuriel Boulmier poursuivra son engagement autour de plusieurs priorités : \n-simplifier les procédures, \n-adapter les logements aux évolutions démographiques et climatiques,\n-mobiliser les financements nécessaires à la construction et à la réhabilitation.\n\nCette nouvelle gouvernance confirme également la place du réseau Procivis dans les instances régionales du logement social.\n\nJean Pierre MOUCHARD, Directeur général délégué de PROCIVIS Nouvelle-Aquitaine, siège au Conseil d’administration en qualité de Vice-Président au titre de la famille des SACICAP, aux côtés notamment d’Isabelle BELLOCQ, Présidente-Directrice générale de Procivis Aquitaine Sud, et d’Antoine DAGONAT, Directeur général de PROCIVIS POITOU-CHARENTES.\n\n« Face aux besoins croissants de logement, nous devons dépasser les frontières entre logement social et logement privé. Les SACICAP ont toute leur place dans cette mobilisation collective, en apportant des solutions complémentaires, adaptées aux réalités de nos territoires », souligne Jean-Pierre Mouchard.\n\nCette vision rejoint pleinement les engagements de notre Groupe : favoriser la complémentarité des acteurs de l’habitat et contribuer à des réponses adaptées aux besoins des habitants et des collectivités.\n\nPROCIVIS Nouvelle-Aquitaine adresse ses félicitations à Muriel Boulmier et à l’ensemble des membres du Conseil d’administration pour ce nouveau mandat au service du logement dans notre région.\n\n#LogementSocial #NouvelleAquitaine #Habitat #PROCIVIS",
+     "entete": "",
+     "auteur": "Procivis Nouvelle Aquitaine",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGlnO2HV4-Gmw/feedshare-image-high-res/B4EaHAQnx3IEAU-/0/1794226945512?e=1796256000&v=beta&t=gQYi9CsTaHwrLCHbn7xp3GSawn9MF6ykwPPkN1t15Ik",
+       "w": 704,
+       "h": 866
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "nom": "OFS PNA",
+   "url": "https://www.linkedin.com/company/ofs-procivis-en-nouvelle-aquitaine/",
+   "statut": "suivie",
+   "company_id": "85398757",
+   "nom_linkedin": "OFS Procivis en Nouvelle Aquitaine",
+   "n_trouves": 9,
+   "dernier_ts": 1794314839852,
+   "dernier_post": "3 j",
+   "actif": "OUI",
+   "n_7j": 3,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525901910051061760",
+     "ts": 1794314839852,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525901910051061760",
+     "texte": "« J'avais vraiment envie d'acheter à Martillac, mais les prix étaient trop élevés pour moi. »\n\nÀ l'occasion de la pose de la première pierre de notre programme L'Airial Saint Eugène à Martillac, nous avons eu le plaisir d'écouter le témoignage touchant de Madame Griffin, future propriétaire d'une maison en Bail Réel Solidaire (BRS).\n\nAttachée à Martillac depuis son enfance, elle souhaitait depuis longtemps y devenir propriétaire. Un projet qui lui semblait difficilement accessible au regard des prix de l'immobilier. Grâce au BRS, ce projet devient aujourd'hui une réalité.\n\nDécouvrez son échange avec Monsieur le Maire de Martillac, qui revient sur l'intérêt du BRS pour la commune et sur l'importance de proposer des solutions d'accession à la propriété adaptées aux habitants.\n\nCe moment illustre parfaitement ce qui nous anime au quotidien : rendre la propriété plus accessible, accompagner chaque parcours et permettre à chacun de trouver sa place sur le territoire de son choix.\n\nUn grand merci à Madame Griffin pour son témoignage et sa confiance, ainsi qu'à la commune de Martillac pour son engagement à nos côtés.\n\n👉 Vous souhaitez en savoir plus sur L'Airial Saint Eugène, notre programme de 12 maisons T3 et T4 en BRS à Martillac ?\n\n📞 05 56 01 64 96\n📩 commercial@abri-familial.fr\nAccession en BRS sous conditions d'éligibilité et de financement.",
+     "entete": "OFS Procivis en Nouvelle Aquitaine reposted this",
+     "auteur": "L'Abri Familial - Acteur de PROCIVIS Nouvelle Aquitaine",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQHL_P0Mn_UlzQ/videocover-high/B4EaGwiBJ8KgBM-/0/1793963083668?e=1795165200&v=beta&t=RGNu42C5qwEq5AMET688zgEoPsPM4s9hRaLp5-u_gss",
+       "w": 720,
+       "h": 1280
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQHL_P0Mn_UlzQ/mp4-720p-30fp-crf28/B4EaGwiBJ8KgB8-/0/1793963104718?e=1795165200&v=beta&t=rBIJvIOpbvb9P9j4G3cDZAKK70d-8fZfSnBgITOgjoQ",
+      "w": 720,
+      "h": 1280,
+      "duree_ms": 285500
+     }
+    },
+    {
+     "urn": "urn:li:activity:7525542847215763456",
+     "ts": 1794229232601,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525542847215763456",
+     "texte": "Un moment de partage avec l’équipe de la Crédit Agricole d'Aquitaine : Jean-Luc Dubos, Frederic DELAMARRE, Laure Belliche, Cécile Périssé, et Jérémy DINOIA de chez Square Habitat Crédit Agricole lors du congrès HLM 2026 qui s’est tenu à Bordeaux cette année. \n\nL’occasion pour le groupe Procivis Nouvelle Aquitaine de mettre en valeur le partenariat noué dès les premières opérations de BRS lancées il y a 4 ans par son pôle habitat social L'Abri Familial - Acteur de PROCIVIS Nouvelle Aquitaine et OFS Procivis en Nouvelle Aquitaine avec les financements de la CRAQ. \n\nNous avons appris ensemble en mode pionnier et sommes fiers et heureux de livrer les logements à nos clients. \nLes Coop'​ Hlm - Fédération nationale des sociétés coopératives d'Hlm\nHélène Dürlewanger Stéphane Canonne Jean-François Moser",
+     "entete": "OFS Procivis en Nouvelle Aquitaine reposted this",
+     "auteur": "L'Abri Familial - Acteur de PROCIVIS Nouvelle Aquitaine",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFkGcT-ZaMudQ/feedshare-image-high-res/B4EaF4Au59JgAU-/0/1793014820786?e=1796256000&v=beta&t=u6IDdo4j86lZygrSw9lNUVif0ZoeBuaBmp7gh2XB3Ik",
+       "w": 1600,
+       "h": 1200
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "nom": "L'abri familial",
+   "url": "https://www.linkedin.com/company/l-abri-familial/",
+   "statut": "suivie",
+   "company_id": "19114253",
+   "nom_linkedin": "L'Abri Familial - Acteur de PROCIVIS Nouvelle Aquitaine",
+   "n_trouves": 9,
+   "dernier_ts": 1794314910871,
+   "dernier_post": "3 j",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525902207926312961",
+     "ts": 1794314910871,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525902207926312961",
+     "texte": "La Direction des ressources humaines du CHU de Bordeaux vous donne rendez-vous pour la 2ème édition du Forum de l'Habitat 2026 \n🗓️ Mardi 17 novembre 2026 ⏰ De 9h00 à 15h00 📍 Hall de l'IMS – Hôpital Xavier Arnozan\nOrganisé en partenariat avec le Crédit Social des Fonctionnaires , cet événement est pensé pour vous offrir un espace d'échange privilégié avec tous les acteurs clés du logement en Gironde.\n🤝 Venez rencontrer nos partenaires présents sur place :\nBailleurs sociaux et acteurs de l'accession : CDC Habitat Domofrance Erilia 1001 Vies Habitat Vilogia Aquitanis - Office public de l'habitat de Bordeaux Métropole L'Abri Familial - Acteur de PROCIVIS Nouvelle Aquitaine iad France \nAccompagnement et institutionnels : La Chambre des Notaires de la Gironde, Caisse d’allocations familiales de la Gironde, C.G.O.S Nouvelle-Aquitaine.\nQue vous soyez personnel médical, non médical,étudiant, apprenti, titulaire, CDI, CDD au CHU, profitez de cette journée pour poser toutes vos questions sur l'achat, la location, le financement ou votre éligibilité aux logements sociaux.\n💡 Un projet, des questions ? La Mission Logement vous accompagne au quotidien : qvt-logement@chu-bordeaux.fr\n#CHUBordeaux #QualitéDeVieAuTravail #QVCT #Logement #Immobilier #RessourcesHumaines #Solidarité #Bordeaux\nThibault Strasser Adrien Moura Lénaïg Esnault Cécile Ameye CHU de Bordeaux Michaël Aunac Audrey Lemonnier Chambre des Notaires de la Gironde CAISSE D'ALLOCATIONS FAMILIALES DE LA GIRONDE CGOS @assistantes sociales du personnel Romain Plaziat,  Romain Thierry LANGIN Laetitia Losi @christophe RICHEZ Bénédicte BORUTA",
+     "entete": "L'Abri Familial - Acteur de PROCIVIS Nouvelle Aquitaine reposted this",
+     "auteur": "Garin Nathalie",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGXpLmuCAVA9A/feedshare-image-high-res/B4EaHEVf3fIoAQ-/0/1794295332782?e=1796256000&v=beta&t=dw9TGLIbraMqsirqtoKt9h2kxv4N1Axq6D7NNKuXDDA",
+       "w": 1474,
+       "h": 907
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7524426696930889728",
+     "ts": 1793963121636,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524426696930889728",
+     "texte": "« J'avais vraiment envie d'acheter à Martillac, mais les prix étaient trop élevés pour moi. »\n\nÀ l'occasion de la pose de la première pierre de notre programme L'Airial Saint Eugène à Martillac, nous avons eu le plaisir d'écouter le témoignage touchant de Madame Griffin, future propriétaire d'une maison en Bail Réel Solidaire (BRS).\n\nAttachée à Martillac depuis son enfance, elle souhaitait depuis longtemps y devenir propriétaire. Un projet qui lui semblait difficilement accessible au regard des prix de l'immobilier. Grâce au BRS, ce projet devient aujourd'hui une réalité.\n\nDécouvrez son échange avec Monsieur le Maire de Martillac, qui revient sur l'intérêt du BRS pour la commune et sur l'importance de proposer des solutions d'accession à la propriété adaptées aux habitants.\n\nCe moment illustre parfaitement ce qui nous anime au quotidien : rendre la propriété plus accessible, accompagner chaque parcours et permettre à chacun de trouver sa place sur le territoire de son choix.\n\nUn grand merci à Madame Griffin pour son témoignage et sa confiance, ainsi qu'à la commune de Martillac pour son engagement à nos côtés.\n\n👉 Vous souhaitez en savoir plus sur L'Airial Saint Eugène, notre programme de 12 maisons T3 et T4 en BRS à Martillac ?\n\n📞 05 56 01 64 96\n📩 commercial@abri-familial.fr\nAccession en BRS sous conditions d'éligibilité et de financement.",
+     "entete": "",
+     "auteur": "L'Abri Familial - Acteur de PROCIVIS Nouvelle Aquitaine",
+     "reprise": null,
+     "date": "7 j",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQHL_P0Mn_UlzQ/videocover-high/B4EaGwiBJ8KgBM-/0/1793963083668?e=1795165200&v=beta&t=RGNu42C5qwEq5AMET688zgEoPsPM4s9hRaLp5-u_gss",
+       "w": 720,
+       "h": 1280
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQHL_P0Mn_UlzQ/mp4-720p-30fp-crf28/B4EaGwiBJ8KgB8-/0/1793963104718?e=1795165200&v=beta&t=rBIJvIOpbvb9P9j4G3cDZAKK70d-8fZfSnBgITOgjoQ",
+      "w": 720,
+      "h": 1280,
+      "duree_ms": 285500
+     }
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "nom": "Construction horizontale",
+   "url": "https://www.linkedin.com/company/constructionhorizontale/",
+   "statut": "suivie",
+   "company_id": "70887581",
+   "nom_linkedin": "CONSTRUCTION HORIZONTALE - Acteur de PROCIVIS Nouvelle Aquitaine",
+   "n_trouves": 9,
+   "dernier_ts": 1793084423034,
+   "dernier_post": "2 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 18,
+   "nom": "IGC",
+   "url": "https://www.linkedin.com/company/igc-construction/",
+   "statut": "suivie",
+   "company_id": "10461974",
+   "nom_linkedin": "IGC CONSTRUCTION - Acteur de PROCIVIS Nouvelle Aquitaine",
+   "n_trouves": 9,
+   "dernier_ts": 1794318583802,
+   "dernier_post": "3 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525917613315751936",
+     "ts": 1794318583802,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525917613315751936",
+     "texte": "La satisfaction de nos clients est notre plus belle récompense. Et lorsqu'un client nous confie non pas un, mais deux projets de construction, c'est une véritable marque de confiance !\n\nAujourd'hui, nous partageons avec plaisir le témoignage d'Alain, qui a fait appel à notre agence de Beychac-et-Caillau pour concrétiser ses projets.\nUn grand merci à Alain pour sa fidélité et ses mots qui valorisent l'engagement de nos équipes à chaque étape, de la conception de la maison jusqu'au service après-vente.\n\n📍 Vous avez un projet de construction en Gironde ? Nos équipes sont à votre écoute pour vous accompagner !\n\nIGC Construction\nBâtir au cœur de votre région.\n\n📞 Téléphone : 05 57 97 97 60",
+     "entete": "",
+     "auteur": "IGC CONSTRUCTION - Acteur de PROCIVIS Nouvelle Aquitaine",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "documentComponent"
+     ],
+     "images": [],
+     "doc_pages": [
+      "https://media.licdn.com/dms/image/v2/D4E1FAQFgGPtYGpOulw/feedshare-document-cover-images_1920/B4EaHFuBoPGoBQ-/0/1794318540598?e=1795165200&v=beta&t=jJfdKbdSxL7B7PTz6KvNDWFWs5TVwDaIqnOhabeQ-Dg",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQFgGPtYGpOulw/feedshare-document-cover-images_1920/B4EaHFuBoPGoBQ-/1/1794318540598?e=1795165200&v=beta&t=hrl74H-waBXgbFhBeoHpN-WHnCDYFJgP7cZ7IIo8vdc"
+     ],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7523693396742516737",
+     "ts": 1793788289247,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7523693396742516737",
+     "texte": "Derniers jours pour profiter de notre offre exclusive IGC × IXINA !\nNotre offre commerciale en partenariat avec IXINA Sainte-Eulalie est prolongée jusqu'au 8 novembre 2026 ! 🎉\n\nC'est le moment de concrétiser votre projet de construction et de profiter d'un avantage pour aménager votre future maison.\n\nPour votre projet de maison IGC, bénéficiez au choix :\nDe votre cuisine IXINA offerte\nOU\nD'un bon d'achat de 6 500 € chez IXINA Sainte-Eulalie !\n\n⏳ Plus que quelques jours pour en profiter !\n\nNos équipes sont à votre disposition pour vous accompagner dans votre projet de construction et vous présenter les modalités de cette offre.\n\nContactez dès maintenant votre conseiller IGC pour en savoir plus !\n\nOffre valable jusqu'au 8 novembre 2026, sous réserve d'éligibilité et selon les conditions de l'opération. Voir modalités auprès de votre conseiller IGC.\n\nIGC Construction\nBâtir au cœur de votre région.\n\n📞 Téléphone : 05 57 97 97 60",
+     "entete": "",
+     "auteur": "IGC CONSTRUCTION - Acteur de PROCIVIS Nouvelle Aquitaine",
+     "reprise": null,
+     "date": "1 sem.",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHyf-ni4y19KQ/feedshare-image-high-res/B4EaGmHRs8G8BA-/0/1793788288084?e=1796256000&v=beta&t=0vNpIN_BHVxmqIkhiAxW6pW9MotDFpgih4KwsjuLuRE",
+       "w": 1080,
+       "h": 1350
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "nom": "SOVI",
+   "url": "https://www.linkedin.com/company/sudouestvillages-sovi/",
+   "statut": "suivie",
+   "company_id": "11246200",
+   "nom_linkedin": "SOVI - Acteur de PROCIVIS Nouvelle Aquitaine",
+   "n_trouves": 9,
+   "dernier_ts": 1794237324506,
+   "dernier_post": "4 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525576787125346306",
+     "ts": 1794237324506,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525576787125346306",
+     "texte": "À Tosse, dans le Sud des Landes, découvrez Le Clos 1872, une résidence intimiste de 20 appartements neufs du T2 au T4, à seulement 15 minutes des plages d'Hossegor et de Seignosse.\n\nCe programme associe la réhabilitation d'un ancien presbytère du XIXe siècle à trois bâtiments contemporains, dans un environnement résidentiel agréable.\n\nLes atouts de la résidence :\n- 20 appartements du T2 au T4, tous dotés d'un espace extérieur privatif : jardin, balcon ou loggia.\n- Un emplacement privilégié, à proximité des commerces, des écoles et des pistes cyclables.\n- Une résidence à taille humaine, aux prestations soignées et conforme à la RE2020.\n- 6 logements proposés en Bail Réel Solidaire (BRS), pour faciliter l'accession à la propriété à prix maîtrisé, sous conditions d'éligibilité.\nUn lieu de vie qui allie le charme du patrimoine landais et le confort de l'immobilier neuf.\n\n📞 05 57 54 11 54",
+     "entete": "",
+     "auteur": "SOVI - Acteur de PROCIVIS Nouvelle Aquitaine",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQE0ziDqDUakSw/videocover-high/B4EaHA4Ki8HwBM-/0/1794237313634?e=1795165200&v=beta&t=4s65grZT6EXg39t63vlO6saWkeJ1vY5CoEe4fvE-aIg",
+       "w": 720,
+       "h": 1280
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE0ziDqDUakSw/mp4-720p-30fp-crf28/B4EaHA4Ki8HwB8-/0/1794237316662?e=1795165200&v=beta&t=aO1saPXWxhxqcETXFiIMfYcdqsG5pn8k2kWGQ1wU6zY",
+      "w": 720,
+      "h": 1280,
+      "duree_ms": 29866
+     }
+    },
+    {
+     "urn": "urn:li:activity:7524098343162236928",
+     "ts": 1793884835997,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524098343162236928",
+     "texte": "Un terrain pour construire la maison qui vous ressemble, un jardin pour profiter des beaux jours et un cadre de vie privilégié aux portes de Bordeaux.\n\nDécouvrez Le Clos du Châtaignier, un lotissement de 9 terrains à bâtir, idéalement situé au cœur de Saint-Aubin-de-Médoc.\n\nLes atouts du programme :\n- Des terrains de 468 à 585 m², dans un environnement résidentiel verdoyant\n- Des parcelles viabilisées et libres de constructeur pour donner vie à votre projet\n- Une situation privilégiée, à proximité des commerces, des services et des pistes cyclables\n- La ligne G du Bus Express pour rejoindre Bordeaux\n- Des terrains à partir de 222 000 € !\nVotre terrain, votre constructeur, votre future maison !\n\nEt en ce moment, bénéficiez d'une offre commerciale exclusive : 10 000€ de remise sur les 5 premières ventes jusqu'au 15 novembre.\n\n📞 05 57 54 11 54",
+     "entete": "",
+     "auteur": "SOVI - Acteur de PROCIVIS Nouvelle Aquitaine",
+     "reprise": null,
+     "date": "1 sem.",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQG2zWCwPEEqOw/videocover-high/B4EaGr3h65GkBM-/0/1793884825892?e=1795165200&v=beta&t=i9BvRVF_crz0dk-jv5mcVbfNrcVkIlaVGhSAowObPuc",
+       "w": 720,
+       "h": 1280
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQG2zWCwPEEqOw/mp4-720p-30fp-crf28/B4EaGr3h65GkB8-/0/1793884829019?e=1795165200&v=beta&t=pGx-8OYWJvLA507ppTP3WktY7_TIFgt0gjfwVDj9BDA",
+      "w": 720,
+      "h": 1280,
+      "duree_ms": 29966
+     }
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "nom": "Maisons d'en France Sud Pyrénées",
+   "url": "https://www.linkedin.com/company/maisonsdenfrance-sudpyrenees/",
+   "statut": "suivie",
+   "company_id": "6364336",
+   "nom_linkedin": "Maisons d’en France Sud Pyrénées - Acteur de PROCIVIS Nouvelle Aquitaine",
+   "n_trouves": 9,
+   "dernier_ts": 1781524660847,
+   "dernier_post": "5 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 21,
+   "nom": "Maisons d'en France Sud Ouest",
+   "url": "https://www.linkedin.com/company/maisons-den-france-sud-ouest/",
+   "statut": "suivie",
+   "company_id": "109551866",
+   "nom_linkedin": "Maisons d'en France Sud Ouest - Acteur de Procivis Nouvelle Aquitaine",
+   "n_trouves": 9,
+   "dernier_ts": 1794299484454,
+   "dernier_post": "3 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525837504843808771",
+     "ts": 1794299484454,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525837504843808771",
+     "texte": "“Tout a été fluide, sans surprise, claire et précis.”\n\nC’est ce que Marine nous a écrit après la livraison de sa maison 3 chambres. Et c’est exactement ce que l’on s’efforce de construire à chaque projet : un accompagnement aussi solide que la maison elle-même.\n\nMerci Marine pour ces mots. Et surtout merci à Nadège et Julien pour leur implication. 💙\n\n#MaisonsdenFranceSudOuest #AvisClients #OpinionSystem",
+     "entete": "",
+     "auteur": "Maisons d'en France Sud Ouest - Acteur de Procivis Nouvelle Aquitaine",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEbpH5rJF68Yw/feedshare-shrink_1280/B4EaF5aW_uJsAM-/0/1793038315833?e=1796256000&v=beta&t=M1UBS1Y0udXhvFkFio928SzqFnho9eY0EgH5vcQdbmk",
+       "w": 1080,
+       "h": 1350
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7524040472055488513",
+     "ts": 1793871038450,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524040472055488513",
+     "texte": "Le 10ème Baromètre Groupe QUALITEL 2026 vient de paraître. 3 300 personnes interrogées par IPSOS. Les résultats sont éclairants.\n\n58 % des habitants de maisons se sentent très bien logés, contre 38 % de ceux vivant en appartement. Et parmi les logements construits depuis 2016 ? Ce chiffre monte à 62 %.\n\nMais ce qui retient l’attention, c’est ce qui fait vraiment la différence. L’étude identifie 5 critères déterminants du sentiment d’être bien logé : la consommation d’énergie, l’isolation phonique, le confort thermique en hiver, le confort thermique en été, et la qualité de l’aération et de la ventilation.\n\nCes 5 critères ne sont pas le fruit du hasard. Ce sont précisément les dimensions que la certification NF Habitat HQE évalue et garantit. Une certification qu’obtient Maisons d’en France Sud-Ouest, et qui repose sur des contrôles indépendants, pas sur des promesses.\n\n80 % des Français réclament davantage de logements neufs répondant aux exigences de confort et de bien-être. La réponse existe. Elle s’appelle construction neuve certifiée.\n\nSource : Baromètre QUALITEL 2026, étude IPSOS.\n\n#MaisonsdenFranceSudOuest #NFHabitatHQE #QualitéLogement #BaromètreQualitel #ConstructionNeuve",
+     "entete": "",
+     "auteur": "Maisons d'en France Sud Ouest - Acteur de Procivis Nouvelle Aquitaine",
+     "reprise": null,
+     "date": "1 sem.",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGQkvl6kDVCIA/feedshare-image-high-res/B4EaF5ZooDIIAU-/0/1793038125893?e=1796256000&v=beta&t=s8k2WGwqtMNCGm39pyO6Hh-AXxfdKill7RrB6-yq6PU",
+       "w": 1080,
+       "h": 1350
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "nom": "IMMO de FRANCE AQUITAINE",
+   "url": "https://www.linkedin.com/company/immo-de-france-aquitaine/",
+   "statut": "suivie",
+   "company_id": "51321769",
+   "nom_linkedin": "IMMO DE FRANCE Aquitaine - Acteur de PROCIVIS Nouvelle Aquitaine",
+   "n_trouves": 9,
+   "dernier_ts": 1790279192700,
+   "dernier_post": "2 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 23,
+   "nom": "PROCIVIS ALSACE",
+   "url": "https://www.linkedin.com/company/procivis-alsace/",
+   "statut": "suivie",
+   "company_id": "25519064",
+   "nom_linkedin": "PROCIVIS Alsace",
+   "n_trouves": 9,
+   "dernier_ts": 1792598977162,
+   "dernier_post": "3 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 25,
+   "nom": "Gambetta Promotion",
+   "url": "https://www.linkedin.com/company/groupe-gambetta/",
+   "statut": "suivie",
+   "company_id": "10948978",
+   "nom_linkedin": "Groupe Gambetta",
+   "n_trouves": 9,
+   "dernier_ts": 1793791314497,
+   "dernier_post": "1 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 26,
+   "nom": "Groupe Habiter Alpes",
+   "url": "https://www.linkedin.com/company/groupe-cis-73/",
+   "statut": "suivie",
+   "company_id": "100212080",
+   "nom_linkedin": "Groupe CIS",
+   "n_trouves": 9,
+   "dernier_ts": 1794412894125,
+   "dernier_post": "2 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526313179480592384",
+     "ts": 1794412894125,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526313179480592384",
+     "texte": "📣 Le logement mérite une ambition collective et durable.\n\nFace aux difficultés rencontrées par les ménages et aux besoins des territoires, les acteurs du logement appellent à des décisions concrètes.\nLe 28 octobre, l’Alliance pour le logement, dont PROCIVIS est membre fondateur, a adressé une lettre ouverte au Gouvernement et aux parlementaires.\n\n🔗 Lire la lettre ouverte de l’Alliance pour le logement : https://lnkd.in/e48HEPrt\n\nAu cœur de cet appel : accélérer la relance du logement, soutenir la construction et la rénovation, sécuriser les dispositifs de financement et donner aux acteurs la visibilité nécessaire pour agir. \n\nLe Groupe CIS, membre du réseau PROCIVIS, partage cette conviction : le logement doit être une priorité collective.\n\n#GroupeCIS #Procivis #AlliancePourLeLogement #PolitiqueDuLogement #Logement #AccessionÀLaPropriété #Rénovation #Savoie",
+     "entete": "",
+     "auteur": "Groupe CIS",
+     "reprise": null,
+     "date": "2 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGGOuTN4ec0EA/feedshare-image-high-res/B4EaHAiAnEJ8AU-/0/1794231503675?e=1796256000&v=beta&t=kqm8zwTefuaxMN00WykR6tnT_m3zJgmuPjXkKrU6V1A",
+       "w": 1672,
+       "h": 940
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7523776536550752257",
+     "ts": 1793808111322,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7523776536550752257",
+     "texte": "🏘️ Agir concrètement pour améliorer l’habitat\n\nMercredi dernier, la Ville de Chambéry a accueilli Monsieur Pierre Cunéo, directeur général de l’Agence nationale de l’habitat (Anah), pour son premier déplacement depuis sa prise de fonction, à l’invitation de Thierry Repentin, président de l’Anah et de Grand Chambéry.\n\nCette visite a permis de mettre en lumière les actions conduites par la Ville et l’Agglomération en faveur de l’amélioration de l’habitat, ainsi que la mobilisation de l’ensemble des partenaires engagés.\n📍 Place Saint-Léger, devant la copropriété du 98-102-110, le Groupe CIS, représenté par Sophie Tremblay, a présenté son engagement dans le cadre de ses Missions Sociales.\n\nAux côtés de Cristal Habitat et des partenaires institutionnels, le Groupe CIS au travers de PROCIVIS SAVOIE accompagne cette copropriété dégradée grâce au dispositif d’avances sur subventions de l’Anah, permettant de faciliter le financement des travaux de réhabilitation et de sécurisation.\n\n💙 Une illustration concrète de la vocation du Groupe CIS et du réseau Procivis : mobiliser leurs moyens et leur expertise pour contribuer à la rénovation de l’habitat, soutenir les ménages et agir en faveur de l’intérêt général.\n\n#GroupeCIS #ProcivisSavoie #Procivis #MissionsSociales #Anah #Rénovation #Habitat #Copropriété #Solidarité #ÉconomieSocialeEtSolidaire #Chambéry #Savoie",
+     "entete": "",
+     "auteur": "Groupe CIS",
+     "reprise": null,
+     "date": "1 sem.",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQF6rZuj8tPZAA/feedshare-shrink_1280/B4EaGhy8buGkAM-/0/1793715849607?e=1796256000&v=beta&t=9msfTF0Qg21UYlqEfzRokJmMHViTNdrvBNRVjIVDrnA",
+       "w": 1280,
+       "h": 1706
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "nom": "CIS Promotion",
+   "url": "https://www.linkedin.com/company/cis-promotion/",
+   "statut": "suivie",
+   "company_id": "26743689",
+   "nom_linkedin": "CIS PROMOTION",
+   "n_trouves": 10,
+   "dernier_ts": 1794499308023,
+   "dernier_post": "17 h",
+   "actif": "OUI",
+   "n_7j": 3,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526675625638789121",
+     "ts": 1794499308023,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526675625638789121",
+     "texte": "🌿 TERRA SIERRA : ET SI VOTRE PROJET SE CONCRÉTISAIT À GRÉSY-SUR-AIX ?\n\nLes travaux ont démarré. La résidence prend forme… et c'est le moment de vous intéresser aux dernières opportunités !\n\n🏡 Des appartements de 3 ou 4 pièces\n☀️ Des espaces extérieurs selon les logements\n📍 Un emplacement recherché aux portes d’Aix-les-Bains\nVous êtes à la recherche d'un appartement neuf pour habiter ou investir ?\nLes dernières disponibilités méritent votre attention.\n\n👉 Contactez CIS PROMOTION pour connaître les logements encore disponibles et étudier votre projet.\n\n#CISPromotion #TerraSierra #GrésySurAix #DernièresOpportunités #ImmobilierNeuf #AppartementNeuf #AixLesBains #Savoie",
+     "entete": "",
+     "auteur": "CIS PROMOTION",
+     "reprise": null,
+     "date": "17 h",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGmfuuTsGykeg/feedshare-shrink_1280/B4EaHP2JBVJQAI-/0/1794488439312?e=1796256000&v=beta&t=OfEUhv17s3RJTBjR6uyVYm7JJzdApS8G6W_pDDkEEIM",
+       "w": 998,
+       "h": 998
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525950749755981824",
+     "ts": 1794326484145,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525950749755981824",
+     "texte": "🔑 POURQUOI ATTENDRE QUAND VOTRE FUTUR LOGEMENT EST DÉJÀ LÀ ?\n\nVous avez un projet immobilier et souhaitez emménager rapidement ?\nAvec CIS PROMOTION, plusieurs résidences livrées vous permettent de découvrir concrètement votre futur appartement et d'envisager votre installation sans attendre la fin d'un chantier.\n\n🏡 ARBOR&SENS – Bassens\n✨ LEYA – La Motte-Servolex\n🌿 HANAMI – Tours-en-Savoie\n🔑 OXALIS – Le Pont-de-Beauvoisin\n⛰️ LES AGATHINES - Queige\nDes logements à découvrir, des visites à organiser et des projets à concrétiser !\n\n👉 Vous recherchez un appartement neuf disponible rapidement ? Contactez-nous pour découvrir les opportunités correspondant à vos critères.\n\n#CISPromotion #ImmobilierNeuf #LivraisonImmédiate #AppartementNeuf #Bassens #LaMotteServolex #ToursEnSavoie #PontDeBeauvoisin #Savoie",
+     "entete": "",
+     "auteur": "CIS PROMOTION",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGfwMs6wxQpzw/feedshare-image-high-res/B4EaHAj8PFHAAU-/0/1794232010650?e=1796256000&v=beta&t=AH-UKBvlXb577u-yrPezXAmiYYAvWyywTgG8OvRLrQE",
+       "w": 2048,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEGc60dDz9JCA/feedshare-image-high-res/B4EaHAj827H0AQ-/0/1794232012803?e=1796256000&v=beta&t=PmUw4HWS1m7l2eox02mCIcQ5sDRg7kBJNT57lz8KMJU",
+       "w": 2048,
+       "h": 921
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQE0KFqBX5EbcA/feedshare-shrink_1280/B4EaHAj8ruIoAM-/0/1794232012144?e=1796256000&v=beta&t=__W65s3WNe-eByAucG8d_U0-wS_FIQC9lAkbhNh1UfY",
+       "w": 1280,
+       "h": 1706
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHAKA_DzLUzqw/feedshare-image-high-res/B4EaHAj8mSHMAQ-/0/1794232011667?e=1796256000&v=beta&t=BiXLH0n0CZYLKuyW4gXRO4T-ORNbhXY1Il7fapg2vcM",
+       "w": 2048,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEso-hNlVV9Dg/feedshare-image-high-res/B4EaHAj8NwI8AU-/0/1794232010221?e=1796256000&v=beta&t=Lv5y9TIhHQlxEfBNvJls95K_ZkOs3Vwh8uKPe2SgwgM",
+       "w": 2048,
+       "h": 1536
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "nom": "CIS IMMOBILIER",
+   "url": "https://www.linkedin.com/company/cis-immobilier/",
+   "statut": "suivie",
+   "company_id": "5727119",
+   "nom_linkedin": "CIS Immobilier",
+   "n_trouves": 9,
+   "dernier_ts": 1794499237439,
+   "dernier_post": "17 h",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526675329587924993",
+     "ts": 1794499237439,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526675329587924993",
+     "texte": "🔄 Vendre pour acheter : comment faire coïncider les deux projets ?\nVous souhaitez changer de logement, mais votre achat dépend de la vente de votre bien actuel ?\n\nC’est une situation fréquente… et qui mérite d’être bien préparée !\n📊 Évaluer votre bien au juste prix\n📅 Anticiper les délais de vente et d’acquisition\n🏠 Identifier les biens correspondant à vos critères\n🤝 Coordonner les différentes étapes\n\nChez CIS Immobilier, nos conseillers vous accompagnent pour construire une stratégie cohérente et avancer avec davantage de visibilité.\n💬 Vous envisagez de vendre pour acheter ? Parlons de votre projet !\n\n#VendrePourAcheter #ProjetImmobilier #TransactionImmobilière #AchatImmobilier #VenteImmobilière #CISImmobilier #ImmobilierSavoie",
+     "entete": "",
+     "auteur": "CIS Immobilier",
+     "reprise": null,
+     "date": "17 h",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEc1NiJvVs7qw/feedshare-image-high-res/B4EaHAopBYKgAQ-/0/1794233242055?e=1796256000&v=beta&t=LG6nz02JS37Gom1sU90dylXO6ttbYdk2cb7AniHMyEo",
+       "w": 1672,
+       "h": 940
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525950497170583552",
+     "ts": 1794326423924,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525950497170583552",
+     "texte": "🔑 Votre locataire vous donne son préavis ? Et maintenant ?\n\nUn départ de locataire soulève souvent plusieurs questions :\n📅 Quand organiser les démarches ?\n🔍 Comment anticiper la relocation ?\n💰 À quel loyer remettre le logement sur le marché ?\n🛠️ Des travaux ou ajustements sont-ils nécessaires ?\n📋 Comment sécuriser l’arrivée du prochain locataire ?\n\nChaque transition est une étape importante dans la vie d’un investissement locatif.\nChez CIS Immobilier, nous accompagnons les propriétaires pour préparer la suite, valoriser leur bien et limiter les périodes inoccupées.\n💬 Vous êtes propriétaire bailleur ? Nos équipes sont à votre écoute.\n\n#GestionLocative #PropriétaireBailleur #LocationAppartement #InvestissementLocatif #ImmobilierSavoie #CISImmobilier",
+     "entete": "",
+     "auteur": "CIS Immobilier",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHc90RPj2Fwqg/feedshare-shrink_1280/B4EaHAnJCPHMAI-/0/1794232848814?e=1796256000&v=beta&t=L8TvPMSBizvD7GSaIbwDKGq6Mie8al8622Qm266_hVM",
+       "w": 849,
+       "h": 566
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "nom": "4807 Immobilier",
+   "url": "https://www.linkedin.com/company/4807-immobilier-sas/",
+   "statut": "suivie",
+   "company_id": "86281879",
+   "nom_linkedin": "4807 IMMOBILIER SAS",
+   "n_trouves": 9,
+   "dernier_ts": 1794301178595,
+   "dernier_post": "3 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525844610586251264",
+     "ts": 1794301178595,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525844610586251264",
+     "texte": "Vous êtes organisé(e), dynamique et avez le sens du service et du relationnel ?\n#Recrutement #Immobilier #Copropriété #GestionnaireCopropriété #Annecy #Annemasse #ThononLesBains #LaRocheSurForon\nhttps://lnkd.in/ewV4iJU4",
+     "entete": "",
+     "auteur": "4807 IMMOBILIER SAS",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHEGZ9vU-MB0Q/feedshare-shrink_1280/B4EaHEry9uKgAI-/0/1794301178009?e=1796256000&v=beta&t=ufHygqRe-03tkJ--jEcShQJ0blFQ9vaB8i88v_11F2g",
+       "w": 1022,
+       "h": 362
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7516444701042987008",
+     "ts": 1792060065518,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7516444701042987008",
+     "texte": "📣 Notre agence d'Annemasse recrute un Gestionnaire de copropriété !\nhttps://lnkd.in/effrcDeA",
+     "entete": "",
+     "auteur": "4807 IMMOBILIER SAS",
+     "reprise": null,
+     "date": "4 sem.",
+     "kind": [
+      "articleComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/sync/v2/D4E27AQGAqs_48RJGdA/articleshare-shrink_1280_800/B4EaE_GmUOHYAk-/0/1792060058129?e=1795165200&v=beta&t=5dBz8eyTda5Bq3KktaPXD05Jec2KrXi01HcHG8BjNz0",
+       "w": 1200,
+       "h": 630
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "nom": "Groupe CISN",
+   "url": "https://www.linkedin.com/company/groupecisn/",
+   "statut": "suivie",
+   "company_id": "16262265",
+   "nom_linkedin": "Groupe CISN",
+   "n_trouves": 10,
+   "dernier_ts": 1794387860584,
+   "dernier_post": "2 j",
+   "actif": "OUI",
+   "n_7j": 3,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526208181199471006",
+     "ts": 1794387860584,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526208181199471006",
+     "texte": "🔉 Jeunes de moins de 30 ans ? \nLouez votre appartement T1 ou T2, meublé ou non meublé à Pornic \n\nAlternants, saisonniers, jeunes actifs, vous recherchez un logement abordable idéalement situé quartier de la Ria ?  \n🔑 T1 meublé à partir de 320 €*\n🔑 T2 non meublé à partir de 460 €*\n \n🏘️ Villa Maria, 35 logements destinés aux jeunes dont 25 studios meublés \n\n🤩 Votre futur appartement vous attend !\n \n📅 Livraison fin décembre. \n \nContactez-nous dès maintenant \n📞 02 40 22 95 50\n ✉️ logementjeunes@groupecisn.fr\n🌐 https://lnkd.in/eSPHW2mq\n \n*Loyers charges comprises. Sous conditions de ressources.\n\nLise Anne LE HAY Christelle BARBEREAU Léanna NIOBEY Cathy Leroy Pauline DAVID\nadelis PORNIC AGGLO PAYS DE RETZ Ville de Pornic\nEUREQUIP Mobilier fabriqué en France\n\n#Logement #Jeunes #Pornic #LogementSocial #Location #AppartementMeublé",
+     "entete": "",
+     "auteur": "Groupe CISN",
+     "reprise": null,
+     "date": "2 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEgBvICHej_6A/feedshare-image-high-res/B4EaHFyubVHoAU-/0/1794319772124?e=1796256000&v=beta&t=3TspiHPtkEI6sZEOPu6di50Lq6zs4k4eq5uxxJKCJ3Y",
+       "w": 1536,
+       "h": 1536
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525504516151058433",
+     "ts": 1794220093763,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525504516151058433",
+     "texte": "🇪🇺 𝗕𝗿𝘂𝘅𝗲𝗹𝗹𝗲𝘀 - 𝗖𝗼𝗺𝗺𝗶𝘀𝘀𝗶𝗼𝗻 𝗘𝘂𝗿𝗼𝗽𝗲́𝗲𝗻𝗻𝗲\n🎤 Prise de parole (in English 🇬🇧 ) de Matthieu Nédonchelle\n \n« Workshop on overcoming the scale issue/the role of aggregators for cooperative housing investments »\n \nMatthieu Nédonchelle, Directeur Général du Groupe CISN, était invité à la Commission Européenne à Bruxelles pour la réunion d’experts « Surmonter la question de l’échelle des investissements dans le logement coopératif ».\n\n🤝 Des débats intéressants et souvent techniques sur la meilleure façon de mettre les outils de financement européens (Banque Européenne d’Investissement, etc..) au service du monde #coopératif pour les aider à développer du logement abordable.\n \nL’occasion de rappeler les principaux défis des coopératives d’accession sociale à la propriété ⤵️\n \n💶 𝗟𝗲𝘀 𝗰𝗼𝗼𝗽𝗲́𝗿𝗮𝘁𝗶𝘃𝗲𝘀 𝗼𝗻𝘁 𝗯𝗲𝘀𝗼𝗶𝗻 𝗱𝗲 𝗳𝗼𝗻𝗱𝘀 𝗽𝗿𝗼𝗽𝗿𝗲𝘀 𝗽𝗼𝘂𝗿 𝗰𝗼𝗻𝘀𝘁𝗿𝘂𝗶𝗿𝗲 𝗽𝗹𝘂𝘀 𝗱𝗲 𝗹𝗼𝗴𝗲𝗺𝗲𝗻𝘁𝘀\nDans notre modèle, les fonds propres ne se renforcent qu’avec les bénéfices. Or il en faut toujours plus pour livrer autant de logements, en raison de l'allongement de la durée des projets. \nLa demande 👉 un capital sur le long terme, avec la Banque Européenne d’Investissement, la Banque de Développement du Conseil de l’Europe, en coopération avec la Banque des Territoires.\n \n🔑 𝗕𝗮𝗶𝗹 𝗿𝗲́𝗲𝗹 𝘀𝗼𝗹𝗶𝗱𝗮𝗶𝗿𝗲 : 𝗹𝗲𝘀 𝗮𝗰𝗾𝘂𝗲́𝗿𝗲𝘂𝗿𝘀 𝗲𝗻 #𝗕𝗥𝗦 𝗼𝗻𝘁 𝗽𝗲𝘂 𝗱𝗲 𝗰𝗵𝗼𝗶𝘅 𝗱𝗲 𝗽𝗿𝗲̂𝘁𝗲𝘂𝗿 \nLe modèle est jeune et les prêts viennent surtout du Crédit Agricole et du Crédit Mutuel.\nLa demande 👉 une garantie européenne pour ces prêts et un traitement prudentiel clair, pour rassurer les banques qui prêtent aux particuliers.\n \n⚓ 𝗟’𝗲𝘅𝗲𝗺𝗽𝗹𝗲 𝗱𝗲 𝗦𝗮𝗶𝗻𝘁-𝗡𝗮𝘇𝗮𝗶𝗿𝗲 : 𝘂𝗻 𝗳𝗼𝗻𝗱𝘀 𝗽𝘂𝗯𝗹𝗶𝗰 𝗱𝘂 𝗹𝗼𝗴𝗲𝗺𝗲𝗻𝘁 𝗽𝗼𝘂𝗿 𝗰𝗵𝗮𝗻𝗴𝗲𝗿 𝗱’𝗲́𝗰𝗵𝗲𝗹𝗹𝗲\nLes chantiers navals vont construire le prochain porte-avions français, des milliers de salariés auront besoin d’un logement.\nLa foncière publique prévoit déjà 100 logements, pour des besoins qui sont bien supérieurs.\nLa demande 👉 un cofinancement européen aux côtés de la Banque des Territoires.\n \n🏦 𝗟𝗲𝘀 𝗿𝗲̀𝗴𝗹𝗲𝘀 𝗱𝘂 Haut Conseil de Stabilité financière (HCSF) 𝗳𝗿𝗲𝗶𝗻𝗲𝗻𝘁 𝗮𝗰𝗾𝘂𝗲́𝗿𝗲𝘂𝗿𝘀 𝗲𝘁 𝗶𝗻𝘃𝗲𝘀𝘁𝗶𝘀𝘀𝗲𝘂𝗿𝘀 : depuis 2021, les primo-accédants empruntent moins, les investisseurs sont freinés, alors que les risques de défaut sont faibles.\nLa demande 👉 des règles proportionnées, via un dialogue entre l’Europe et les États.\n\nEuropean Banking Authority (EBA)\nAlessandro Bragonzi European Investment Bank (EIB)\nRossana Zaccaria Legacoop Abitanti\nCEB - Council of Europe Development Bank\nEuropean Commission Ville de Bruxelles - Stad Brussel Ursula von der Leyen\nMenedżer Spółdzielni Mieszkaniowej\nL'Union sociale pour l'habitat Emmanuelle COSSE\nUSH des Pays de la Loire Carine Puyol \nSaint-Nazaire Ville & Agglo\n\n#CoopérativeImmobilière #AccessionSociale #BailRéelSolidaire #FinancementEuropéen",
+     "entete": "",
+     "auteur": "Groupe CISN",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFRhxQ5v1reDQ/feedshare-image-high-res/B4EaG_2eiZHEAU-/0/1794220091885?e=1796256000&v=beta&t=RiartaTb8PjrqT10wCl9wvAgpDQSt_0uD_kfaYSV3Gk",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHix7LPpSWboQ/feedshare-shrink_1280/B4EaG_2eipHwAI-/0/1794220091839?e=1796256000&v=beta&t=SpAfvedQBO0cBiHS0i0PYuWW6ZAGHEHUklqU5Xvxc1U",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQE-2BP4EwR-_g/feedshare-image-high-res/B4EaG_2ejWIEAQ-/0/1794220091988?e=1796256000&v=beta&t=6wbuhsLKUkp5gEQwt7xaMVQC2dQt-jAW7Zua7VRKrEc",
+       "w": 1600,
+       "h": 1200
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "nom": "Edifides",
+   "url": "https://www.linkedin.com/company/edifides/",
+   "statut": "suivie",
+   "company_id": "25950044",
+   "nom_linkedin": "EDIFIDES",
+   "n_trouves": 9,
+   "dernier_ts": 1794499304121,
+   "dernier_post": "17 h",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526675609272631298",
+     "ts": 1794499304121,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526675609272631298",
+     "texte": "🏗️ TRAVAUX EN COURS 🏗️\n\nLe chantier prend de la hauteur à Petit-Quevilly (76) ! \nLes plateformes sont réalisées et la grue est arrivée sur l’opération Les Clématites !\n\n🏡 Le programme en bref\nAux portes du futur quartier Flaubert, à quelques minutes du centre de Rouen, la résidence propose 17 logements neufs du 2 au 4 pièces, répartis en deux bâtiments signés Popcorn Architecte :\n✔️ Des surfaces généreuses, de 37 à 89 m²\n✔️ Des logements tous traversants\n✔️ Une loggia ou un jardin pour chaque appartement\n✔️ Une passerelle végétalisée en cœur d’îlot, signature du projet\n✔️ Une performance énergétique RE 2020 seuil 2025\n✔️ À proximité immédiate des arrêts Téor T4 et T5\n\n📍 Il reste des appartements à la vente, à partir de 154 900 € pour habiter ou investir. Livraison prévue au 4ᵉ trimestre 2027.\n\n👉 Contactez-nous pour en savoir plus ou prendre rendez-vous :\nhttps://lnkd.in/e7UwWkVM\n📞 Agence de Rouen : 02 35 70 12 83\n\n🤝 Merci à toutes les équipes mobilisées :\n\nMaîtrise d’ouvrage : EDIFIDES\nBailleur : Seine Habitat, qui acquiert les 8 logements du bâtiment 1\nArchitecte : Popcorn Architecte\nOPC / Direction des travaux : TEMPO COORDINATION\nÉconomiste, BET Thermique, Fluides et VRD : ECOSEINE\nBET Structure : KUBE STRUCTURE\nContrôle technique et CSPS : SOCOTEC\n\nEntreprises : EGCN (gros œuvre), Durand Fils (charpente, bardage bois, couverture, étanchéité), Ravalux (façade), B’Plast (menuiseries extérieures PVC), Le Coguic (métallerie), Blin (doublage, cloisons, plafonds, menuiseries intérieures), As du Revêtement (sols et faïence), AM Peinture, H2OGAZ (plomberie, chauffage, ventilation), Solsol (électricité), 2DTP (VRD), Lucky Green Normandie (espaces verts, clôtures), Fermatic (portails et portes de garage).",
+     "entete": "",
+     "auteur": "EDIFIDES",
+     "reprise": null,
+     "date": "17 h",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEhoebRaXXn9A/feedshare-image-high-res/B4EaHQfk8AI0AQ-/0/1794499301998?e=1796256000&v=beta&t=d6wCjrlYH_yNkr2zLj4DZDDwnK5S7lLs9INP7x_JoUQ",
+       "w": 1536,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFaCz94vhhQnA/feedshare-image-high-res/B4EaHQfk5mJQAY-/0/1794499301739?e=1796256000&v=beta&t=tPB5oZHYumX1mgolSoQylN21xvlS-l7BZ8uGGi7SdEs",
+       "w": 1536,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHUDsd8cK3W0Q/feedshare-image-high-res/B4EaHQfk91GsAY-/0/1794499302331?e=1796256000&v=beta&t=ZOCAGKMjzVGifV1srZc5D6kFtmKj27g5Dscwk3YmZhU",
+       "w": 1536,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFMvb8LFqXnMg/feedshare-image-high-res/B4EaHQfk9_IAAQ-/0/1794499302230?e=1796256000&v=beta&t=JSHIXbtKlBvF_VNPN_TZL_C6sL39LVwigkdvTRk_D7w",
+       "w": 1536,
+       "h": 1536
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525595630241759232",
+     "ts": 1794241817055,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525595630241759232",
+     "texte": "🏗️ TRAVAUX EN COURS 🏗️\n\nLe chantier d’Astralis est bientôt terminé à Caen, route de Trouville !\nCette résidence de 23 appartements neufs sera livrée à la fin de l’année.\n\nAu programme :\n🌿 Un balcon ou une terrasse pour chaque appartement\n🚗 Une place de stationnement privative\n🛍️ Le centre commercial des Rives de l’Orne à moins de 15 minutes à pied\n🏛️ L’hypercentre de Caen à seulement 2 km\n⚡ Une performance énergétique RE 2020\n\n⏳ DERNIÈRE OPPORTUNITÉ ⏳\nIl nous reste quelques 2 et 3 pièces, plus d'infos ici : https://lnkd.in/enMrQUiV",
+     "entete": "",
+     "auteur": "EDIFIDES",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGtJzjqtmbB2g/feedshare-image-high-res/B4EaHAxuUfKwAQ-/0/1794235623142?e=1796256000&v=beta&t=CWI5QDt4NyNhUqzTJTRp51Qi2HAY21oraTh-hOYXLmw",
+       "w": 1500,
+       "h": 1500
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQG_Hw0aFX7Ydw/feedshare-image-high-res/B4EaHAxumjH0AQ-/0/1794235624216?e=1796256000&v=beta&t=Qn-uDR81b7aEPYVCfo10PnaU2xJzl6j2RhLMnxWvyxM",
+       "w": 1500,
+       "h": 1500
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHekYOyK8mTHA/feedshare-image-high-res/B4EaHAxu79IEAQ-/0/1794235625772?e=1796256000&v=beta&t=sOkTA6OigM60LTdjsZliuTip7IXlf5djggzg5uJg5IY",
+       "w": 1536,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQE-kwaHP3eNsA/feedshare-image-high-res/B4EaHAxvp3IYAU-/0/1794235628761?e=1796256000&v=beta&t=Mub9Ml__o_TARZrsrHwXFbhbE-IXkJBUIoZqGLWsL7s",
+       "w": 1536,
+       "h": 1536
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "nom": "Evel immobilier",
+   "url": "https://www.linkedin.com/company/evel-immobilier/",
+   "statut": "suivie",
+   "company_id": "25748417",
+   "nom_linkedin": "Evel Immobilier",
+   "n_trouves": 9,
+   "dernier_ts": 1790778839589,
+   "dernier_post": "1 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 33,
+   "nom": "Groupe FDI",
+   "url": "https://www.linkedin.com/company/fdi-groupe/",
+   "statut": "suivie",
+   "company_id": "10403038",
+   "nom_linkedin": "Groupe FDI",
+   "n_trouves": 9,
+   "dernier_ts": 1794332366883,
+   "dernier_post": "3 j",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525975423747452929",
+     "ts": 1794332366883,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525975423747452929",
+     "texte": "Merci au Metropolitain Montpellier pour cette mise en lumière 👇",
+     "entete": "",
+     "auteur": "Groupe FDI",
+     "reprise": {
+      "auteur": "Metropolitain Montpellier",
+      "texte": "Le 3 novembre marque la fin et le début d'une nouvelle étape pour la compagnie de gendarmerie de Lunel \n\nAprès les gendarmeries de Sommières et de Bernis dans le Gard, Groupe FDI Habitat continue de développer ses compétences sur des projets mixtes alliant locaux professionnels et cadre de vie \n\n> Article complet : https://lnkd.in/eQKhV4ZX"
+     },
+     "date": "3 j",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQGBVQeYCa534g/videocover-high/B4EaHFumS_IYBM-/0/1794318705203?e=1795165200&v=beta&t=lkqemXTjk9tifpEEPGLEYZislbV06eME8NDywT6s-qY",
+       "w": 1280,
+       "h": 720
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQGBVQeYCa534g/mp4-720p-30fp-crf28/B4EaHFumS_IYB8-/0/1794318719882?e=1795165200&v=beta&t=7kaQz66esuewtcKo4UcdPbW0R8l_qrA9zi01AN4BYng",
+      "w": 1280,
+      "h": 720,
+      "duree_ms": 119100
+     }
+    },
+    {
+     "urn": "urn:li:activity:7525845730876633088",
+     "ts": 1794301445693,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525845730876633088",
+     "texte": "[🤝 SOUTENIR LA CULTURE, C’EST RENFORCER CE QUI NOUS RELIE]\nÀ l’occasion de Cœur de Ville en Lumières, Montpellier vibrera pendant 3 jours du 12 au 14 novembre au rythme des créations lumineuses, des animations et des parcours artistiques.\n\nFDI soutient la culture, pour accompagner ce qui rassemble, transmet et crée du lien entre les habitants d’un même territoire.🏘️\n\nÀ travers ses partenariats culturels et ses engagements sur l’arc méditerranéen, le Groupe contribue à faire vivre les initiatives qui participent au dynamisme et au rayonnement de notre territoire.\n\n🎭🏛️Festivals, patrimoine, arts vivants, fondations, initiatives solidaires : chacun de ces partenariats contribue à faire vivre le territoire, à créer du lien et à rendre la culture accessible au plus grand nombre. \n\nConstruire des logements structure nos villes. Soutenir la culture fait vivre notre territoire.✨\n\nFDI - L’immobilier en commun.\n\nMathieu Massot - Michaël Delafosse - André DELJARRY -  Boris Bellanger - Régis Penalva - Lucie BARRAU - Florence Fabre - Montpellier, Ville, Métropole et CCAS - CCI Montpellier - TaM Montpellier 3M",
+     "entete": "",
+     "auteur": "Groupe FDI",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4D10AQFM-DykPktOkQ/image-shrink_1280/B4DaHEszrhK0AY-/0/1794301443303?e=1795165200&v=beta&t=ddURvvL6OUVEOqe6JhNcgRqzYkDZEU1Eiyb8d3tsBqQ",
+       "w": 1200,
+       "h": 1200
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4D10AQFZ0YRsCNvTFw/image-shrink_1280/B4DaHEsz51H8AY-/0/1794301444141?e=1795165200&v=beta&t=9Slsi4ZNLsAdam8zQMyReCYi-cju0FD1kOWcRVGJj7E",
+       "w": 1200,
+       "h": 1200
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4D10AQECRhAoQ1vzsg/image-shrink_1280/B4DaHEs0GwK0Ac-/0/1794301444828?e=1795165200&v=beta&t=6YmGJ4uETqmhjOrEtSX7fCfk_mfSUrnMiLVef0wGd_Q",
+       "w": 1200,
+       "h": 1200
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4D10AQGPH44sJ60pKQ/image-shrink_1280/B4DaHEs0ONJMAY-/0/1794301445251?e=1795165200&v=beta&t=3n-AdoNaPHzeBQmO3OnpVJK59CGBMV0AJl9TuK4-KRI",
+       "w": 1200,
+       "h": 1200
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "nom": "Procivis Sud",
+   "url": "https://www.linkedin.com/company/procivis-provence/",
+   "statut": "suivie",
+   "company_id": "72754078",
+   "nom_linkedin": "Procivis Provence",
+   "n_trouves": 9,
+   "dernier_ts": 1794067150482,
+   "dernier_post": "6 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7524863025535840256",
+     "ts": 1794067150482,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524863025535840256",
+     "texte": "Ce samedi nos équipes se sont rendues aux portes ouvertes de @Saint-Cyr-sur-Mer. Le soleil était de la partie du matin jusqu'en fin d'après-midi, et les visiteurs aussi. Souvent venus en famille, ils ont découvert sur place l'emplacement du futur programme, chemin du Sauvet, et l'implantation du bâtiment.\n\nBeaucoup de projets de vie concrets, de familles qui veulent s'installer durablement dans la commune et pour qui le bail réel solidaire OFS Procivis Sud rend cet achat possible.\n\nMerci aux équipes de la Caisse d'Epargne CEPAC venues nous épauler toute la journée. Leur présence a permis à chacun de faire un premier point sur son financement.\n\nMerci à tous ceux qui ont fait le déplacement !\n\n#BRS #AccessionAbordable #SaintCyrSurMer #Logement Pierre LE JEUNE Mehdi Landolsi Louise Burteaux Bernard PIERI",
+     "entete": "",
+     "auteur": "Procivis Provence",
+     "reprise": null,
+     "date": "6 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQERcoO7Ybwofg/feedshare-image-high-res/B4EaG2vAUYJgAU-/0/1794067148173?e=1796256000&v=beta&t=L9r_kllLpBZPdQ3cpu1JX4fKNMpY_0jjU_bFw9DxqxI",
+       "w": 2048,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHroKnbobzZJA/feedshare-image-high-res/B4EaG2u_ILGkAQ-/0/1794067139714?e=1796256000&v=beta&t=7WxMgMeZWehO88mjjjuPZ8FOdvzbwu1KY1I1RSzWCpc",
+       "w": 2048,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHcv4Nx7XPzFg/feedshare-shrink_1280/B4EaG2u_0TJgAI-/0/1794067145200?e=1796256000&v=beta&t=jQhBZhKg4IeTeI6IckklAtnSfbu8ETB886Vl2_nwxbw",
+       "w": 1280,
+       "h": 1707
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7524132990361206785",
+     "ts": 1793893096533,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524132990361206785",
+     "texte": "👉 Nexity et Procivis Provence ont célébré l’élévation de la résidence Nouvel Orizon à Château-Gombert, à Marseille. \n✔️ Il s’agit d’une des premières opérations en Bail réel solidaire (BRS) qui sort de terre dans la ville.\n📌 Et qui a été imaginée par le cabinet d'architecte Alain Ferran.\n\nLire notre article ici : https://lnkd.in/eaSkm6FN\n\nLionel Seropian Stéphane Aranda SOLEAM Audrey Garino Audrey Gatian Pierre LE JEUNE\n\n#construction #architecture #BRS #mesinfos",
+     "entete": "Procivis Provence reposted this",
+     "auteur": "TPBM",
+     "reprise": null,
+     "date": "1 sem.",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFTmLgQnKgQTg/feedshare-shrink_1280/B4EaGNH4o6HEAM-/0/1793369017276?e=1796256000&v=beta&t=DSnzys8iVmAW0MxPfCZ2wHMmq_LTWm61cBoUTwtOXsE",
+       "w": 1200,
+       "h": 1500
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "nom": "Immo de France Hauts-de-France",
+   "url": "https://www.linkedin.com/company/immodefrancehdf/",
+   "statut": "suivie",
+   "company_id": "88897000",
+   "nom_linkedin": "Immo de France Hauts-de-France",
+   "n_trouves": 7,
+   "dernier_ts": 1792051431117,
+   "dernier_post": "4 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 37,
+   "nom": "Groupe Midi Habitat",
+   "url": "https://www.linkedin.com/company/groupe-midi-habitat/",
+   "statut": "suivie",
+   "company_id": "19056653",
+   "nom_linkedin": "Groupe MIDI HABITAT",
+   "n_trouves": 9,
+   "dernier_ts": 1793806511653,
+   "dernier_post": "1 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 38,
+   "nom": "IDF Midi Habitat ADB",
+   "url": "https://www.linkedin.com/company/midihabitat/",
+   "statut": "suivie",
+   "company_id": "69514614",
+   "nom_linkedin": "Midi Habitat Services Immobiliers - Toulouse",
+   "n_trouves": 9,
+   "dernier_ts": 1793802477380,
+   "dernier_post": "1 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 39,
+   "nom": "Pierre Passion",
+   "url": "https://www.linkedin.com/company/procivis-midi-pyr%C3%A9n%C3%A9es/",
+   "statut": "suivie",
+   "company_id": "10277910",
+   "nom_linkedin": "Pierre Passion",
+   "n_trouves": 9,
+   "dernier_ts": 1792683802994,
+   "dernier_post": "3 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 40,
+   "nom": "SACICAP TOULOUSE-PYRENEES",
+   "url": "https://www.linkedin.com/company/procivis-sud-massif-central-toulouse-pyrenees/",
+   "statut": "suivie",
+   "company_id": "25293960",
+   "nom_linkedin": "Procivis Sud Massif Central",
+   "n_trouves": 9,
+   "dernier_ts": 1794300719986,
+   "dernier_post": "3 j",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525842687040798721",
+     "ts": 1794300719986,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525842687040798721",
+     "texte": "La Fondation du patrimoine en visite à La Maison Moirée \n\nAccueillir Alexandre Giuglaris, Directeur général de la Fondation du patrimoine, à la Maison Moirée a constitué un moment particulièrement marquant dans l'histoire de notre projet.\n\nNotre objectif : réhabiliter et faire renaître un bâtiment chargé d'histoire pour en faire un espace vivant, ouvert et accessible, où se rencontrent culture, inclusion, solidarité et vie locale et bonne table. \n\nLa confiance accordée par la Fondation du patrimoine est essentielle pour concrétiser cette aventure collective au service du territoire ruthénois. \n\nSon soutien constitue un levier précieux pour faire émerger un projet singulier, démontrant que la préservation du patrimoine peut aussi être un moteur de création de lien social, d'innovation et de revitalisation du cœur de ville.\n\nNous remercions chaleureusement la Fondation du patrimoine pour son engagement à nos côtés, ainsi qu'Alexandre Giuglaris, Anne-Marie Leroy, Déléguée régionale, Patrice Lemoux, Délégué Aveyron et Juliette Larnaudie, Chargée de mission Aveyron, pour leur visite, leur écoute attentive et la richesse de nos échanges. \n\nL’aventure continue, et nous sommes fiers de l’écrire avec LIENS (restaurant inclusif), PRODIGES (médiation culturelle), Michel CURE (artiste peintre) et PROGRESS (Régie de territoire)\n\nEclisse Promotion, OFS STON, Immo de France SMC, Sud Massif Central Habitat",
+     "entete": "",
+     "auteur": "Procivis Sud Massif Central",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHR5HVn3TwgKA/feedshare-image-high-res/B4EaHEp9yIKQAY-/0/1794300698125?e=1796256000&v=beta&t=pxxh-YkV7HPBw27qi8rAmIlYEpBxPWYbzhMTKXfnbsA",
+       "w": 2040,
+       "h": 1530
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHj6Gtkw9h2qw/feedshare-image-high-res/B4EaHEqBpbIYAQ-/0/1794300718193?e=1796256000&v=beta&t=575xczXV7n_4OCMrI1Gz0_gqt3XWpuv838b6jrIXJhc",
+       "w": 1780,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHB_xTwmMHeKw/feedshare-image-high-res/B4EaHEp9fvIoAY-/0/1794300696868?e=1796256000&v=beta&t=agPpUqtv5iAFnGq7kU7zm_AYYSLRYytEN2565MKdaBI",
+       "w": 2040,
+       "h": 1530
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFzI3qX84UucQ/feedshare-image-high-res/B4EaHEp9pPHEAU-/0/1794300697566?e=1796256000&v=beta&t=D4AuYxJNz2FKm1i0UfmDiRD9hnPYDWjnXwhtWwlQehQ",
+       "w": 2048,
+       "h": 921
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525512877634600960",
+     "ts": 1794222087296,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525512877634600960",
+     "texte": "Pour postuler, c'est ici : https://lnkd.in/eaRUTCBK",
+     "entete": "Procivis Sud Massif Central reposted this",
+     "auteur": "Mathilde COUDERC",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQE28RhamsR6RA/videocover-high/B4EaG_8sj.GwBQ-/0/1794221723614?e=1795165200&v=beta&t=0aOtTky9cxj0cEAQ4LyI6htrRAPej5pU0ofBs6dFtMI",
+       "w": 1280,
+       "h": 720
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE28RhamsR6RA/mp4-720p-30fp-crf28/B4EaG_8sj.GwCA-/0/1794221726049?e=1795165200&v=beta&t=qsOcgCa-mhLhpk-TAwyzAT4B1CTPFJ4EBVx_KYgdwws",
+      "w": 1280,
+      "h": 720,
+      "duree_ms": 20000
+     }
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "nom": "Eclisse promotion",
+   "url": "https://www.linkedin.com/company/eclisse-promotion/",
+   "statut": "suivie",
+   "company_id": "10367561",
+   "nom_linkedin": "Eclisse Promotion",
+   "n_trouves": 9,
+   "dernier_ts": 1794493680265,
+   "dernier_post": "18 h",
+   "actif": "OUI",
+   "n_7j": 7,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526652021110849537",
+     "ts": 1794493680265,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526652021110849537",
+     "texte": "Résidence Passerelles à Fenouillet : les pré-livraisons ont commencé ! \n\nAujourd'hui, les futurs résidents ont pu découvrir leur logement, parcourir les différentes pièces et se projeter un peu plus concrètement dans leur futur chez-eux.\n\nRéalisée en copromotion avec NOVILIS, la résidence Passerelles se prépare désormais à accueillir ses premiers habitants, avec une livraison prévue mi-décembre 2026.\n\nVous souhaitez devenir propriétaire à Fenouillet ? Il reste encore 3 maisons disponibles en Bail Réel Solidaire (BRS) :\n• T3 de 73 m² à 206 000 €\n• T4 de 96 m² à 234 000 €\n• T5 de 108 m² à 279 000 €\nSous conditions d'éligibilité au BRS.\n\n#Fenouillet #Toulouse #ImmobilierNeuf #ImmobilierToulouse #LogementNeuf #AchatImmobilier #DevenirProprietaire #AccessionALaPropriete #ResidenceNeuve #PromotionImmobiliere #HauteGaronne #Occitanie\nProcivis Sud Massif Central Toulouse Pyrénées, IMMO DE FRANCE, Sud Massif Central Habitat, OFS STON, Hugo Tissandié, Anaïs L., Marine Chambeaud, Nicolas FRUGNAC, Lucie GOBA",
+     "entete": "",
+     "auteur": "Eclisse Promotion",
+     "reprise": null,
+     "date": "18 h",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQF8EcFEY-0k5A/feedshare-image-high-res/B4EaHQKIE4IgAQ-/0/1794493678631?e=1796256000&v=beta&t=S5gnTKIYpaCXGGRtK0tRowjjZNqGY5DZNG4RsI_lw5s",
+       "w": 2048,
+       "h": 1143
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEsgIcIV1_DTw/feedshare-image-high-res/B4EaHQKH9qKwAU-/0/1794493677889?e=1796256000&v=beta&t=eH8xe_VPpoeQfbJuRhoKgw5TE-6PrIsDlfbYzav1ffY",
+       "w": 2048,
+       "h": 1143
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHXj0DF4iKHTw/feedshare-image-high-res/B4EaHQKG90IIAQ-/0/1794493674066?e=1796256000&v=beta&t=LUtmVbeErNPXdg-bXw7uabsZI1dNNO4rTGALMuW7d6Q",
+       "w": 2048,
+       "h": 1365
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHnoVmg93h7Qw/feedshare-image-high-res/B4EaHQKHrYKwAQ-/0/1794493677108?e=1796256000&v=beta&t=Hdb0gtMcvoZbVV99qupAITytMLw6t1jjviW_ixdj_jM",
+       "w": 1706,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQH3U4jMtJBa7w/feedshare-image-high-res/B4EaHQKHRcHwAQ-/0/1794493675018?e=1796256000&v=beta&t=bgWPGZ2i4jUcptlX0CyF8oNEORQO7ry4TuUFKIGmwfM",
+       "w": 2048,
+       "h": 1536
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7526587884296933376",
+     "ts": 1794478388857,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526587884296933376",
+     "texte": "Pour y vivre ou pour y investir, l'emplacement fait toute la différence.\n\nNew Béteille, c'est une résidence neuve en cours de construction à Rodez, à proximité de tout : le cœur de ville, les commerces, les halles, le parc, la culture et le sport. Plutôt que de l'affirmer, on vous préfère vous le montrer !\n\nDu T1 au T4 à partir de 103 000 €.\nNos équipes commerciales répondent à vos questions au 05 65 67 59 00.\n\nToutes les infos sur la résidence sont en commentaire 👇\n\n#Rodez #Aveyron #ImmobilierNeuf #InvestissementLocatif #BRS\nProcivis Sud Massif Central Toulouse Pyrénées, OFS STON, Sud Massif Central Habitat, IMMO DE FRANCE",
+     "entete": "",
+     "auteur": "Eclisse Promotion",
+     "reprise": null,
+     "date": "22 h",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQEKGuw1hxigcA/mp4-720p-30fp-crf28/B4EaHPPuS3GkB4-/0/1794478381626?e=1795165200&v=beta&t=OqZ-OPZuRi8YxbnW7CclZfssdqV7U71Ub6-aiww7t3I",
+      "w": 720,
+      "h": 1280,
+      "duree_ms": 67466
+     }
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "nom": "SMC habitat",
+   "url": "https://www.linkedin.com/company/sud-massif-central-habitat/",
+   "statut": "suivie",
+   "company_id": "77921384",
+   "nom_linkedin": "Sud Massif Central Habitat",
+   "n_trouves": 8,
+   "dernier_ts": 1794222105173,
+   "dernier_post": "4 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525512952616062977",
+     "ts": 1794222105173,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525512952616062977",
+     "texte": "Pour postuler, c'est ici : https://lnkd.in/eaRUTCBK",
+     "entete": "Sud Massif Central Habitat reposted this",
+     "auteur": "Mathilde COUDERC",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQE28RhamsR6RA/videocover-high/B4EaG_8sj.GwBQ-/0/1794221723614?e=1795165200&v=beta&t=0aOtTky9cxj0cEAQ4LyI6htrRAPej5pU0ofBs6dFtMI",
+       "w": 1280,
+       "h": 720
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE28RhamsR6RA/mp4-720p-30fp-crf28/B4EaG_8sj.GwCA-/0/1794221726049?e=1795165200&v=beta&t=qsOcgCa-mhLhpk-TAwyzAT4B1CTPFJ4EBVx_KYgdwws",
+      "w": 1280,
+      "h": 720,
+      "duree_ms": 20000
+     }
+    },
+    {
+     "urn": "urn:li:activity:7472553808712355840",
+     "ts": 1781595661333,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7472553808712355840",
+     "texte": "Deux jours pour se retrouver, partager une vision commune et faire vivre notre collectif.\n \nJeudi 11 et vendredi 12 juin, les collaborateurs de Procivis Sud Massif Central Toulouse Pyrénées se sont réunis à Montpellier pour leur séminaire annuel, aux côtés des équipes de nos quatre filiales : OFS STON, Sud Massif Central Habitat, IMMO DE FRANCE et Eclisse Promotion.\n \nAu cœur du JOST Hotel, la première journée a été marquée par une plénière animée par notre Directeur Général Cyril Gasparotto, l’occasion de revenir sur les temps forts de l’année, de partager les ambitions du groupe et de rappeler ce qui nous rassemble : notre engagement au service de l’habitat, des territoires et de l’utilité sociale.\n\nCe temps collectif a également permis de mettre à l’honneur plusieurs collaborateurs dont le parcours et l’engagement ont marqué l’année.\nBravo à toutes celles et ceux qui ont été récompensés pour leur contribution, leur énergie et leur implication au quotidien.\n\nLe lendemain, direction Ville de Palavas-les-Flots pour une matinée placée sous le signe de la cohésion, des rencontres et de l’esprit d’équipe.\n \nMerci à l’ensemble des collaborateurs présents pour leur participation et leur enthousiasme.\nFiers de ce collectif.\nFiers de construire ensemble les projets de demain.\n \n#Procivis #ProcivisSMC #Séminaire #Cohésion #Collectif #Immobilier #Habitat #Territoires #RSE #Montpellier #SMCHabitat #ImmoDeFrance #OFSSTON #EclissePromotion",
+     "entete": "Sud Massif Central Habitat reposted this",
+     "auteur": "Procivis Sud Massif Central",
+     "reprise": null,
+     "date": "5 mois",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQEbg0AkzkZfYQ/videocover-high/B4EZ7Ku8X5IcBM-/0/1781517768135?e=1795165200&v=beta&t=FrOaPLihfeB9qR-1lvj_zTEOCaIk00vZXNCapKJHptA",
+       "w": 1280,
+       "h": 720
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQEbg0AkzkZfYQ/mp4-720p-30fp-crf28/B4EZ7Ku8X5IcB8-/0/1781517772016?e=1795165200&v=beta&t=S5gjJ_BhziEARs8nCTbzENkAY435KLZY3-izCFfb2uk",
+      "w": 1280,
+      "h": 720,
+      "duree_ms": 38900
+     }
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "nom": "OFS STON",
+   "url": "https://www.linkedin.com/company/ofs-ston/",
+   "statut": "suivie",
+   "company_id": "91744429",
+   "nom_linkedin": "OFS STON",
+   "n_trouves": 9,
+   "dernier_ts": 1794496597100,
+   "dernier_post": "17 h",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526664255203381248",
+     "ts": 1794496597100,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526664255203381248",
+     "texte": "Résidence Passerelles à Fenouillet : les pré-livraisons ont commencé ! \n\nAujourd'hui, les futurs résidents ont pu découvrir leur logement, parcourir les différentes pièces et se projeter un peu plus concrètement dans leur futur chez-eux.\n\nRéalisée en copromotion avec NOVILIS, la résidence Passerelles se prépare désormais à accueillir ses premiers habitants, avec une livraison prévue mi-décembre 2026.\n\nVous souhaitez devenir propriétaire à Fenouillet ? Il reste encore 3 maisons disponibles en Bail Réel Solidaire (BRS) :\n• T3 de 73 m² à 206 000 €\n• T4 de 96 m² à 234 000 €\n• T5 de 108 m² à 279 000 €\nSous conditions d'éligibilité au BRS.\n\n#Fenouillet #Toulouse #ImmobilierNeuf #ImmobilierToulouse #LogementNeuf #AchatImmobilier #DevenirProprietaire #AccessionALaPropriete #ResidenceNeuve #PromotionImmobiliere #HauteGaronne #Occitanie\nProcivis Sud Massif Central Toulouse Pyrénées, IMMO DE FRANCE, Sud Massif Central Habitat, OFS STON, Hugo Tissandié, Anaïs L., Marine Chambeaud, Nicolas FRUGNAC, Lucie GOBA",
+     "entete": "OFS STON reposted this",
+     "auteur": "Eclisse Promotion",
+     "reprise": null,
+     "date": "17 h",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQF8EcFEY-0k5A/feedshare-image-high-res/B4EaHQKIE4IgAQ-/0/1794493678631?e=1796256000&v=beta&t=S5gnTKIYpaCXGGRtK0tRowjjZNqGY5DZNG4RsI_lw5s",
+       "w": 2048,
+       "h": 1143
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEsgIcIV1_DTw/feedshare-image-high-res/B4EaHQKH9qKwAU-/0/1794493677889?e=1796256000&v=beta&t=eH8xe_VPpoeQfbJuRhoKgw5TE-6PrIsDlfbYzav1ffY",
+       "w": 2048,
+       "h": 1143
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHXj0DF4iKHTw/feedshare-image-high-res/B4EaHQKG90IIAQ-/0/1794493674066?e=1796256000&v=beta&t=LUtmVbeErNPXdg-bXw7uabsZI1dNNO4rTGALMuW7d6Q",
+       "w": 2048,
+       "h": 1365
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHnoVmg93h7Qw/feedshare-image-high-res/B4EaHQKHrYKwAQ-/0/1794493677108?e=1796256000&v=beta&t=Hdb0gtMcvoZbVV99qupAITytMLw6t1jjviW_ixdj_jM",
+       "w": 1706,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQH3U4jMtJBa7w/feedshare-image-high-res/B4EaHQKHRcHwAQ-/0/1794493675018?e=1796256000&v=beta&t=bgWPGZ2i4jUcptlX0CyF8oNEORQO7ry4TuUFKIGmwfM",
+       "w": 2048,
+       "h": 1536
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7521612745440501760",
+     "ts": 1793292223320,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7521612745440501760",
+     "texte": "𝗨𝗻 𝗽𝗿𝗼𝗷𝗲𝘁 𝗶𝗺𝗺𝗼𝗯𝗶𝗹𝗶𝗲𝗿 𝗻𝗲 𝗰𝗼𝗺𝗺𝗲𝗻𝗰𝗲 𝗽𝗮𝘀 𝗽𝗮𝗿 𝘂𝗻𝗲 𝘃𝗶𝘀𝗶𝘁𝗲.\n𝗜𝗹 𝗰𝗼𝗺𝗺𝗲𝗻𝗰𝗲 𝗽𝗮𝗿 𝘂𝗻 𝗰𝗵𝗶𝗳𝗳𝗿𝗲.\n\nCelui de sa capacité d’achat.\n\nAvant de rechercher un logement, connaître précisément son budget permet de mieux cibler les biens mais aussi d’identifier les leviers qui peuvent entrer dans le financement du projet.\n\nRevenus, charges, apport éventuel, durée du financement, aides mobilisables, PTZ selon éligibilité…\n\n𝗨𝗻𝗲 𝘃𝗶𝘀𝗶𝗼𝗻 𝗰𝗹𝗮𝗶𝗿𝗲 𝗱𝘂 𝗳𝗶𝗻𝗮𝗻𝗰𝗲𝗺𝗲𝗻𝘁 𝗽𝗲𝗿𝗺𝗲𝘁 𝗱𝗲 𝗰𝗼𝗻𝘀𝘁𝗿𝘂𝗶𝗿𝗲 𝘂𝗻𝗲 𝗿𝗲𝗰𝗵𝗲𝗿𝗰𝗵𝗲 𝗶𝗺𝗺𝗼𝗯𝗶𝗹𝗶𝗲̀𝗿𝗲 𝗽𝗹𝘂𝘀 𝗿𝗲́𝗮𝗹𝗶𝘀𝘁𝗲 𝗲𝘁 𝗽𝗹𝘂𝘀 𝗲𝗳𝗳𝗶𝗰𝗮𝗰𝗲.\n\nC’est aussi tout l’intérêt d’un accompagnement global : ne pas regarder uniquement le prix affiché d’un logement mais la faisabilité du projet dans son ensemble.\n\n👉 Le bon budget, les bons dispositifs, les bonnes opportunités… Et si vous aviez toutes les clés pour faire avancer votre projet immobilier ?\n\nSuivez Les Rencontres Easy Access : on vous aide à y voir plus clair, étape par étape !\n\n#LesRencontresEasyAccess #FinancementImmobilier #ProjetImmobilier #AccessionAbordable #PTZ #Toulouse\n\n\nAltéal CDC Habitat Groupe des Chalets LE COL (Comité Ouvrier du Logement) Oppidea Europolia PATRIMOINE SA Languedocienne Pierre Passion TOULOUSE METROPOLE HABITAT - l'OPH de la métropole toulousaine OFS STON Notre Maison - Groupe Valophis ZELIDOM - Groupe Promologis. ⁣",
+     "entete": "OFS STON reposted this",
+     "auteur": "Les rencontres Easy Access",
+     "reprise": null,
+     "date": "2 sem.",
+     "kind": [
+      "documentComponent"
+     ],
+     "images": [],
+     "doc_pages": [
+      "https://media.licdn.com/dms/image/v2/D4E1FAQHW-I4Rxj70Bg/feedshare-document-cover-images_1920/B4EaGHCkLaJEBQ-/0/1793266960396?e=1795165200&v=beta&t=jqSP55PwySU9QFcZRTwJO5DoH1nNHGuoxJ_wG8FFmqg",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQHW-I4Rxj70Bg/feedshare-document-cover-images_1920/B4EaGHCkLaJEBQ-/1/1793266960396?e=1795165200&v=beta&t=RwLQTxul0x3-F3Oed0oVEIj7vcXFo4l1lXyCxhYq8Ww",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQHW-I4Rxj70Bg/feedshare-document-cover-images_1920/B4EaGHCkLaJEBQ-/2/1793266960396?e=1795165200&v=beta&t=fZJuAA8zSKjfMlVymdbNZ2biEPsX_mLd916DetlFeL4"
+     ],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "nom": "IMMO de FRANCE SMC RODEZ (FERNAND RATIER)",
+   "url": "https://www.linkedin.com/company/immo-de-france-smc/",
+   "statut": "suivie",
+   "company_id": "75719245",
+   "nom_linkedin": "Immo de France SMC",
+   "n_trouves": 5,
+   "dernier_ts": 1794222079232,
+   "dernier_post": "4 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525512843811532800",
+     "ts": 1794222079232,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525512843811532800",
+     "texte": "Pour postuler, c'est ici : https://lnkd.in/eaRUTCBK",
+     "entete": "Immo de France SMC reposted this",
+     "auteur": "Mathilde COUDERC",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQE28RhamsR6RA/videocover-high/B4EaG_8sj.GwBQ-/0/1794221723614?e=1795165200&v=beta&t=0aOtTky9cxj0cEAQ4LyI6htrRAPej5pU0ofBs6dFtMI",
+       "w": 1280,
+       "h": 720
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQE28RhamsR6RA/mp4-720p-30fp-crf28/B4EaG_8sj.GwCA-/0/1794221726049?e=1795165200&v=beta&t=qsOcgCa-mhLhpk-TAwyzAT4B1CTPFJ4EBVx_KYgdwws",
+      "w": 1280,
+      "h": 720,
+      "duree_ms": 20000
+     }
+    },
+    {
+     "urn": "urn:li:activity:7511774863603351553",
+     "ts": 1790946689511,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7511774863603351553",
+     "texte": "📢 Immo de France Rodez recrute un·e Comptable (H/F) en CDI ! \n\nLoyers, baux, rapprochements bancaires, TVA, régularisations de charges… Vous aimez la rigueur et le contact ? Rejoignez notre équipe au sein du groupe Procivis Sud Massif Central amp; Toulouse Pyrénées. \n\n👉 Postulez ici : https://lnkd.in/epJafq4t",
+     "entete": "Immo de France SMC reposted this",
+     "auteur": "Mathilde COUDERC",
+     "reprise": null,
+     "date": "1 mois",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQF3busnXPLD-g/feedshare-shrink_1280/B4EaD7xay7KwAM-/0/1790930431457?e=1796256000&v=beta&t=CF-gBeempLrnMa8lrZ9dvPS1ROa4Wrs6lK8B90g9SKc",
+       "w": 1280,
+       "h": 1600
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "nom": "Procivis Bretagne",
+   "url": "https://www.linkedin.com/company/procivis-bretagne/",
+   "statut": "suivie",
+   "company_id": "25939736",
+   "nom_linkedin": "PROCIVIS BRETAGNE",
+   "n_trouves": 9,
+   "dernier_ts": 1792153844070,
+   "dernier_post": "4 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 47,
+   "nom": "Polimmo Développement",
+   "url": "https://www.linkedin.com/company/groupe-polimmo/",
+   "statut": "suivie",
+   "company_id": "76166625",
+   "nom_linkedin": "GROUPE POLIMMO",
+   "n_trouves": 9,
+   "dernier_ts": 1793983219820,
+   "dernier_post": "7 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7524510994824527872",
+     "ts": 1793983219820,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524510994824527872",
+     "texte": "📣 Rappel - Salon de l'habitat - Lorient\n\nPour rappel, nous serons présents au salon de l'Habitat de Lorient ce week-end, du 7 au 9 novembre !\n\n🤝 Stand E09 pour découvrir nos nouveautés terrains et appartements neufs !\n\n📅 7 au 9 novembre 2026\nSamedi 7 novembre : 10h-19h\nDimanche 8 novembre : 10h-19h\nLundi 9 novembre : 10h-17h\n\n📍 Parc des Expositions de Lorient\n\n#salonhabitat #immobilier #terrainsàbâtir #appartementsneufs #promoteur #aménageur #morbihan",
+     "entete": "GROUPE POLIMMO reposted this",
+     "auteur": "Polimmo Promotion Aménagement",
+     "reprise": null,
+     "date": "7 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFz0KvZq1mpzg/feedshare-shrink_1280/B4EaGrG53KI8AI-/0/1793872076527?e=1796256000&v=beta&t=jCzDx_TydSImczN2PPbEHTTsuMA_YmbtspVa7IXmFIA",
+       "w": 1080,
+       "h": 1080
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7523063088212955136",
+     "ts": 1793638011983,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7523063088212955136",
+     "texte": "📣 Salon de l'Habitat - Lorient \n\nL'équipe de Polimmo Promotion Aménagement sera présente du 7 au 9 novembre au salon de l'Habitat organisé par Deficom à Lorient !\n\nCe salon est l'occasion pour vous de venir échanger avec nos conseillers sur nos terrains à bâtir et nos appartements neufs à vendre dans le Morbihan ! \n\n🤝 Nous vous donnons rendez-vous au stand E09 et nous serons ravis de vous aider dans votre projet immobilier.\n\nÀ noter :\n📅 7 au 9 novembre 2026\nSamedi 7 novembre : 10h-19h\nDimanche 8 novembre : 10h-19h\nLundi 9 novembre : 10h-17h\n📍 Parc des Expositions de Lorient\n\n#salonhabitat #immobilier #terrainsàbâtir #appartementsneufs #promoteur #aménageur #morbihan",
+     "entete": "GROUPE POLIMMO reposted this",
+     "auteur": "Polimmo Promotion Aménagement",
+     "reprise": null,
+     "date": "1 sem.",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQE2uPUdQrlnzA/feedshare-shrink_1280/B4EaF37TegGwAM-/0/1793013397666?e=1796256000&v=beta&t=0OaFvXK0MSFwsDtEYOTkoL5sKRRZZZ5e1OuoZ0LB17s",
+       "w": 1080,
+       "h": 1080
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 48,
+   "nom": "Maisons d'en France Bretagne",
+   "url": "https://www.linkedin.com/company/maisons-d%27en-france-bretagne/",
+   "statut": "suivie",
+   "company_id": "26854505",
+   "nom_linkedin": "MAISONS D EN FRANCE BRETAGNE",
+   "n_trouves": 9,
+   "dernier_ts": 1792153932835,
+   "dernier_post": "4 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 50,
+   "nom": "Polimmo Promotion Aménagement",
+   "url": "https://www.linkedin.com/company/polimmo-promotion-amenagement/",
+   "statut": "suivie",
+   "company_id": "32978361",
+   "nom_linkedin": "Polimmo Promotion Aménagement",
+   "n_trouves": 9,
+   "dernier_ts": 1794501011735,
+   "dernier_post": "16 h",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526682771524734976",
+     "ts": 1794501011735,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526682771524734976",
+     "texte": "🚧 Travaux - Résidence L'Arborétum à Caudan\n\nLes travaux de la résidence L'Arborétum à Caudan se poursuivent !\n\nLes travaux de gros œuvre sont en cours. Les travaux d'étanchéité démarreront courant du mois de janvier 💪 \n\n✅ 9 appartements du T2 au T4 sont encore disponibles à la vente. \n\nPlus de renseignements :\n👉 https://bit.ly/46sUg9S\n☎️ 02 98 95 99 92\n\n#travaux #appartementsneufs #logements #caudan #morbihan",
+     "entete": "",
+     "auteur": "Polimmo Promotion Aménagement",
+     "reprise": null,
+     "date": "16 h",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFxZawU_yCoOw/feedshare-image-high-res/B4EaHAwhZBIEAU-/0/1794235309138?e=1796256000&v=beta&t=aJCQz3R7JieYpwv9uP7Q9fIjUgb3fPtEB2uV-3KiIJ4",
+       "w": 2048,
+       "h": 1365
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525875223313690624",
+     "ts": 1794308477238,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525875223313690624",
+     "texte": "🎨 Polimmo s'engage pour le patrimoine de Pont-Aven !\n\nNous sommes fiers de soutenir, aux côtés du Club des Mécènes du Patrimoine en Bretagne, la restauration du panneau publicitaire en céramique de Pont-Aven !\n\nCe beau panneau a été réalisé en 1969 par le céramiste Alain Kergoat. Cette œuvre unique mêle art publicitaire et tradition bretonne; avec un clin d'œil à Gauguin et aux peintres de l'école de Pont-Aven.\n\nLe Club, dont Polimmo est membre, a remis le 28 octobre 2026 une subvention de 3 000€, soit 30 % du coût des travaux. La remise s'est faite Place Julia en présence du maire de Pont-Aven.\n\n✨ Grâce au savoir-faire d'une restauratrice spécialisée dans les objets d'art, installée à Elven, les carreaux de faïence ont retrouvé tout leur éclat.\n\nEnsemble, continuons à faire vivre le patrimoine de notre région !\n\n#patrimoine #pontaven #fondationdupatrimoine #céramique #polimmo",
+     "entete": "",
+     "auteur": "Polimmo Promotion Aménagement",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHQbUpNFQ5CDg/feedshare-shrink_1280/B4EaGrFlfRIYAI-/0/1793871731158?e=1796256000&v=beta&t=nBzUkk2qjsaSkirbpSNxemiSVdLzsjVHJ_gFIiDDeDg",
+       "w": 1080,
+       "h": 1080
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "nom": "Groupe Polylogis",
+   "url": "https://www.linkedin.com/company/polylogis/",
+   "statut": "suivie",
+   "company_id": "6949187",
+   "nom_linkedin": "Groupe Polylogis",
+   "n_trouves": 9,
+   "dernier_ts": 1794476579845,
+   "dernier_post": "23 h",
+   "actif": "OUI",
+   "n_7j": 3,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526580296750751744",
+     "ts": 1794476579845,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526580296750751744",
+     "texte": "🎉 Le projet LogiH est en sélection officielle des Signatures Pôle Habitat FFB 2026 !\n\nAu 14 rue d'Odessa, à Paris 14e, LogiH, promoteur du Groupe Polylogis, réalise sa toute première opération de surélévation.\n\nCe projet est un des premiers démonstrateurs de LogiRén'Up, l'offre du Groupe Polylogis pour accompagner les copropriétés dans la rénovation globale de leur immeuble, grâce à la valorisation de leur foncier aérien. LogiRén'Up est le fruit d'une synergie avec UPFACTOR, spécialiste de la surélévation.\n\n👉 Découvrir LogiRén'Up : https://lnkd.in/ez_yg6MD\n\nVous pourrez très bientôt découvrir le projet en détail, à l'issue des Journées de l'Habitat Innovant.\n\nEn attendant, suivez notre parcours lors des Journées de l'Habitat Innovant, à Deauville, du 26 au 28 novembre !\n\nPriscille Radja-Rock, Sophie Joret, Bruno MOSCARDINI, Didier MIGNERY, Benjamin Potelle, Corentin FILLEUL, Samira SBAI MARMONT, Cédric Loret, Karine JULIEN-ELKAÏM \n\nROTH - Bien Sûr Elévations - UPFACTOR - LogiH\n\n#LesSignatures2026 #PôleHabitatFFB #Surélévation #Copropriété #Rénovation #GroupePolylogis #LogiH #UpFactor #LogiRénUp",
+     "entete": "",
+     "auteur": "Groupe Polylogis",
+     "reprise": null,
+     "date": "23 h",
+     "kind": [
+      "documentComponent"
+     ],
+     "images": [],
+     "doc_pages": [
+      "https://media.licdn.com/dms/image/v2/D4E1FAQFtX63XNhvX6w/feedshare-document-cover-images_1920/B4EaHPIz5UIgBU-/0/1794476556993?e=1795165200&v=beta&t=NSd9_BOMu0tH4Fw5TMwjuHQnh3c2iQMuaIqCjD8H56U",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQFtX63XNhvX6w/feedshare-document-cover-images_1920/B4EaHPIz5UIgBU-/1/1794476556993?e=1795165200&v=beta&t=WR4fEqB-2NfkSHbSsUgQCsF9Z7qDY1WKsWHWiI_Y4zM"
+     ],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525891463847555072",
+     "ts": 1794312349283,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525891463847555072",
+     "texte": "🏆 26ᵉ Trophée du Cercle de l’Arcade  🏆\n                   Une soirée placée sous le signe de l’Amitié ! \n\nQuelle magnifique soirée ! Quelle énergie ! \nEt surtout, quel bonheur de vous avoir retrouvés si nombreux...Malgré ce jeudi noir, marqué par les grèves, les manifestations et les difficultés de déplacement, nos amis ont répondu PRÉSENTS ! 👏\n\nVous étiez près de 250 acteurs de la construction à avoir bravé les perturbations pour nous retrouver et partager ce RDV annuel qui nous est si cher.\nVotre présence, malgré ce contexte compliqué, est sans doute le plus beau témoignage de votre attachement au Cercle et aux valeurs qui nous unissent. \n\n🏆 Cette année, nous avons eu l'immense plaisir et la fierté de remettre notre 26ᵉ Trophée à Monsieur Marc DAOUT, Responsable Politique Technique chez Groupe Polylogis.\nÀ travers cette distinction, l'ensemble des membres du Cercle a souhaité saluer bien plus qu'un parcours professionnel.\nNous avons voulu mettre à l'honneur un homme de valeurs, reconnu pour sa considération envers les industriels, son écoute, son respect et surtout l'éthique et l'équité dont il fait preuve dans ses relations professionnelles.\nDes qualités humaines qui méritent d'être reconnues, encouragées et célébrées !\nAu-delà de cette belle distinction, cette soirée nous rappelle combien notre profession a besoin de rencontres authentiques, de respect mutuel et de relations humaines fortes.\n\n❤️ Merci à nos invités et merci à toute la Team du Cercle qui œuvre avec passion pour faire vivre cet esprit si particulier.\n\nContinuons ensemble à cultiver ce qui nous rassemble, à valoriser celles et ceux qui font grandir notre profession et à préserver cette belle philosophie qui nous anime depuis toujours :\n\n🎀   « Quand l’Amitié Fait Grandir… » 🎀\n\nEric. Bokobza\nPrésident du Cercle de l'Arcade\n\nLa Team :\nJean-René Bouzonie Vice Président,\nGilles Riou Secrétaire Général, Nathalie Droy trésorière, Hassene HOSNI , Mohamed Jabbour, Charles Henry , Laurent Bertheau , Caroline NARTEAU , Michel Griffon , Claire Ginisty , Laurent Bourgois , Audrey MICHEL , Yann Sernin ,David Parisse , Sid HAYANE, Roger Ruibal, Christelle Lavigne, wilfried CARTON, Cedric Lefevre\n\n#CercleDeLArcade #Trophée2026 #Polylogis #MarcDaout #Construction #Industrie #Amitié #Convivialité #Reconnaissance #ValeursHumaines",
+     "entete": "Groupe Polylogis reposted this",
+     "auteur": "LE CERCLE DE L'ARCADE",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQFHSv4Ohf7FQw/videocover-high/B4EaHBiND9IIBU-/0/1794248332965?e=1795165200&v=beta&t=MrUQio3LBIZtBkQ0WPxeoG4ASXl3v3OwKWDpLKndoPY",
+       "w": 1278,
+       "h": 720
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQFHSv4Ohf7FQw/mp4-720p-30fp-crf28/B4EaHBiND9IICE-/0/1794248335193?e=1795165200&v=beta&t=KmZGTY-qGRN30M62zCS8D2v9MJ8q8BJIZDgnS5b0J0M",
+      "w": 910,
+      "h": 512,
+      "duree_ms": 16766
+     }
+    }
+   ]
+  },
+  {
+   "id": 52,
+   "nom": "Polylogis - LogiH",
+   "url": "https://www.linkedin.com/company/logih-logicap/",
+   "statut": "suivie",
+   "company_id": "74355556",
+   "nom_linkedin": "LogiH",
+   "n_trouves": 9,
+   "dernier_ts": 1794476642725,
+   "dernier_post": "23 h",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526580560488710144",
+     "ts": 1794476642725,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526580560488710144",
+     "texte": "🎉 Le projet LogiH est en sélection officielle des Signatures Pôle Habitat FFB 2026 !\n\nAu 14 rue d'Odessa, à Paris 14e, LogiH, promoteur du Groupe Polylogis, réalise sa toute première opération de surélévation.\n\nCe projet est un des premiers démonstrateurs de LogiRén'Up, l'offre du Groupe Polylogis pour accompagner les copropriétés dans la rénovation globale de leur immeuble, grâce à la valorisation de leur foncier aérien. LogiRén'Up est le fruit d'une synergie avec UPFACTOR, spécialiste de la surélévation.\n\n👉 Découvrir LogiRén'Up : https://lnkd.in/ez_yg6MD\n\nVous pourrez très bientôt découvrir le projet en détail, à l'issue des Journées de l'Habitat Innovant.\n\nEn attendant, suivez notre parcours lors des Journées de l'Habitat Innovant, à Deauville, du 26 au 28 novembre !\n\nPriscille Radja-Rock, Sophie Joret, Bruno MOSCARDINI, Didier MIGNERY, Benjamin Potelle, Corentin FILLEUL, Samira SBAI MARMONT, Cédric Loret, Karine JULIEN-ELKAÏM \n\nROTH - Bien Sûr Elévations - UPFACTOR - LogiH\n\n#LesSignatures2026 #PôleHabitatFFB #Surélévation #Copropriété #Rénovation #GroupePolylogis #LogiH #UpFactor #LogiRénUp",
+     "entete": "LogiH reposted this",
+     "auteur": "Groupe Polylogis",
+     "reprise": null,
+     "date": "23 h",
+     "kind": [
+      "documentComponent"
+     ],
+     "images": [],
+     "doc_pages": [
+      "https://media.licdn.com/dms/image/v2/D4E1FAQFtX63XNhvX6w/feedshare-document-cover-images_1920/B4EaHPIz5UIgBU-/0/1794476556993?e=1795165200&v=beta&t=NSd9_BOMu0tH4Fw5TMwjuHQnh3c2iQMuaIqCjD8H56U",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQFtX63XNhvX6w/feedshare-document-cover-images_1920/B4EaHPIz5UIgBU-/1/1794476556993?e=1795165200&v=beta&t=WR4fEqB-2NfkSHbSsUgQCsF9Z7qDY1WKsWHWiI_Y4zM"
+     ],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7510603969660878849",
+     "ts": 1790667526641,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7510603969660878849",
+     "texte": "Darnétal (76) : pose de la première pierre de Rodbæk Village,\nune opération emblématique du Groupe Polylogis 🏗️\n\nPremière pierre, pas tout à fait !\n\nÀ Darnétal, le chantier n'a pas attendu la cérémonie pour avancer.\n\nVendredi 25 septembre, 𝗟𝗼𝗴𝗶𝗛 𝗡𝗼𝗿𝗺𝗮𝗻𝗱𝗶𝗲 a réuni élus et partenaires pour célébrer le programme de « Rodbæk Village ».\n\nÀ l’origine, sur ce site se trouvaient des logements sociaux qui ne répondaient plus aux besoins du territoire.\n\nIl a fallu du temps, de la réflexion et du dialogue avec les partenaires pour trouver la bonne réponse.\n\nAujourd’hui, le site accueillera ce nouveau quartier de qualité qui permettra à des familles d'accéder à la propriété.\n\nLe programme :\n🏡 103 logements : 46 maisons T4 et T5 et 57 appartements du T1 au T3\n🌳 près de 3000 arbres et arbustes, des jardins partagés et un parcours dédié à la biodiversité\n🚲 une piste cyclable qui prolonge les aménagements de mobilité douce de la Métropole Rouen Normandie\n⚡ des constructions conformes à la RE 2020, labellisées Nouvel Habitat, DPE A pour tous les logements\n\nPour Karine JULIEN-ELKAÏM, Présidente du comité exécutif du Groupe Polylogis, cette opération illustre la présence du Groupe sur toute la chaîne du logement : construire, réhabiliter, développer l'accession sociale, gérer et accompagner les parcours résidentiels.\n\n« Dans un contexte où la sobriété foncière devient une nécessité, il est essentiel de savoir transformer des sites déjà urbanisés pour leur donner une nouvelle utilité, plus en phase avec les attentes des territoires et des habitants. »\n\nMerci à la Ville de Darnétal, à la Métropole Rouen Normandie, à CDC Habitat, à l'agence Gris Souris Architecture et aux équipes de LogiH Normandie qui portent ce projet.\n\nRendez-vous dans quelques mois pour découvrir ce nouveau quartier habité !\n\nECOFUTUR CONCEPT, chaib jerome, INFRA Services, Tony Benard, Guillaume BERTRAND, Julien BOULAND, Gris Souris Architecture, Camille LEFEUVRE, Joël SOURY  ECONOMIE 80, Grégory LARCHEVEQUE, @Maxime MAUGER, O’carre, Damien Laumonier, Benjamin Dubus , PROJEMO, Joël MOUTIER, SOCOTEC, Nicolas Le Fevre, TECHNOSOL - Groupe Gengis, @Laufti CHAMAKH, GAGNERAUD Région Normandie, LANGEVIN TP, SATEB, BEVELEC 76, Guillaume HOMONT, Mairie de Darnétal, Christopher LANGLOIS (Monsieur le Maire), Samuel LEROUX , Elodie SIX , Métropole Rouen Normandie, Bruno MOSCARDINI ,LogiH Normandie,  Morgan DELAUNEY, Camille Gillard, Alexandra Hanin, Wilfrid LESAGE, Garry Le Moel, CDC Habitat, Alexis CAILLERET, Mathieu Monduc, Virginie Dufau, LogiRep, \nFresque : Ecloz Artiste\n#LogiHNormandie #GroupePolylogis #Darnétal #MétropoleRouenNormandie #AccessionSociale #PremièrePierre",
+     "entete": "LogiH reposted this",
+     "auteur": "Groupe Polylogis",
+     "reprise": null,
+     "date": "2 mois",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQEFHtlYX7mGDQ/videocover-high/B4EaDpyGTCHMBM-/0/1790628627786?e=1795165200&v=beta&t=hA6q-_E0TUd7ccuNipLKYfARfzgfnbadM4kIM-GPANQ",
+       "w": 1280,
+       "h": 720
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQEFHtlYX7mGDQ/mp4-720p-30fp-crf28/B4EaDpyGTCHMB8-/0/1790628633613?e=1795165200&v=beta&t=NV15CvaYruAyZ8qcPWWdrGwqb-1zaZXmvxv49jLNeUw",
+      "w": 1280,
+      "h": 720,
+      "duree_ms": 48800
+     }
+    }
+   ]
+  },
+  {
+   "id": 53,
+   "nom": "LOGIH Normandie",
+   "url": "https://www.linkedin.com/company/logihnormandie/",
+   "statut": "suivie",
+   "company_id": "74373057",
+   "nom_linkedin": "LogiH Normandie",
+   "n_trouves": 8,
+   "dernier_ts": 1790772216176,
+   "dernier_post": "1 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 54,
+   "nom": "Immo de France Paris",
+   "url": "https://www.linkedin.com/company/immo-de-france-paris-ile-de-france/",
+   "statut": "suivie",
+   "company_id": "26125691",
+   "nom_linkedin": "IMMO DE FRANCE PARIS ILE DE FRANCE",
+   "n_trouves": 9,
+   "dernier_ts": 1790953498561,
+   "dernier_post": "1 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 55,
+   "nom": "Plurimmo",
+   "url": "https://www.linkedin.com/company/plurimmo-promotion/",
+   "statut": "suivie",
+   "company_id": "79362145",
+   "nom_linkedin": "Plurimmo",
+   "n_trouves": 6,
+   "dernier_ts": 1783502334126,
+   "dernier_post": "4 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 56,
+   "nom": "Pluralis",
+   "url": "https://www.linkedin.com/company/pluralis-habitat/",
+   "statut": "suivie",
+   "company_id": "11458565",
+   "nom_linkedin": "Pluralis Habitat",
+   "n_trouves": 9,
+   "dernier_ts": 1794476738799,
+   "dernier_post": "23 h",
+   "actif": "OUI",
+   "n_7j": 4,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526580963452129280",
+     "ts": 1794476738799,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526580963452129280",
+     "texte": "Un club de basket 🏀\nUn bailleur social 🏠\nUn même territoire 📍\n\nLe PVBC Business Club et Pluralis Habitat, deux acteurs historiques du Pays Voironnais, font grandir un dispositif d’utilité sociale : PVBC Life by PLURALIS 💪\n\n🎯 Son objet : accompagner chaque tranche d’âge par le sport, la sensibilisation, la formation et l’accès à l’emploi.\n\nDécouvrez le programme et les prochains rendez-vous : https://www.pvbc.life/\n\n🔔 Abonnez-vous pour suivre nos actions sur le terrain et en dehors !\n\n#PVBCLifebyPLURALIS #PaysVoironnais #Voiron",
+     "entete": "Pluralis Habitat reposted this",
+     "auteur": "PVBC Life by PLURALIS",
+     "reprise": null,
+     "date": "23 h",
+     "kind": [
+      "documentComponent"
+     ],
+     "images": [],
+     "doc_pages": [
+      "https://media.licdn.com/dms/image/v2/D4E1FAQHllAc-1lCrXA/feedshare-document-cover-images_1920/B4EaHEgo_.GsBY-/0/1794298254293?e=1795165200&v=beta&t=BMEwLr9-Jj_UWWj98Z6g2Awquy9u9nxilu-XgJpvmT8",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQHllAc-1lCrXA/feedshare-document-cover-images_1920/B4EaHEgo_.GsBY-/1/1794298254293?e=1795165200&v=beta&t=KoH-7n8JmN0_TssqNnmXm2R1b0QZfJ_GazHVTfbp8YM",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQHllAc-1lCrXA/feedshare-document-cover-images_1920/B4EaHEgo_.GsBY-/2/1794298254293?e=1795165200&v=beta&t=XMgYBlpxF2DJoJM_z0ZlhPLsxChufAJLOI28EhsG2FY"
+     ],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525869757544251394",
+     "ts": 1794307174097,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525869757544251394",
+     "texte": "𝗔𝘃𝗲𝗰 𝗹’𝗜𝗔 𝘀𝗼𝘆𝗼𝗻𝘀 𝘁𝗼𝘂𝗷𝗼𝘂𝗿𝘀 𝘃𝗶𝗴𝗶𝗹𝗮𝗻𝘁 𝗮𝘃𝗲𝗰 𝗰𝗲 𝗾𝘂𝗲 𝗹’𝗼𝗻 𝘃𝗼𝗶𝘁…𝗲𝘁 𝗻𝗲 𝘃𝗼𝗶𝘁 𝗽𝗮𝘀 😉\n\nL’IA, chez Pluralis Habitat n’a pas commencé par un outil mais par une question simple : à quoi doit-elle servir concrètement ?\n\nNotre démarche d’entreprise « IA Ensemble » c’est :\n🔹 279 cas d’usage identifiés, classés et priorisés, direction par direction, service par service.\n🔹 Une charte IA complète : ce qu’on peut confier à un outil et surtout ce qu’on ne lui confie pas. #RGPD\n🔹 Un outil généraliste #Claude et des agents IA choisis pour nos métiers pas pour la tendance.\n🔹 150 collaborateurs déjà formés selon leurs usages réels.\n\nPour toujours être dans l’efficience, cette feuille de route évolue au rythme de la technologie avec un accompagnement des collaborateurs dans la durée.\n\n➡️ Le gain attendu n’est pas uniquement d’aller plus vite mais bien libérer du temps pour ce qu’aucun outil ne fera à notre place : la relation humaine 🤝 \n\n#IntelligenceArtificielle #LogementSocial #ProcivisLogementSocial Procivis Mister IA",
+     "entete": "",
+     "auteur": "Pluralis Habitat",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "documentComponent"
+     ],
+     "images": [],
+     "doc_pages": [
+      "https://media.licdn.com/dms/image/v2/D4E1FAQE5UKZWQthCZA/feedshare-document-cover-images_1920/B4EaHFBymOHMBQ-/0/1794306948929?e=1795165200&v=beta&t=0SXVRECDZY1izRKT67Q9j0Pfi9KFNOBOUPGNkXizvjM",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQE5UKZWQthCZA/feedshare-document-cover-images_1920/B4EaHFBymOHMBQ-/1/1794306948929?e=1795165200&v=beta&t=R7U5kqwZYbBiaZtkuJAcIISgeMFlfml6hIUNGxH330w",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQE5UKZWQthCZA/feedshare-document-cover-images_1920/B4EaHFBymOHMBQ-/2/1794306948929?e=1795165200&v=beta&t=iqRshbt--ILK3U8P0DengA1giwzOyLqOcHdzAiXoXw0"
+     ],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 57,
+   "nom": "Groupe Procivis Ouest",
+   "url": "https://www.linkedin.com/company/groupeprocivisouest/",
+   "statut": "suivie",
+   "company_id": "12989618",
+   "nom_linkedin": "Groupe Procivis Ouest",
+   "n_trouves": 9,
+   "dernier_ts": 1794485144365,
+   "dernier_post": "21 h",
+   "actif": "OUI",
+   "n_7j": 3,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526616218951303168",
+     "ts": 1794485144365,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526616218951303168",
+     "texte": "Pornic, un marché qui vit au-delà de la saison estivale\n\nOn associe volontiers Pornic à l'été. La commune est pourtant une ville vivante toute l'année : commerces, écoles, équipements sportifs et culturels, et une gare SNCF qui la relie à Nantes en moins d'une heure. Cette attractivité permanente en fait une destination recherchée aussi bien pour une résidence principale que pour un pied-à-terre sur la Côte de Jade.\n\nC'est dans ce contexte que Procivis Ouest Promoteur commercialise la résidence Kaden, 72 rue de Nantes, à l'entrée de la ville. Le projet, signé ASA Gimbert, s'organise en deux bâtiments à taille humaine : un socle blanc surmonté d'un dernier niveau en bardage bois, coiffé de tuiles en terre cuite, dans la continuité des silhouettes du paysage pornicais. Les logements, du T2 au T4, se prolongent par des balcons, loggias ou terrasses généreux.\n\nLe centre-ville, le port, les plages et la gare sont accessibles à pied en une vingtaine de minutes. La résidence répond à la norme RE2020 et reste éligible au PTZ, au dispositif Jeanbrun et à la location meublée. Les prix débutent à 225 000 € TTC pour un T2.\n\nEn savoir plus : https://lnkd.in/e6TZkBpU",
+     "entete": "",
+     "auteur": "Groupe Procivis Ouest",
+     "reprise": null,
+     "date": "21 h",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFSdTRenXJNug/feedshare-image-high-res/B4EaHPpkVFGkAQ-/0/1794485143716?e=1796256000&v=beta&t=5Q7hmwXt-FTHvSmoXaT98acsS4C3fEa_30yVGn3Q3Zo",
+       "w": 1080,
+       "h": 1350
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525548036060725248",
+     "ts": 1794230469718,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525548036060725248",
+     "texte": "Maîtrise des consommations d'eau : des gestes simples, des effets mesurables\n\nDans un logement, une part importante du gaspillage d'eau passe inaperçue. Un robinet qui goutte peut représenter jusqu'à 34 000 litres perdus par an, et les chasses d'eau sont souvent à l'origine des fuites les plus discrètes.\n\nQuelques habitudes suffisent pourtant à réduire nettement la consommation : surveiller régulièrement son compteur pour détecter une fuite, privilégier la douche au bain (trois fois moins d'eau), équiper le pommeau de douche d'un économiseur, ne pas laisser couler l'eau inutilement.\n\nPour les locataires comme pour les propriétaires bailleurs, la réactivité reste déterminante : une fuite signalée tôt au gestionnaire locatif, c'est un sinistre évité, des charges maîtrisées et un logement préservé.\n\nCes conseils sont issus du guide du locataire remis par nos agences Immo de France Ouest. Chaque mois, nous partagerons un éco-geste du quotidien pour accompagner nos résidents vers un habitat plus sobre.\n\nGroupe Procivis Ouest Immobilier",
+     "entete": "",
+     "auteur": "Groupe Procivis Ouest",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFT3_EyDmJ1ag/feedshare-shrink_1280/B4EaHAeDw6HwAI-/0/1794230467973?e=1796256000&v=beta&t=HXnyKZIV2A6UuKeqJ4wgvciNwk7bMEa3Ijrcg5zkgRw",
+       "w": 1080,
+       "h": 1350
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQG4daX-tU7iIA/feedshare-shrink_1280/B4EaHAeDwIHoAI-/0/1794230467940?e=1796256000&v=beta&t=2En7AdALtGQbx1DbmWfuhGolPldq5d_CkH1R_GnPVV4",
+       "w": 1080,
+       "h": 1350
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 59,
+   "nom": "OFS Procivis sud",
+   "url": "https://www.linkedin.com/company/organisme-de-foncier-solidaire-procivis-sud/",
+   "statut": "suivie",
+   "company_id": "105398090",
+   "nom_linkedin": "OFS Procivis Sud",
+   "n_trouves": 6,
+   "dernier_ts": 1794071668456,
+   "dernier_post": "6 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7524881975292313600",
+     "ts": 1794071668456,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524881975292313600",
+     "texte": "Ce samedi nos équipes se sont rendues aux portes ouvertes de @Saint-Cyr-sur-Mer. Le soleil était de la partie du matin jusqu'en fin d'après-midi, et les visiteurs aussi. Souvent venus en famille, ils ont découvert sur place l'emplacement du futur programme, chemin du Sauvet, et l'implantation du bâtiment.\n\nBeaucoup de projets de vie concrets, de familles qui veulent s'installer durablement dans la commune et pour qui le bail réel solidaire OFS Procivis Sud rend cet achat possible.\n\nMerci aux équipes de la Caisse d'Epargne CEPAC venues nous épauler toute la journée. Leur présence a permis à chacun de faire un premier point sur son financement.\n\nMerci à tous ceux qui ont fait le déplacement !\n\n#BRS #AccessionAbordable #SaintCyrSurMer #Logement Pierre LE JEUNE Mehdi Landolsi Louise Burteaux Bernard PIERI",
+     "entete": "OFS Procivis Sud reposted this",
+     "auteur": "Procivis Provence",
+     "reprise": null,
+     "date": "6 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQERcoO7Ybwofg/feedshare-image-high-res/B4EaG2vAUYJgAU-/0/1794067148173?e=1796256000&v=beta&t=L9r_kllLpBZPdQ3cpu1JX4fKNMpY_0jjU_bFw9DxqxI",
+       "w": 2048,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHroKnbobzZJA/feedshare-image-high-res/B4EaG2u_ILGkAQ-/0/1794067139714?e=1796256000&v=beta&t=7WxMgMeZWehO88mjjjuPZ8FOdvzbwu1KY1I1RSzWCpc",
+       "w": 2048,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHcv4Nx7XPzFg/feedshare-shrink_1280/B4EaG2u_0TJgAI-/0/1794067145200?e=1796256000&v=beta&t=jQhBZhKg4IeTeI6IckklAtnSfbu8ETB886Vl2_nwxbw",
+       "w": 1280,
+       "h": 1707
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7524133115594964992",
+     "ts": 1793893126391,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524133115594964992",
+     "texte": "👷 Une visite des coulisses du chantier de L'Immeuble Idéal et de son système de préfabrication URBAN LITE, en direct de l'usine Rector Lesage à Berre-l’Étang. \n\nMerci à Made in Marseille et Ambrine Ziani pour cet article !\n➡️ https://lnkd.in/e3TDMPN5\n\nL'Immeuble Idéal est développé par :\nProcivis Provence et MODUS AEDIFICANDI\n\nL'Immeuble Idéal est réalisé avec le système URBAN LITE, opéré par Rector Lesage, Société de Travaux Alpes Méditerranée (STAM) et MODUS AEDIFICANDI, lauréat de l’appel à projet Construction-Rénovation Hors-Site 2024 et financé par le Gouvernement dans le cadre du plan France 2030 opéré par l’ADEME.\n\nL'Immeuble Idéal est soutenu par le Fonds innovation Habitat de la Métropole Aix-Marseille-Provence, pour la mise en oeuvre de solutions pour des logements abordables, écologiques et adaptés aux modes de vie actuels au sein d'une ville résiliente.\n\nL' OFS Procivis Sud est soutenu par le Fonds Vert Recyclage Foncier, opéré au niveau national par l’État (sous la responsabilité du Ministère de la Transition écologique) et en région PACA par les préfets de région et de département, ainsi que par les services déconcentrés de l’État (DREAL Provence-Alpes-Côte d'Azur, DDT-M).\n\n#construction #immeuble #ideal #structure #ville #personnalisable #évolutif #usine",
+     "entete": "OFS Procivis Sud reposted this",
+     "auteur": "L'Immeuble Idéal",
+     "reprise": {
+      "auteur": "Made in Marseille",
+      "texte": "👷 Le futur immeuble \"Idéal\", en construction à Marseille, est en partie préfabriqué à Berre-l’Étang. Ses espaces intérieurs pourront évoluer au fil du temps ➡️ https://lnkd.in/e3TDMPN5"
+     },
+     "date": "1 sem.",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQH1bTvR4Kk2zw/feedshare-shrink_1280/B4EaGItsFqJUAU-/0/1793295041203?e=1796256000&v=beta&t=d41hFMb1NMfMJ1PvXSI5vtZegFhLh_Ud4qQvM8g6gKU",
+       "w": 1080,
+       "h": 1350
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/C4E0BAQGNQNwXXOwZzA/company-logo_400_400/company-logo_400_400/0/1630652546872/modus_aedificandi_logo?e=1796256000&v=beta&t=fRd8jQX1F14eE1X2dORavJtXVKIiZNcprGCzMVimqUY",
+       "w": 400,
+       "h": 400
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/C4D0BAQELWKSi59NW9Q/company-logo_400_400/company-logo_400_400/0/1630553325800/rector_lesage_logo?e=1796256000&v=beta&t=3l1OxoAnOkytv4lfqOlAXmq0ZRGwA2XThLsCJeYk5Q4",
+       "w": 400,
+       "h": 400
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4D0BAQHP0Nvd-7I10w/company-logo_400_400/B4DZasCKjJHQAc-/0/1746642971262/stambrasil_logo?e=1796256000&v=beta&t=zlWH1etdoCuEKbddHjU0akl6GMx6JG2tULyvaaGvgo4",
+       "w": 400,
+       "h": 400
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D5603AQH2GKGpEkwyBQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728297488578?e=1796256000&v=beta&t=yY3CY58Xv1Rdln6vkDBKauUnz5JsbyPzvAD-uCnEkv4",
+       "w": 800,
+       "h": 800
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E03AQHmkzwDU7Amgg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701088260201?e=1796256000&v=beta&t=J3N7mV6xC8cMa_YQzZigDGMRhbkA79CmuNlOLeN2GNA",
+       "w": 800,
+       "h": 800
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E03AQFZewK7rA0gNw/profile-displayphoto-shrink_800_800/B4EZakKAQeHcAc-/0/1746510809240?e=1796256000&v=beta&t=gbxxa2KczyCN0ujsMbU_AeQelz5lIDhmFRTS3s1b-dU",
+       "w": 800,
+       "h": 800
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 60,
+   "nom": "IMMO DE FRANCE AIN",
+   "url": "https://www.linkedin.com/company/immo-de-france-ain/",
+   "statut": "suivie",
+   "company_id": "18670351",
+   "nom_linkedin": "IMMO de France Ain",
+   "n_trouves": 9,
+   "dernier_ts": 1794340043223,
+   "dernier_post": "3 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526007620650905601",
+     "ts": 1794340043223,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526007620650905601",
+     "texte": "[Vendre son bien en toute sérénité ! 🏠✨]\n\nC’est l’histoire qu’ont pu découvrir de nombreux spectateurs au cinéma L’Amphi ces dernières semaines, juste avant leur film.\n\nConfier la vente de son logement ne devrait pas être une source de stress, mais une étape franchie en toute confiance.\n\nCe qui fait toute la différence ?\n🔹 Une estimation au juste prix et un ancrage local fort\n🔹 Un accompagnement sur-mesure, de la mise en valeur du bien jusqu'à la signature finale\n🔹 Une sélection rigoureuse des acquéreurs et un suivi transparent à chaque étape\n\n🙏 Merci à MédiaFrance - Spécialiste de l’audiovisuel pour la réalisation de ce spot, ainsi qu’à nos collaborateurs pour leur engagement au quotidien !",
+     "entete": "IMMO de France Ain reposted this",
+     "auteur": "IMMO de France Ain",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQEQqTPbZ6xLfw/videocover-high/B4EaFoK6uTGwBM-/0/1792749056787?e=1795165200&v=beta&t=rQC7-FyOuqqdMwhqOEZqY2T9uDDADYGeSG-HkYOiQ7Q",
+       "w": 720,
+       "h": 1280
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQEQqTPbZ6xLfw/mp4-720p-30fp-crf28/B4EaFoK6uTGwB8-/0/1792749058398?e=1795165200&v=beta&t=-jFUCxS6qdLIJh2hTUH_BlCShYyBtQ5UZ-TOvjOkmOw",
+      "w": 720,
+      "h": 1280,
+      "duree_ms": 15000
+     }
+    },
+    {
+     "urn": "urn:li:activity:7519334566713528320",
+     "ts": 1792749063185,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7519334566713528320",
+     "texte": "[Vendre son bien en toute sérénité ! 🏠✨]\n\nC’est l’histoire qu’ont pu découvrir de nombreux spectateurs au cinéma L’Amphi ces dernières semaines, juste avant leur film.\n\nConfier la vente de son logement ne devrait pas être une source de stress, mais une étape franchie en toute confiance.\n\nCe qui fait toute la différence ?\n🔹 Une estimation au juste prix et un ancrage local fort\n🔹 Un accompagnement sur-mesure, de la mise en valeur du bien jusqu'à la signature finale\n🔹 Une sélection rigoureuse des acquéreurs et un suivi transparent à chaque étape\n\n🙏 Merci à MédiaFrance - Spécialiste de l’audiovisuel pour la réalisation de ce spot, ainsi qu’à nos collaborateurs pour leur engagement au quotidien !",
+     "entete": "",
+     "auteur": "IMMO de France Ain",
+     "reprise": null,
+     "date": "3 sem.",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQEQqTPbZ6xLfw/videocover-high/B4EaFoK6uTGwBM-/0/1792749056787?e=1795165200&v=beta&t=rQC7-FyOuqqdMwhqOEZqY2T9uDDADYGeSG-HkYOiQ7Q",
+       "w": 720,
+       "h": 1280
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQEQqTPbZ6xLfw/mp4-720p-30fp-crf28/B4EaFoK6uTGwB8-/0/1792749058398?e=1795165200&v=beta&t=-jFUCxS6qdLIJh2hTUH_BlCShYyBtQ5UZ-TOvjOkmOw",
+      "w": 720,
+      "h": 1280,
+      "duree_ms": 15000
+     }
+    }
+   ]
+  },
+  {
+   "id": 61,
+   "nom": "SLCI",
+   "url": "https://www.linkedin.com/company/slci-groupe/",
+   "statut": "suivie",
+   "company_id": "10508008",
+   "nom_linkedin": "SLCI Groupe",
+   "n_trouves": 9,
+   "dernier_ts": 1793285659554,
+   "dernier_post": "2 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 62,
+   "nom": "Maisons Axial",
+   "url": "https://www.linkedin.com/company/maisons-axial/",
+   "statut": "suivie",
+   "company_id": "5714573",
+   "nom_linkedin": "MAISONS AXIAL SAS",
+   "n_trouves": 9,
+   "dernier_ts": 1793265516164,
+   "dernier_post": "2 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 63,
+   "nom": "SEFI Lotissement",
+   "url": "https://www.linkedin.com/company/sefi-terrains/",
+   "statut": "suivie",
+   "company_id": "106881496",
+   "nom_linkedin": "SEFI Terrains",
+   "n_trouves": 9,
+   "dernier_ts": 1791557354146,
+   "dernier_post": "1 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 64,
+   "nom": "SLCI Promotion",
+   "url": "https://www.linkedin.com/company/slcipromotion/",
+   "statut": "suivie",
+   "company_id": "106884458",
+   "nom_linkedin": "SLCI Promotion",
+   "n_trouves": 9,
+   "dernier_ts": 1793354298426,
+   "dernier_post": "1 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 65,
+   "nom": "Régie Simonneau",
+   "url": "https://www.linkedin.com/company/r%C3%A9gie-simonneau-lyon/",
+   "statut": "suivie",
+   "company_id": "101593878",
+   "nom_linkedin": "Régie Simonneau",
+   "n_trouves": 9,
+   "dernier_ts": 1793978982297,
+   "dernier_post": "7 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7524493221364908032",
+     "ts": 1793978982297,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524493221364908032",
+     "texte": "🏡 À VENDRE - Appartement 4 pièces traversant avec terrasse plein sud\n📍 Lyon 6ᵉ - Masséna\n\nDans un immeuble de standing, entre le parc de la Tête d’Or 🌳, la place Maréchal Lyautey et les bords du Rhône, découvrez cet appartement familial au cœur de l’un des quartiers les plus prisés de Lyon ✨\n\nSitué au 3ᵉ étage, ce bien traversant de 81 m² offre de beaux espaces de vie :\n- Une cuisine équipée \n- Deux chambres d’environ 14 m² et 11 m²\n- Une salle d’eau et un WC séparé\n- Une cave\n- Le double vitrage PVC, des stores motorisés et la possibilité d’installer la climatisation\n\n☀️ Son atout ? Une terrasse d’environ 10 m² orientée plein sud, complétée par un balcon aménageable.\n\n🛍️ Commerces de proximité, 🎓 lycée du Parc et 🚇 métro A à 10 minutes à pied : tout est réuni pour un quotidien facile.\n\nGarage disponible en option.\n\n👉 En savoir plus : https://lnkd.in/eNpbwuci\n\n📞 Informations & visites :\nJimmy Brillaud - 06 10 40 32 79\n\n#RegieSimonneau #Lyon #Lyon6 #Massena #ParcDeLaTeteDOr #AppartementAVendre #ImmobilierLyon #VenteImmobiliere #Terrasse #Immobilier",
+     "entete": "",
+     "auteur": "Régie Simonneau",
+     "reprise": null,
+     "date": "7 j",
+     "kind": [
+      "documentComponent"
+     ],
+     "images": [],
+     "doc_pages": [
+      "https://media.licdn.com/dms/image/v2/D4E10AQGgNluy5tn9PQ/ads-document-cover-images_1920/B4EaGxep6xIgBA-/0/1793978967279?e=1795165200&v=beta&t=aqiYq3C09GscjGJDaPldPnz2Z4nwHoSmqeynF8mzRxc",
+      "https://media.licdn.com/dms/image/v2/D4E10AQGgNluy5tn9PQ/ads-document-cover-images_1920/B4EaGxep6xIgBA-/1/1793978967279?e=1795165200&v=beta&t=W8fRg8_nEgau4vS-l5Lg2NmvczhZ5Q8gfiJrMa9xdPA",
+      "https://media.licdn.com/dms/image/v2/D4E10AQGgNluy5tn9PQ/ads-document-cover-images_1920/B4EaGxep6xIgBA-/2/1793978967279?e=1795165200&v=beta&t=4q8wvDuf1yrPDIs45-q0rSv7rgxQUSUtgm50cz3h-hQ"
+     ],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7524139343305756674",
+     "ts": 1793894611193,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524139343305756674",
+     "texte": "220 ans à Lyon. 220 ans à vos côtés. 🎉\n\nDepuis 220 ans, notre métier n’est pas seulement de gérer des immeubles. ✨\n\n🏛️  C’est avant tout accompagner des copropriétaires, faire avancer des projets collectifs, préserver le patrimoine et créer les conditions d’une copropriété sereine et pérenne. \n\nChez Régie Simonneau, nos équipes syndic œuvrent chaque jour aux côtés des conseils syndicaux et des copropriétaires pour assurer la bonne gestion des résidences, anticiper les enjeux de demain et valoriser durablement les immeubles qui nous sont confiés. ❤️\n\n💯 Parce que la confiance se construit dans la durée, nous sommes fiers de mettre notre expertise au service des copropriétés lyonnaises depuis plusieurs générations. 🤝\n\n━━━━━━━━━━━━━━━\n\n🎁  𝐎𝐟𝐟𝐫𝐞 𝐬𝐩𝐞́𝐜𝐢𝐚𝐥𝐞 𝟐𝟐𝟎 𝐚𝐧𝐬\nPendant notre opération anniversaire, bénéficiez de 220 € d’avantages pour tout nouveau contrat syndic signé*.\n\n🎉 Et n’oubliez pas notre Grand Jeu des 220 ans !\n\n❓ Chaque semaine, une nouvelle question sur l’histoire de Lyon et de la Régie Simonneau vous permet de tenter votre chance pour remporter de nombreux cadeaux 🏆\n\n👉 Rendez-vous sur notre site pour participer et découvrir nos offres anniversaire :\nhttps://lnkd.in/ePFCDuq7\n\n* Voir conditions de l’offre.\n\nSylvain RICHERD, Arthur Cerveau, Romuald FANELLI\n\n#ImmobilierLyon #SyndicLyon #Syndic #Anniversaire",
+     "entete": "",
+     "auteur": "Régie Simonneau",
+     "reprise": null,
+     "date": "1 sem.",
+     "kind": [
+      "documentComponent"
+     ],
+     "images": [],
+     "doc_pages": [
+      "https://media.licdn.com/dms/image/v2/D4E10AQH6GuUaAea1gw/ads-document-cover-images_1920/B4EaGsczk1IEBI-/0/1793894600845?e=1795165200&v=beta&t=vF35BG3wXHfT3HBextVY3oY3NXJo7q5ecznthSklxB4",
+      "https://media.licdn.com/dms/image/v2/D4E10AQH6GuUaAea1gw/ads-document-cover-images_1920/B4EaGsczk1IEBI-/1/1793894600845?e=1795165200&v=beta&t=wz5bAYGOyW9BO8Wv0CqMF-pEtgJFDBfvirYLuOBrbAM",
+      "https://media.licdn.com/dms/image/v2/D4E10AQH6GuUaAea1gw/ads-document-cover-images_1920/B4EaGsczk1IEBI-/2/1793894600845?e=1795165200&v=beta&t=TPNhv8zpWGJYmrFTr6IwnZ-0LvaPKJudkZs8OPMOOrs"
+     ],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 66,
+   "nom": "Régie Lescuyer et associés",
+   "url": "https://www.linkedin.com/company/regie-lescuyer/",
+   "statut": "suivie",
+   "company_id": "103506038",
+   "nom_linkedin": "Régie Lescuyer & Associés",
+   "n_trouves": 9,
+   "dernier_ts": 1792416438782,
+   "dernier_post": "4 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 67,
+   "nom": "Groupe Tisserin",
+   "url": "https://www.linkedin.com/company/groupe-tisserin/",
+   "statut": "suivie",
+   "company_id": "8657037",
+   "nom_linkedin": "Groupe Procivis Nord",
+   "n_trouves": 9,
+   "dernier_ts": 1794488616704,
+   "dernier_post": "20 h",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526630782996496384",
+     "ts": 1794488616704,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526630782996496384",
+     "texte": "C’est 𝐥𝐚 𝐩𝐫𝐞𝐦𝐢𝐞̀𝐫𝐞 𝐟𝐨𝐢𝐬 que nous organisons une activité comme celle-ci…\n\nIl faut dire que cette année, la famille des alternants du Groupe Tisserin s’est bien agrandie ! 👨‍👩‍👧‍👦\n\nNotre service RH a organisé la toute première matinée des alternants du Groupe. 𝟐𝟒 𝐚𝐥𝐭𝐞𝐫𝐧𝐚𝐧𝐭𝐬 𝐝𝐞𝐬 𝐇𝐚𝐮𝐭𝐬-𝐝𝐞-𝐅𝐫𝐚𝐧𝐜𝐞 se sont retrouvés au Shake autour d’un petit-déjeuner, d’une présentation du Groupe et d’un quiz pour savoir qui connaissait le mieux Tisserin 👀. Elodie GERARD, conseillère chez 𝐎𝐏𝐂𝐎 𝐄𝐏, est aussi intervenue sur les dispositifs d’accompagnement de l’alternance.\n\nPuis changement de décor. Casque sur la tête, direction le chantier de 𝐋𝐢𝐥𝐥𝐞 𝐇𝐚𝐧𝐚, porté par Tisserin Promotion. Et pour présenter ce projet de 38 logements, qui de mieux qu’une alternante ? Lilly Delabre a joué les guides avec une belle assurance. 👷\n\nNos alternants ont découvert les différentes étapes d’une construction, de la structure aux futurs espaces verts. Pour certains, le chantier fait partie du quotidien. Pour d’autres, c’était une vraie première, et l’occasion de voir de près ce qui se construit derrière nos métiers.\n\nÀ la fin de la matinée, tous sont repartis avec une vision plus concrète de ce que fait le Groupe… et de nouveaux visages à saluer dans les couloirs, bien sûr.\n\nMerci à Lilly Delabre et Mohamed El Aarbaoui pour l’accueil sur le chantier, à Elodie GERARD pour son intervention, et à Nicolas Lecrubier et Candice Meunier pour l’animation.\n\n Et merci à nos alternants d’avoir porté le casque avec autant de style ! 😉\n\nTisserin Promotion | Tisserin Habitat | Nacarat | Immo de France Hauts-de-France\n\n#GroupeTisserin #Alternance #TisserinPromotion #TisserinHabitat #ImmoDeFrance #Nacarat #LilleHana #HautsDeFrance #VieDeGroupe #OPCOEP",
+     "entete": "",
+     "auteur": "Groupe Procivis Nord",
+     "reprise": null,
+     "date": "20 h",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGUqTOTv2VWLQ/feedshare-image-high-res/B4EaHP2zVKGsAQ-/0/1794488613154?e=1796256000&v=beta&t=ciyuabMI3tziNdKJOOlCswyllx5njffzeBUjCTjEgSw",
+       "w": 2048,
+       "h": 1152
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHtVDpTgpxLOA/feedshare-image-high-res/B4EaHP2zxoKwAQ-/0/1794488615286?e=1796256000&v=beta&t=kYJJKdGpBYfl6PnDP3sCF8H-yph_nFxbhvDgorByc10",
+       "w": 2048,
+       "h": 1536
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQH-sBMOH4LbxA/feedshare-shrink_1280/B4EaHP2y1GGwAI-/0/1794488610710?e=1796256000&v=beta&t=KxImW_FZhvXu3r04Utn3xj4kXGYvKnJglu42R3F6LuU",
+       "w": 1280,
+       "h": 1706
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7524511983359066112",
+     "ts": 1793983455505,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524511983359066112",
+     "texte": "Certains collectionnent les buts encaissés, d'autres les Pyramides. 🏆 \n\n5 en 4 ans pour Tisserin Promotion.\n\nEt si on additionne les deux chiffres… on retombe sur un fameux score… ⚽️ \n\nBravo aux équipes et partenaires 🤜🏼🤛🏼\n\nFPI Hauts-de-France",
+     "entete": "",
+     "auteur": "Groupe Procivis Nord",
+     "reprise": {
+      "auteur": "Tisserin Promotion",
+      "texte": "Décidément, Clésence a vraiment eu du flair.\n\nQuand on a commencé à travailler ensemble sur 𝐋'𝐄𝐜𝐫𝐢𝐧 à Hallennes-lez-Habourdin et 𝐌𝐮̈ à Seclin, personne ne parlait de trophées.\n\nHier soir, aux 𝐏𝐲𝐫𝐚𝐦𝐢𝐝𝐞𝐬 𝐝’𝐀𝐫𝐠𝐞𝐧𝐭 𝐝𝐞 𝐥𝐚 𝐅𝐏𝐈 𝟐𝟎𝟐𝟔 les deux résidences acquises par Clésence ont été récompensées :\n\n🏆L’Écrin repart avec la Pyramide d’Argent Bâtiment bas carbone (prix parrainé par EDF)\n🏆Mü en copromotion avec Les Villages d'Or repart avec la Pyramide d’Argent Qualité globale (prix parrainé par le GIP – Groupement des Industriels de la Prescription)\n\nBravo Clésence d’avoir vu juste avant tout le monde. Merci à nos partenaires et à nos équipes. 👏\n\nAvec ces deux-là, Tisserin Promotion compte déjà 5 Pyramides en 4 ans.\nOn se donne rendez-vous l’année prochaine ? On prépare déjà l’étagère.\n|  DDP Agence Delassus - Dumoulin - Prévost Architecture, Recherche et Développement | Projex Ingénierie | Diagobat et EQUIPE INGENIERIE | P2L Ingénierie | 𝐄𝐌𝐀 Emmanuel Miesch  | Clésence | Olivier MONS | David LARBODIE  | Fabrice DOMER | Otilio BORGES | Catherine PAPETTI | Marie ESTOURNET( Les Villages d'Or) | BPLUSB architectures (Benjamin Boyaval) | GROUPE PROJEX |𝐀𝐮𝐭𝐫𝐞𝐦𝐞𝐧𝐭 𝐃𝐢𝐭 | NJC ECONOMIE | Alexandrine CARLIER | Simon Way | Dimitri Vienco | Damien Wallerick | Pierre Jovet | Mohamed El Aarbaoui | Rémy THIERY | FPI Hauts-de-France"
+     },
+     "date": "7 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQET_5IxfnW5tg/feedshare-shrink_1280/B4EaGw8Q.kHEAI-/0/1793969950939?e=1796256000&v=beta&t=3is6z8K1Hazv6_QuZpkBEertkPgFfj10eCOYC57Z90w",
+       "w": 1200,
+       "h": 1200
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEDesyY_xPH7Q/feedshare-image-high-res/B4EaGw8Q7XHwAU-/0/1793969950738?e=1796256000&v=beta&t=aAHmnVLDAoyYR20sx-qSEu036gdf9kIVY1cIRm0IYec",
+       "w": 1200,
+       "h": 1200
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHwo8o2af-rLg/feedshare-shrink_1280/B4EaGw8Q1LI8AI-/0/1793969950315?e=1796256000&v=beta&t=v6gKepkaaX_3C4ek5MFfIeR5Ot07jGdsaHTGq4Jr2jY",
+       "w": 1024,
+       "h": 720
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 68,
+   "nom": "TISSERIN Maisons Individuelles",
+   "url": "https://www.linkedin.com/company/tisserin-maison-individuelle/",
+   "statut": "suivie",
+   "company_id": "108565892",
+   "nom_linkedin": "Tisserin Maison Individuelle",
+   "n_trouves": 7,
+   "dernier_ts": 1790240809851,
+   "dernier_post": "2 mois",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 72,
+   "nom": "Nacarat",
+   "url": "https://www.linkedin.com/company/nacarat/",
+   "statut": "suivie",
+   "company_id": "461710",
+   "nom_linkedin": "Nacarat",
+   "n_trouves": 9,
+   "dernier_ts": 1793790028981,
+   "dernier_post": "1 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 73,
+   "nom": "Tisserin Habitat",
+   "url": "https://www.linkedin.com/company/tisserin-habitat/",
+   "statut": "suivie",
+   "company_id": "16179343",
+   "nom_linkedin": "Tisserin Habitat",
+   "n_trouves": 9,
+   "dernier_ts": 1793808146612,
+   "dernier_post": "1 sem.",
+   "actif": "NON",
+   "n_7j": 0,
+   "posts": []
+  },
+  {
+   "id": 74,
+   "nom": "Tisserin Promotion",
+   "url": "https://www.linkedin.com/company/tisserin-promotion/",
+   "statut": "suivie",
+   "company_id": "16178182",
+   "nom_linkedin": "Tisserin Promotion",
+   "n_trouves": 9,
+   "dernier_ts": 1793969952217,
+   "dernier_post": "7 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7524455346464243712",
+     "ts": 1793969952217,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524455346464243712",
+     "texte": "Décidément, Clésence a vraiment eu du flair.\n\nQuand on a commencé à travailler ensemble sur 𝐋'𝐄𝐜𝐫𝐢𝐧 à Hallennes-lez-Habourdin et 𝐌𝐮̈ à Seclin, personne ne parlait de trophées.\n\nHier soir, aux 𝐏𝐲𝐫𝐚𝐦𝐢𝐝𝐞𝐬 𝐝’𝐀𝐫𝐠𝐞𝐧𝐭 𝐝𝐞 𝐥𝐚 𝐅𝐏𝐈 𝟐𝟎𝟐𝟔 les deux résidences acquises par Clésence ont été récompensées :\n\n🏆L’Écrin repart avec la Pyramide d’Argent Bâtiment bas carbone (prix parrainé par EDF)\n🏆Mü en copromotion avec Les Villages d'Or repart avec la Pyramide d’Argent Qualité globale (prix parrainé par le GIP – Groupement des Industriels de la Prescription)\n\nBravo Clésence d’avoir vu juste avant tout le monde. Merci à nos partenaires et à nos équipes. 👏\n\nAvec ces deux-là, Tisserin Promotion compte déjà 5 Pyramides en 4 ans.\nOn se donne rendez-vous l’année prochaine ? On prépare déjà l’étagère.\n|  DDP Agence Delassus - Dumoulin - Prévost Architecture, Recherche et Développement | Projex Ingénierie | Diagobat et EQUIPE INGENIERIE | P2L Ingénierie | 𝐄𝐌𝐀 Emmanuel Miesch  | Clésence | Olivier MONS | David LARBODIE  | Fabrice DOMER | Otilio BORGES | Catherine PAPETTI | Marie ESTOURNET( Les Villages d'Or) | BPLUSB architectures (Benjamin Boyaval) | GROUPE PROJEX |𝐀𝐮𝐭𝐫𝐞𝐦𝐞𝐧𝐭 𝐃𝐢𝐭 | NJC ECONOMIE | Alexandrine CARLIER | Simon Way | Dimitri Vienco | Damien Wallerick | Pierre Jovet | Mohamed El Aarbaoui | Rémy THIERY | FPI Hauts-de-France",
+     "entete": "",
+     "auteur": "Tisserin Promotion",
+     "reprise": null,
+     "date": "7 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQET_5IxfnW5tg/feedshare-shrink_1280/B4EaGw8Q.kHEAI-/0/1793969950939?e=1796256000&v=beta&t=3is6z8K1Hazv6_QuZpkBEertkPgFfj10eCOYC57Z90w",
+       "w": 1200,
+       "h": 1200
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEDesyY_xPH7Q/feedshare-image-high-res/B4EaGw8Q7XHwAU-/0/1793969950738?e=1796256000&v=beta&t=aAHmnVLDAoyYR20sx-qSEu036gdf9kIVY1cIRm0IYec",
+       "w": 1200,
+       "h": 1200
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHwo8o2af-rLg/feedshare-shrink_1280/B4EaGw8Q1LI8AI-/0/1793969950315?e=1796256000&v=beta&t=v6gKepkaaX_3C4ek5MFfIeR5Ot07jGdsaHTGq4Jr2jY",
+       "w": 1024,
+       "h": 720
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7521265702419308544",
+     "ts": 1793209481816,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7521265702419308544",
+     "texte": "Pendant trente ans, nous avons construit beaucoup de logements en France.\nMais je me demande parfois pour qui nous les avons réellement conçus.\n\nPour ceux qui allaient y vivre ? Ou pour ceux qui allaient les acheter ?\nLa question peut sembler provocatrice. Elle mérite pourtant d'être posée.\n\nPendant des décennies, une grande partie de la construction de logements neufs a été financée par des particuliers, encouragés à investir grâce aux dispositifs de défiscalisation.\nCe modèle a permis de produire beaucoup de logements. Il a aussi eu des effets pervers.\nL'investisseur recherchait avant tout un placement patrimonial, un avantage fiscal et un prix compatible avec sa capacité de financement.\n\nEt comme il n'allait généralement pas habiter le logement, sa qualité d'usage n'était pas nécessairement sa première préoccupation.\n\nProgressivement, nous avons donc appris à optimiser les surfaces, à rationaliser les plans et à réduire certains espaces pour maintenir des prix de vente acceptables.\n\nEt nous, professionnels de l'immobilier, avons largement participé à cette évolution.\nJe ne suis pas en train de dire que tous les logements construits pour des investisseurs sont mauvais. Ni que la défiscalisation était une erreur. Elle a joué un rôle important dans la production de logements.\n\nMais je crois que nous avons fini par confondre deux choses : la valeur financière d'un logement et sa valeur pour celui qui l'habite.\n\nLes deux ne sont pas incompatibles. Encore faut-il ne pas sacrifier systématiquement la seconde à la première.\n\nCar au fond, un logement peut être un excellent investissement sur le papier.\nCela n'en fait pas nécessairement un bon endroit pour vivre.\n\n— Extrait \" Regards de Dirigeants \" - Le Figaro\n\n𝑺𝒖𝒊𝒗𝒆𝒛 𝒍𝒆 𝒇𝒊𝒍.",
+     "entete": "Tisserin Promotion reposted this",
+     "auteur": "Ludovic MONTAUDON",
+     "reprise": null,
+     "date": "2 sem.",
+     "kind": [
+      "linkedInVideoComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E05AQFasDmhN80zxw/videocover-high/B4EaF_C4iqIYBU-/0/1793132826808?e=1795165200&v=beta&t=UDaCppzd9hxLY0_FtyG8qVSJ7H7ugf5ykHS3aBc1bFQ",
+       "w": 720,
+       "h": 900
+      }
+     ],
+     "doc_pages": [],
+     "video": {
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4E05AQFasDmhN80zxw/mp4-720p-30fp-crf28/B4EaF_C4iqIYCE-/0/1793132838123?e=1795165200&v=beta&t=hnW6ootxNnZ25NZep-mlLB0tYM2Q2ka_M6YKFncRnf4",
+      "w": 720,
+      "h": 900,
+      "duree_ms": 94000
+     }
+    }
+   ]
+  },
+  {
+   "id": 75,
+   "nom": "VALRIM",
+   "url": "https://www.linkedin.com/company/groupe-valrim/",
+   "statut": "suivie",
+   "company_id": "13063151",
+   "nom_linkedin": "GROUPE VALRIM",
+   "n_trouves": 9,
+   "dernier_ts": 1794295272798,
+   "dernier_post": "3 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525819839878307841",
+     "ts": 1794295272798,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525819839878307841",
+     "texte": "ᴀᴜx ᴄᴏᴛéꜱ ᴅᴇ 𝟧𝟧 ᴀꜱꜱᴏᴄɪᴀᴛɪᴏɴꜱ ᴇɴɢᴀɢéᴇꜱ ᴀᴠᴇᴄ ʟᴀ Banque Alimentaire Drôme Ardèche ᴄᴏɴᴛʀᴇ ʟᴀ ᴘʀéᴄᴀʀɪᴛé ᴀʟɪᴍᴇɴᴛᴀɪʀᴇ 🧡 \n\nAlors que la précarité augmente, 𝗲𝗹𝗹𝗲𝘀 𝗮𝗴𝗶𝘀𝘀𝗲𝗻𝘁. \n\n𝟳 𝗲𝗻𝘁𝗿𝗲𝗽𝗿𝗶𝘀𝗲𝘀 𝗺𝗲𝗺𝗯𝗿𝗲𝘀 de Les Entreprises du Cœur ont participé ce week-end à la grande collecte et au tri des denrées alimentaires pour la Banque Alimentaire Drôme Ardèche. \n\n🔸Plusieurs dizaines de collaborateurs engagés \n🔸𝟭𝟰𝟱 𝘁𝗼𝗻𝗻𝗲𝘀 𝗱𝗲 𝗱𝗼𝗻𝘀 collectés, à titre d’exemple en 2025 🛒 \n🔸𝟮𝟳 𝟬𝟬𝟬 𝗽𝗲𝗿𝘀𝗼𝗻𝗻𝗲𝘀 qui bénéficient chaque semaine de l’aide alimentaire.\n\nᴅᴏɴɴᴇʀ, ᴀᴄʜᴇᴍɪɴᴇʀ, ᴛʀɪᴇʀ, ʀᴇᴅɪꜱᴛʀɪʙᴜᴇʀ … Merci de participer à cette formidable chaîne des solidarités 🧡\n\nARDROM GROUPE • Dimitri BERNARD • Lucie Marsanne • Ainhoa lenfant • Cécilia CASTRO DIAS • Aventech • Catherine DE-MONTEIRO • Christophe Reyes • Groupe VINCENT • Marine AUGÉ-COURTOI • Dominique SPAGNOLETTI • Émilie Fraisse • Rémi VINCENT • Groupe Vingt-Six •  Mylene SALISSON • Philippe Veyret • GROUPE VALRIM • Thierry CLEMENSON • Lucile Terras • FARAGLO • Claire TRENTO • Céline M.\nBanque Alimentaire • Marie-Hélène Guillon-Strobl • Béatrice LIAIGRE\n\n#BanqueAlimentaire #Solidarité #Engagement #Drôme #Ardèche #RSE #EntreprisesEngagées #Dons",
+     "entete": "GROUPE VALRIM reposted this",
+     "auteur": "Les Entreprises du Cœur",
+     "reprise": null,
+     "date": "3 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQEmdQ5Z4CnAXA/feedshare-image-high-res/B4EaHBAsO6IEAY-/0/1794239546702?e=1796256000&v=beta&t=JllGQbQ8sFnEisFzU7eKiOocYV8UwKVh7GxWpEMtPNs",
+       "w": 1200,
+       "h": 1500
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGlj_acpIsNFg/feedshare-shrink_1280/B4EaHBAsTxGsAQ-/0/1794239547002?e=1796256000&v=beta&t=7r9sguUFeeX9ClD1Bcl-zon95rLF_QwRGNH8X-W5ET8",
+       "w": 1200,
+       "h": 1500
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFbx5t7UpJX_Q/feedshare-image-high-res/B4EaHBAsSoHwAU-/0/1794239546847?e=1796256000&v=beta&t=X0kDS--HMtupeuLBhOpgo5hLnNIu_S37SXr_wcoKRYo",
+       "w": 1200,
+       "h": 1500
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFHjzfXh0UfJA/feedshare-image-high-res/B4EaHBAsHxHMAQ-/0/1794239546185?e=1796256000&v=beta&t=--A-ugWtIvZd_Z8IXKO5JoQNIu52yqZvElJfmfL0cus",
+       "w": 1200,
+       "h": 1500
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQGGXF1PdvkrPA/feedshare-shrink_1280/B4EaHBAsVFHwAQ-/0/1794239547034?e=1796256000&v=beta&t=v6jOWEkuC30RlfHf3YkvYtO3AtCjwossMshTcEfjmlI",
+       "w": 1200,
+       "h": 1500
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQE52GWkcjUcIw/feedshare-shrink_1280/B4EaHBAsVVI8AM-/0/1794239547153?e=1796256000&v=beta&t=Le5LlNSsIoL3iRsE0-v_D-jm8bK_0xFIfO611YPAb0k",
+       "w": 1200,
+       "h": 1500
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7523051478165417984",
+     "ts": 1793635243932,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7523051478165417984",
+     "texte": "🎉 Bienvenue aux nouveaux membres du Groupe Valrim 🎉\n\nNous avons le plaisir de vous présenter les nouveaux collaborateurs qui ont récemment rejoint nos équipes :\n\nEmily GRANGE - Conseillère Transaction pour la REGIE GOUDARD-PATOT au sein de l'agence d'Annonay. \n\nLucas CROS - Commercial Aménagement Foncier pour Valrim Aménagement au siège à Valence.\n\nLilly DAMON - Assistante Marketing & Communication en Alternance pour Habitat Dauphinois - Groupe Valrim au sein du siège à Valence. \n\nFlavie CHANIOL - Assistante Commerciale en Alternance pour Habitat Dauphinois - Groupe Valrim à l'agence de Bourg-lès-Valence.\n\nMorgane GERMAIN - Chargée de Gestion Locative pour Immo de France - Groupe Valrim Nord à l'agence de Vienne. \n\nNous leur souhaitons la bienvenue et beaucoup de réussite dans cette nouvelle aventure ! 🚀",
+     "entete": "",
+     "auteur": "GROUPE VALRIM",
+     "reprise": null,
+     "date": "1 sem.",
+     "kind": [
+      "documentComponent"
+     ],
+     "images": [],
+     "doc_pages": [
+      "https://media.licdn.com/dms/image/v2/D4E1FAQEcTZ5a15yq1g/feedshare-document-cover-images_1920/B4EaFZCShmGUBQ-/0/1792495136902?e=1795165200&v=beta&t=b9NU_zJGAeoqXC-G8dy2awgGHUfxY2WGxo3Oo49EiYg",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQEcTZ5a15yq1g/feedshare-document-cover-images_1920/B4EaFZCShmGUBQ-/1/1792495136902?e=1795165200&v=beta&t=_uvW7ZRnIDiZB0C1M6e5bQQxoHgyCYqkHu6aEJUbC-Y",
+      "https://media.licdn.com/dms/image/v2/D4E1FAQEcTZ5a15yq1g/feedshare-document-cover-images_1920/B4EaFZCShmGUBQ-/2/1792495136902?e=1795165200&v=beta&t=HPSUjA-zAo8gYLwSiwWLeNjXKuYlT_mwjsYudOBYiTY"
+     ],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 76,
+   "nom": "Maisons Liberté",
+   "url": "https://www.linkedin.com/showcase/maisons-libert%C3%A9---groupe-valrim/",
+   "statut": "suivie",
+   "company_id": "69900990",
+   "nom_linkedin": "Maisons Liberté - Groupe Valrim",
+   "n_trouves": 9,
+   "dernier_ts": 1794240031764,
+   "dernier_post": "4 j",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525588142188347393",
+     "ts": 1794240031764,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525588142188347393",
+     "texte": "Merci à Bernard & Christelle pour leur confiance. 🏡✨\n\nChez Maisons Liberté, nous mettons tout en œuvre pour que chaque projet soit suivi avec sérieux, écoute et proximité, de la conception jusqu’à la livraison.\n\nUn grand merci pour ce bel avis, qui valorise l'implication de nos équipes et la qualité du travail réalisé !",
+     "entete": "",
+     "auteur": "Maisons Liberté - Groupe Valrim",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E10AQGSaq5umF9D2Q/image-shrink_1280/B4EaHBChWRIgAY-/0/1794240026309?e=1795165200&v=beta&t=IPJDJX5BSR5i1a-mOWrLYCdDMuqwK0r2Wjk0Qf9511Y",
+       "w": 1200,
+       "h": 1200
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7524787563644006400",
+     "ts": 1794049158965,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524787563644006400",
+     "texte": "🏠Retrouvez- nous ce week-end au Salon Habitat & Déco de Valence !\n\nNos équipes seront présentes pour vous accueillir et vous accompagner dans vos projets immobiliers.\n\nVenez nous rencontrer et échanger avec nous !\n\n📍Stand B23\n🕦 De 10h à 19h\n📌Palais des Congrès et des expositions- 16 Avenue Georges Clemenceau, 26000 Valence",
+     "entete": "",
+     "auteur": "Maisons Liberté - Groupe Valrim",
+     "reprise": null,
+     "date": "6 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E10AQFn9rAgDK20qA/image-shrink_1280/B4EaG1qZj_GwAY-/0/1794049154694?e=1795165200&v=beta&t=cAp9CAQIZWgfeG_qYzrojFX7McSCi1Sf3yLmc5hGy1U",
+       "w": 1280,
+       "h": 1707
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 77,
+   "nom": "Valrim aménagement",
+   "url": "https://www.linkedin.com/showcase/valrim-am%C3%A9nagement/",
+   "statut": "suivie",
+   "company_id": "72255431",
+   "nom_linkedin": "Valrim Aménagement",
+   "n_trouves": 9,
+   "dernier_ts": 1794240047411,
+   "dernier_post": "4 j",
+   "actif": "OUI",
+   "n_7j": 2,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7525588207816581120",
+     "ts": 1794240047411,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525588207816581120",
+     "texte": "🏡 Et si votre future maison commençait ici ?\n\n📍 VALRIM Aménagement vous propose des terrains à vendre dans 13 communes de la Drôme : de Valence à Montélimar, en passant par Romans-sur-Isère, Grignan et bien d’autres !\n\n🌿 En ville, au calme ou au cœur d’un village, trouvez le terrain qui correspond à vos envies et à votre projet de construction.\n\n👉 Découvrez tous nos terrains disponibles :\nhttps://hubs.li/Q04DyVKF0\n\n📩 Un projet en tête ? Contactez-nous, nous sommes là pour vous accompagner !\n\nVisuel généré par IA – Implantations indicatives.",
+     "entete": "",
+     "auteur": "Valrim Aménagement",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "documentComponent"
+     ],
+     "images": [],
+     "doc_pages": [
+      "https://media.licdn.com/dms/image/v2/D4E10AQHu46y3vC7U7w/ads-document-cover-images_1920/B4EaHBClZmIIBA-/0/1794240044893?e=1795165200&v=beta&t=YxOe3BhU9KrZi1KoIiOIICKcr4G1ed-ioid511FiJO8",
+      "https://media.licdn.com/dms/image/v2/D4E10AQHu46y3vC7U7w/ads-document-cover-images_1920/B4EaHBClZmIIBA-/1/1794240044893?e=1795165200&v=beta&t=96_utwKEX2kelWCW6hWyopLqgBfoA74kE8T_bNYdPVg",
+      "https://media.licdn.com/dms/image/v2/D4E10AQHu46y3vC7U7w/ads-document-cover-images_1920/B4EaHBClZmIIBA-/2/1794240044893?e=1795165200&v=beta&t=8KVHHX2TJ24Hu0owWFnyns0H77AXwW_gGlc2GXzPC54"
+     ],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7524787563497439232",
+     "ts": 1794049158930,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524787563497439232",
+     "texte": "🏠Retrouvez- nous ce week-end au Salon Habitat & Déco de Valence !\n\nNos équipes seront présentes pour vous accueillir et vous accompagner dans vos projets immobiliers.\n\nVenez nous rencontrer et échanger avec nous !\n\n📍Stand B23\n🕦 De 10h à 19h\n📌Palais des Congrès et des expositions- 16 Avenue Georges Clemenceau, 26000 Valence",
+     "entete": "",
+     "auteur": "Valrim Aménagement",
+     "reprise": null,
+     "date": "6 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E10AQHx40OXiOGmVA/image-shrink_1280/B4EaG1qZiPI8AY-/0/1794049154380?e=1795165200&v=beta&t=i7908duo312427HVA6iVWXoQfacgg1BLFHv-wdwGzdo",
+       "w": 1280,
+       "h": 1707
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 78,
+   "nom": "L'Immobilière Valrim",
+   "url": "https://www.linkedin.com/company/l'immobili%C3%A8re-valrim/",
+   "statut": "suivie",
+   "company_id": "72267275",
+   "nom_linkedin": "L'Immobilière Valrim",
+   "n_trouves": 9,
+   "dernier_ts": 1794049158958,
+   "dernier_post": "6 j",
+   "actif": "OUI",
+   "n_7j": 1,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7524787563614814208",
+     "ts": 1794049158958,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524787563614814208",
+     "texte": "🏠Retrouvez- nous ce week-end au Salon Habitat & Déco de Valence !\n\nNos équipes seront présentes pour vous accueillir et vous accompagner dans vos projets immobiliers.\n\nVenez nous rencontrer et échanger avec nous !\n\n📍Stand B23\n🕦 De 10h à 19h\n📌Palais des Congrès et des expositions- 16 Avenue Georges Clemenceau, 26000 Valence",
+     "entete": "",
+     "auteur": "L'Immobilière Valrim",
+     "reprise": null,
+     "date": "6 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E10AQGAyNvayZMLNQ/image-shrink_1280/B4EaG1qZi5JwAY-/0/1794049154667?e=1795165200&v=beta&t=23S4C_3u_Mdwse2U5o5OJJTnxNEmbbTejSqj8oxNOG0",
+       "w": 1280,
+       "h": 1707
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7523783851618361344",
+     "ts": 1793809855370,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7523783851618361344",
+     "texte": "Devenir propriétaire à prix abordable dans le Vercors : le BRS expliqué demain à Lans-en-Vercors\n\nDans les territoires de montagne, la hausse des prix éloigne de plus en plus les actifs et les familles de l’accession à la propriété. À Lans-en-Vercors, l’Immobilière Valrim y répond avec le Bail Réel Solidaire.\n\nAvec nos programmes Horizon Vercors et Jean Detter, nous proposons des logements neufs en BRS. Le foncier est dissocié du bâti, ce qui permet d’acheter sa résidence principale à un prix maîtrisé, sous conditions de ressources. Le logement reste ensuite durablement abordable pour les acquéreurs suivants.\n\nUne réunion d’information publique est organisée demain avec la commune pour présenter le dispositif et les logements :\n📅 Jeudi 5 novembre, 18h30\n📍 Salle Saint-Donat, mairie de Lans-en-Vercors\n\n87 % des ménages français sont éligibles au BRS (source : ministère chargé du Logement, plafonds 2026).\n#AccessionSociale #BRS #LogementAbordable #Vercors #ImmobilierNeuf",
+     "entete": "",
+     "auteur": "L'Immobilière Valrim",
+     "reprise": null,
+     "date": "1 sem.",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E10AQGX9aesP37iwA/image-shrink_1280/B4EaGnZhyLG8Ak-/0/1793809849824?e=1795165200&v=beta&t=9uAWSZ33X9MQZBSK_0bcqL1tqQhaHbWZnkmbAmi0BtU",
+       "w": 1200,
+       "h": 1200
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  },
+  {
+   "id": 79,
+   "nom": "Habitat dauphinois",
+   "url": "https://www.linkedin.com/showcase/habitat-dauphinois---groupe-valrim/",
+   "statut": "suivie",
+   "company_id": "72519650",
+   "nom_linkedin": "Habitat Dauphinois - Groupe Valrim",
+   "n_trouves": 9,
+   "dernier_ts": 1794502770546,
+   "dernier_post": "16 h",
+   "actif": "OUI",
+   "n_7j": 3,
+   "posts": [
+    {
+     "urn": "urn:li:activity:7526690148512632832",
+     "ts": 1794502770546,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526690148512632832",
+     "texte": "#Signature#Convention | 🤝 Sécurité et tranquillité résidentielle dans l’habitat social : 5 nouveaux bailleurs s’engagent\n\nLa préfète de la Drôme, Marie-Aimée Gaspari, et le procureur de la République près le tribunal judiciaire de Valence, Laurent de Caigny, ont signé 3 conventions de partenariat avec 5 bailleurs sociaux du département : GROUPE ADIS, HABITAT DAUPHINOIS, SDH Constructeur, Orélia et Drôme Aménagement Habitat. \n\nCes conventions renforcent la coopération entre bailleurs, préfecture, parquet et forces de sécurité intérieure :\n✅ prévention et respect des règlements intérieurs et des obligations locatives\n✅ signalement des troubles significatifs à la préfecture et au parquet\n✅ désignation de correspondants sûreté pour faciliter les échanges avec la police et la gendarmerie\n✅ meilleure coordination des interventions et des procédures judiciaires, notamment pour la résiliation des baux\n\nAvec cette signature, la démarche engagée depuis février 2026 couvre désormais l’ensemble du département. \nL’État réaffirme sa volonté d’agir aux côtés des habitants et des collectivités pour restaurer la quiétude dans les résidences sociales.\n\n👉 Retrouvez le communiqué de presse: https://lnkd.in/eZSih7PP\n\n\n#Drôme #HabitatSocial #Sécurité #TranquillitéRésidentielle #LoiNarcotrafic #Valence",
+     "entete": "Habitat Dauphinois - Groupe Valrim reposted this",
+     "auteur": "Préfecture de la Drôme",
+     "reprise": null,
+     "date": "16 h",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHW-TBARlP9Qg/feedshare-shrink_1280/B4EaHPXdFVIYAI-/0/1794480394920?e=1796256000&v=beta&t=79j9BuBaIuTF5PSDfX_SL-gegO8rnbskG0X41gtT7-c",
+       "w": 1080,
+       "h": 1350
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQHjrGX8L2mK4w/feedshare-shrink_1280/B4EaHPXdBEIoAM-/0/1794480394748?e=1796256000&v=beta&t=Jrqz8n1AuE63PcaNlwghHnKYK1qHecDLMZ5nRF-a5Qk",
+       "w": 1080,
+       "h": 1350
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFDS_9a1d9rdA/feedshare-shrink_1280/B4EaHPXdL6IoAI-/0/1794480395324?e=1796256000&v=beta&t=ZkUy4rXOn916isVHBLRgEnbHSudE30AlEIEaF9YeX6Y",
+       "w": 1080,
+       "h": 1350
+      },
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E22AQFaJF42VGmv6w/feedshare-image-high-res/B4EaHPXdFKIAAU-/0/1794480394879?e=1796256000&v=beta&t=qtTtKPMe9oPbnMk0f5nmZzVB-T9cW0RXxqlT_TFdN44",
+       "w": 1080,
+       "h": 1350
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    },
+    {
+     "urn": "urn:li:activity:7525588189286154240",
+     "ts": 1794240042993,
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525588189286154240",
+     "texte": "✨ Et si votre futur chez-vous était à Montélier ?\n\nDécouvrez Les Camélias, une résidence à taille humaine située à proximité de Valence. Deux dernières opportunités sont encore disponibles :\n\n🏡 Une villa T4\n🏢 Un appartement T3\n\nUn cadre de vie agréable, des logements neufs et une belle opportunité pour donner vie à votre projet immobilier !\n\n💡 Bonne nouvelle : le programme est également éligible au dispositif de Location-Accession, une solution pour faciliter l’accession à la propriété.\n\n🔎 Découvrez le programme :\nhttps://hubs.li/Q04BnPml0\n\n📞 Une question ou envie de visiter ? Notre équipe est à votre écoute au 04 75 44 92 20.",
+     "entete": "",
+     "auteur": "Habitat Dauphinois - Groupe Valrim",
+     "reprise": null,
+     "date": "4 j",
+     "kind": [
+      "imageComponent"
+     ],
+     "images": [
+      {
+       "url": "https://media.licdn.com/dms/image/v2/D4E10AQEm1BSY3xzs2g/image-shrink_1280/B4EaHBCkIXHAAc-/0/1794240037795?e=1795165200&v=beta&t=ob4CIQ1RmCrb36n8ehhIpewTGV9IhzYLziyAYtQVURs",
+       "w": 1200,
+       "h": 1200
+      }
+     ],
+     "doc_pages": [],
+     "video": null
+    }
+   ]
+  }
+ ]
+}
